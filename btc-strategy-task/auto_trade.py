@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-BTC合约 自动交易策略 v2.11.3
+BTC合约 自动交易策略 v2.11.4
 - 5秒监控 + 多周期指标分析
 - 自定义止盈止损
 - 开仓理由记录 + 微信通知
-- v2.11.3: 修复幽灵仓位reason覆盖问题 - state为唯一数据源，不从交易所更新
+- v2.11.4: 移动止盈仅追踪state中的bot仓位，手动仓彻底隔离
 """
 import ccxt
 import pandas as pd
@@ -905,15 +905,17 @@ def main():
                         save_state(state)
 
             # ========== v2.9: 移动止盈（集成版）==========
-            # 使用exchange_pos（交易所实时持仓），避免幽灵仓位
-            if has_pos:
+            # ========== v2.11.4: 移动止盈（仅追踪state中的bot仓位）==========
+            # 移动止盈只追踪bot在state['positions']中自己开的仓
+            # 手动仓位不在state中，完全不受影响，与幽灵仓位问题彻底切割
+            bot_positions = state.get('positions', [])
+            if has_pos and bot_positions:
                 price = data['5m']['price']
-                trail_closed = []  # 记录被移动止盈平仓的仓位entry_price
-                # 将exchange_pos转为本地positions格式用于移动止盈追踪
-                exchange_pos_map = {float(p.get('entryPrice', 0)): p for p in exchange_pos if float(p.get('contracts', 0)) > 0}
-                for entry, p in exchange_pos_map.items():
-                    direction = p.get('side', 'long')
-                    qty = float(p.get('contracts', 0))
+                trail_closed = []
+                for p in bot_positions:
+                    direction = p['direction']
+                    entry = p['entry_price']
+                    qty = p['qty']
                     peak_key = f"peak_{entry}"
                     if peak_key not in state:
                         state[peak_key] = entry
@@ -961,7 +963,7 @@ def main():
                                     trail_closed.append(entry)
                                 except Exception as e:
                                     log(f"❌ 移动止盈平仓失败: {e}")
-                # 从positions中移除已平仓的仓位
+                # 只从state中移除bot已平仓的仓位（手动仓不在state中，无需处理）
                 if trail_closed:
                     state['positions'] = [p for p in state['positions'] if p['entry_price'] not in trail_closed]
                     for e in trail_closed:
