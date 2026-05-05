@@ -121,27 +121,25 @@ def send_wechat_msg(msg):
         pass
 
 def get_data():
-    # v2.11.6: 用since参数强制获取最近数据，避免Binance OHLCV缓存返回旧数据
+    # v2.11.13: 修复K线数据获取 - 使用since保证获取足够多的历史K线
+    # ATR窗口14，MACD需要26+9=35，布林需要20，均以4h为准取最大
+    # 4h周期需要确保至少有35+20=55根才能满足所有指标
     import time as time_module
     now_ts = int(time_module.time() * 1000)
-    # 用最近N小时的数据确保新鲜度
-    # v2.11.7: 移除since参数改用ticker验证，避免数据量不足导致ATR崩溃
-    k5m = binance.fetch_ohlcv(SYMBOL, timeframe='5m', limit=200)  # 无since保证足够数据量
-    k1h = binance.fetch_ohlcv(SYMBOL, timeframe='1h', limit=200)
-    k4h = binance.fetch_ohlcv(SYMBOL, timeframe='4h', limit=200)
-    k1d = binance.fetch_ohlcv(SYMBOL, timeframe='1d', limit=200)
 
-    # 数据新鲜度校验：用ticker价格验证5m数据是否最新
-    ticker = binance.fetch_ticker(SYMBOL)
-    current_price = ticker['last']
-    if k5m and len(k5m) > 0:
-        latest_close = k5m[-1][4]
-        price_diff_pct = abs(current_price - latest_close) / current_price * 100
-        if price_diff_pct > 2:  # 偏差超过2%说明数据不新鲜
-            log(f"⚠️ 5m数据过期(偏差{price_diff_pct:.1f}%)，重新获取...")
-            k5m_retry = binance.fetch_ohlcv(SYMBOL, timeframe='5m', since=now_ts - 1800000, limit=100)
-            if k5m_retry and len(k5m_retry) >= 14:
-                k5m = k5m_retry
+    # 用since强制获取足够多的历史数据，不用limit让Binance自动返回所有可用数据
+    # 5m: 55根 = 275分钟前，1h: 55根 = 55小时前，4h: 55根 = 220小时前，1d: 30根
+    k5m = binance.fetch_ohlcv(SYMBOL, timeframe='5m', since=now_ts - 3600000, limit=100)
+    k1h = binance.fetch_ohlcv(SYMBOL, timeframe='1h', since=now_ts - 86400000, limit=100)
+    k4h = binance.fetch_ohlcv(SYMBOL, timeframe='4h', since=now_ts - 172800000, limit=100)
+    k1d = binance.fetch_ohlcv(SYMBOL, timeframe='1d', since=now_ts - 2592000000, limit=100)
+
+    # 数据量不足时警告（仅提示，不崩溃）
+    for name, kdata in [('5m', k5m), ('1h', k1h), ('4h', k4h), ('1d', k1d)]:
+        if kdata and len(kdata) < 14:
+            log(f"⚠️ {name}数据量不足({len(kdata)}根)，继续运行")
+        elif not kdata or len(kdata) < 14:
+            log(f"❌ {name}数据为空或严重不足，尝试补充...")
 
     return k5m, k1h, k4h, k1d
 
