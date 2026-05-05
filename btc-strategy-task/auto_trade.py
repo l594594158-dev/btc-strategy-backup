@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-BTC合约 自动交易策略 v2.11.4
+BTC合约 自动交易策略 v2.11.5
 - 5秒监控 + 多周期指标分析
 - 自定义止盈止损
 - 开仓理由记录 + 微信通知
-- v2.11.4: 移动止盈仅追踪state中的bot仓位，手动仓彻底隔离
+- v2.11.5: 修复OHLCV数据过期bug - 强制刷新市场数据 + 时间戳校验
 """
 import ccxt
 import pandas as pd
@@ -113,10 +113,34 @@ def send_wechat_msg(msg):
         pass
 
 def get_data():
+    # v2.11.5: 强制重新加载市场数据，确保OHLCV是当前数据而非旧缓存
+    try:
+        binance.load_markets(True)  # True = 强制刷新
+    except:
+        pass
     k5m = binance.fetch_ohlcv(SYMBOL, timeframe='5m', limit=100)
     k1h = binance.fetch_ohlcv(SYMBOL, timeframe='1h', limit=200)
     k4h = binance.fetch_ohlcv(SYMBOL, timeframe='4h', limit=200)
     k1d = binance.fetch_ohlcv(SYMBOL, timeframe='1d', limit=200)
+
+    # 数据新鲜度校验：检查最新K线时间戳是否在最近30分钟内
+    import time as time_module
+    import datetime
+    now_ts = int(time_module.time() * 1000)
+    for name, kdata in [('5m', k5m), ('1h', k1h), ('4h', k4h), ('1d', k1d)]:
+        if kdata and len(kdata) > 0:
+            latest_ts = kdata[-1][0]
+            age_min = (now_ts - latest_ts) / 60000
+            if age_min > 30:
+                log(f"⚠️ {name} K线数据过期({age_min:.0f}分钟前)，重新获取...")
+                # 重新获取一次
+                retry = binance.fetch_ohlcv(SYMBOL, timeframe=({'5m':'5m','1h':'1h','4h':'4h','1d':'1d'})[name], limit=100 if name == '5m' else 200)
+                if retry and len(retry) > 0 and (now_ts - retry[-1][0]) < 1800000:
+                    if name == '5m': k5m = retry
+                    elif name == '1h': k1h = retry
+                    elif name == '4h': k4h = retry
+                    else: k1d = retry
+
     return k5m, k1h, k4h, k1d
 
 def calc(df):
