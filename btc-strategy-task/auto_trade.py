@@ -121,26 +121,13 @@ def send_wechat_msg(msg):
         pass
 
 def get_data():
-    # v2.11.13: 修复K线数据获取 - 使用since保证获取足够多的历史K线
-    # ATR窗口14，MACD需要26+9=35，布林需要20，均以4h为准取最大
-    # 4h周期需要确保至少有35+20=55根才能满足所有指标
-    import time as time_module
-    now_ts = int(time_module.time() * 1000)
-
-    # 用since强制获取足够多的历史数据，不用limit让Binance自动返回所有可用数据
-    # 5m: 55根 = 275分钟前，1h: 55根 = 55小时前，4h: 55根 = 220小时前，1d: 30根
-    k5m = binance.fetch_ohlcv(SYMBOL, timeframe='5m', since=now_ts - 3600000, limit=100)
-    k1h = binance.fetch_ohlcv(SYMBOL, timeframe='1h', since=now_ts - 86400000, limit=100)
-    k4h = binance.fetch_ohlcv(SYMBOL, timeframe='4h', since=now_ts - 172800000, limit=100)
-    k1d = binance.fetch_ohlcv(SYMBOL, timeframe='1d', since=now_ts - 2592000000, limit=100)
-
-    # 数据量不足时警告（仅提示，不崩溃）
-    for name, kdata in [('5m', k5m), ('1h', k1h), ('4h', k4h), ('1d', k1d)]:
-        if kdata and len(kdata) < 14:
-            log(f"⚠️ {name}数据量不足({len(kdata)}根)，继续运行")
-        elif not kdata or len(kdata) < 14:
-            log(f"❌ {name}数据为空或严重不足，尝试补充...")
-
+    # v2.11.14: K线数据获取 - 只用limit=200，让Binance返回最近200根（足够任何指标）
+    # 200 x 5m = 16.7小时，200 x 1h = 8.3天，200 x 4h = 33天，200 x 1d = 200天
+    # 稳定可靠，避免since参数配合小lookback导致数据不足的问题
+    k5m = binance.fetch_ohlcv(SYMBOL, timeframe='5m', limit=200)
+    k1h = binance.fetch_ohlcv(SYMBOL, timeframe='1h', limit=200)
+    k4h = binance.fetch_ohlcv(SYMBOL, timeframe='4h', limit=200)
+    k1d = binance.fetch_ohlcv(SYMBOL, timeframe='1d', limit=200)
     return k5m, k1h, k4h, k1d
 
 def calc(df):
