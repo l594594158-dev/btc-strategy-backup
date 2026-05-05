@@ -392,3 +392,8 @@
 [2026-05-05 23:20:51] [错误] index 13 is out of bounds for axis 0 with size 12
 [2026-05-05 23:21:01] [错误] index 13 is out of bounds for axis 0 with size 12
 [2026-05-05 23:21:12] [错误] index 13 is out of bounds for axis 0 with size 12
+[2026-05-06 07:53:48] [错误] module 'ta.trend' has no attribute 'MACIndicator'
+[2026-05-06 07:53:58] [错误] module 'ta.trend' has no attribute 'MACIndicator'
+[2026-05-06 07:54:09] [错误] module 'ta.trend' has no attribute 'MACIndicator'
+[2026-05-06 07:54:19] [错误] module 'ta.trend' has no attribute 'MACIndicator'
+[2026-05-06 07:54:29] [错误] module 'ta.trend' has no attribute 'MACIndicator'

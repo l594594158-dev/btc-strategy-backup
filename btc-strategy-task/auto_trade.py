@@ -143,7 +143,7 @@ def calc(df):
 
     ma7 = ta.trend.SMAIndicator(close, 7).sma_indicator().iloc[lv]
     ma25 = ta.trend.SMAIndicator(close, 25).sma_indicator().iloc[lv]
-    macd_ind = ta.trend.MACIndicator(close)
+    macd_ind = ta.trend.MACD(close)
     macd = macd_ind.macd().iloc[lv]
     macd_sig = macd_ind.macd_signal().iloc[lv]
     rsi = ta.momentum.RSIIndicator(close).rsi().iloc[lv]
