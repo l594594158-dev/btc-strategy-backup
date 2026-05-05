@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-BTC合约 自动交易策略 v2.11.5
+BTC合约 自动交易策略 v2.11.6
 - 5秒监控 + 多周期指标分析
 - 自定义止盈止损
 - 开仓理由记录 + 微信通知
-- v2.11.5: 修复OHLCV数据过期bug - 强制刷新市场数据 + 时间戳校验
+- v2.11.6: 修复OHLCV数据过期bug - 改用since参数强制拉最近数据 + ticker交叉验证
 """
 import ccxt
 import pandas as pd
@@ -113,33 +113,24 @@ def send_wechat_msg(msg):
         pass
 
 def get_data():
-    # v2.11.5: 强制重新加载市场数据，确保OHLCV是当前数据而非旧缓存
-    try:
-        binance.load_markets(True)  # True = 强制刷新
-    except:
-        pass
-    k5m = binance.fetch_ohlcv(SYMBOL, timeframe='5m', limit=100)
-    k1h = binance.fetch_ohlcv(SYMBOL, timeframe='1h', limit=200)
-    k4h = binance.fetch_ohlcv(SYMBOL, timeframe='4h', limit=200)
-    k1d = binance.fetch_ohlcv(SYMBOL, timeframe='1d', limit=200)
-
-    # 数据新鲜度校验：检查最新K线时间戳是否在最近30分钟内
+    # v2.11.6: 用since参数强制获取最近数据，避免Binance OHLCV缓存返回旧数据
     import time as time_module
-    import datetime
     now_ts = int(time_module.time() * 1000)
-    for name, kdata in [('5m', k5m), ('1h', k1h), ('4h', k4h), ('1d', k1d)]:
-        if kdata and len(kdata) > 0:
-            latest_ts = kdata[-1][0]
-            age_min = (now_ts - latest_ts) / 60000
-            if age_min > 30:
-                log(f"⚠️ {name} K线数据过期({age_min:.0f}分钟前)，重新获取...")
-                # 重新获取一次
-                retry = binance.fetch_ohlcv(SYMBOL, timeframe=({'5m':'5m','1h':'1h','4h':'4h','1d':'1d'})[name], limit=100 if name == '5m' else 200)
-                if retry and len(retry) > 0 and (now_ts - retry[-1][0]) < 1800000:
-                    if name == '5m': k5m = retry
-                    elif name == '1h': k1h = retry
-                    elif name == '4h': k4h = retry
-                    else: k1d = retry
+    # 用最近N小时的数据确保新鲜度
+    k5m = binance.fetch_ohlcv(SYMBOL, timeframe='5m', since=now_ts - 3600000, limit=100)  # 最近1小时
+    k1h = binance.fetch_ohlcv(SYMBOL, timeframe='1h', since=now_ts - 86400000, limit=200)  # 最近24小时
+    k4h = binance.fetch_ohlcv(SYMBOL, timeframe='4h', since=now_ts - 259200000, limit=200)  # 最近3天
+    k1d = binance.fetch_ohlcv(SYMBOL, timeframe='1d', since=now_ts - 604800000, limit=200)  # 最近7天
+
+    # 数据新鲜度校验：用ticker价格验证5m数据是否最新
+    ticker = binance.fetch_ticker(SYMBOL)
+    current_price = ticker['last']
+    if k5m and len(k5m) > 0:
+        latest_close = k5m[-1][4]
+        price_diff_pct = abs(current_price - latest_close) / current_price * 100
+        if price_diff_pct > 2:  # 偏差超过2%说明数据不新鲜
+            log(f"⚠️ 5m数据过期(偏差{price_diff_pct:.1f}%)，重新获取...")
+            k5m = binance.fetch_ohlcv(SYMBOL, timeframe='5m', since=now_ts - 1800000, limit=50)
 
     return k5m, k1h, k4h, k1d
 
