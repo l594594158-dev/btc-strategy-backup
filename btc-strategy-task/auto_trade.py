@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-BTC合约 自动交易策略 v2.11.2
+BTC合约 自动交易策略 v2.11.3
 - 5秒监控 + 多周期指标分析
 - 自定义止盈止损
 - 开仓理由记录 + 微信通知
-- v2.11.2: 移除1.5%间隔限制，自动开仓不受手动仓影响，禁用幽灵仓位自动导入
+- v2.11.3: 修复幽灵仓位reason覆盖问题 - state为唯一数据源，不从交易所更新
 """
 import ccxt
 import pandas as pd
@@ -834,27 +834,22 @@ def main():
 
             state = load_state()
 
-            # 检查持仓状态
+            # v2.11.3: state['positions'] 是bot自己管理的仓位的唯一来源
+            # 禁止从交易所读取持仓来更新或覆盖state，保留每个仓位的原始reason
+            # 交易所持仓检查仅用于判断是否有持仓，不用于更新state
             exchange_pos = binance.fetch_positions()
-            has_pos = any(p.get('symbol') == SYMBOL and float(p.get('contracts', 0)) > 0 for p in exchange_pos)
+            exchange_qty = sum(float(p.get('contracts', 0)) for p in exchange_pos if p.get('symbol') == SYMBOL)
+            state_qty = sum(p['qty'] for p in state.get('positions', []))
+            has_pos = exchange_qty > 0
 
-            # v2.11.2: bot只管自己开的仓，不同步手动仓数量
-            # state['positions'] = bot自行管理的手仓列表，与交易所手动仓完全隔离
-            pass
+            # 修复 in_position 状态一致性（基于交易所实际持仓）
+            state['in_position'] = has_pos
 
-            # 修复 in_position 状态一致性
-            if not state.get('positions'):
-                state['in_position'] = False
-
-            # ========== v2.11.2: 幽灵仓位导入已禁用 ==========
-            # 手动仓位由用户自行管理，bot只管理自己开仓的positions列表
-            # 如需同步幽灵仓，请手动在state.json中编辑
-            pass
-
-            # v2.7: 持仓全部平仓时清空state（部分平仓时保留其他仓位）
+            # 全部平仓时清空state（以交易所为准）
             if not has_pos and state.get('positions') == []:
                 save_state({'in_position': False, 'positions': [], 'last_close_time': time.time()})
                 state = {'in_position': False, 'positions': []}
+            # 重要：has_pos为True但state有仓 = 继续用state（reason不丢失）
 
             # 打印状态
             print_status(data, state)
