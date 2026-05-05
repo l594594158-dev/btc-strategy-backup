@@ -11,7 +11,7 @@ TARGET = 'o9cq80_h_BaEgBVnsrfqjOMF8Rug@im.wechat'
 def send_wechat(msg):
     """调用openclaw CLI发送微信"""
     result = subprocess.run([
-        'openclaw', 'message', 'send',
+        '/root/.local/share/pnpm/openclaw', 'message', 'send',
         '--channel', CHANNEL,
         '--target', TARGET,
         '--message', msg
