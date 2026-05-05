@@ -143,7 +143,7 @@ def calc(df):
     # ========== 新增优化1: ADX趋势强度 ==========
     # ADX > 25 表示市场有趋势，< 25 震荡市指标信号易失效
     try:
-        adx_ind = ta.volatility.ADXIndicator(high, low, close, window=14)
+        adx_ind = ta.trend.ADXIndicator(high, low, close, window=14)
         adx = adx_ind.adx().iloc[lv]
         adx_pos = adx_ind.adx_pos().iloc[lv]
         adx_neg = adx_ind.adx_neg().iloc[lv]
