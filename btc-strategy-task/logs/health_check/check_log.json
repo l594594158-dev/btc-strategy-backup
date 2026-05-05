@@ -1,255 +1,5 @@
 [
   {
-    "time": "2026-05-03 21:30:01",
-    "checks_ok": 7,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-03 21:30:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=2388564 运行中"
-      },
-      {
-        "time": "2026-05-03 21:30:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78606.5"
-      },
-      {
-        "time": "2026-05-03 21:30:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-03 21:30:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-03 21:30:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "不存在（首次运行）"
-      },
-      {
-        "time": "2026-05-03 21:30:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-03 21:30:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-03 22:00:01",
-    "checks_ok": 7,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-03 22:00:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=2388564 运行中"
-      },
-      {
-        "time": "2026-05-03 22:00:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78649.9"
-      },
-      {
-        "time": "2026-05-03 22:00:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-03 22:00:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-03 22:00:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "不存在（首次运行）"
-      },
-      {
-        "time": "2026-05-03 22:00:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-03 22:00:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-03 22:30:01",
-    "checks_ok": 7,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-03 22:30:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=2388564 运行中"
-      },
-      {
-        "time": "2026-05-03 22:30:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78649.9"
-      },
-      {
-        "time": "2026-05-03 22:30:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-03 22:30:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-03 22:30:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "不存在（首次运行）"
-      },
-      {
-        "time": "2026-05-03 22:30:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-03 22:30:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-03 23:00:01",
-    "checks_ok": 7,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-03 23:00:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=2388564 运行中"
-      },
-      {
-        "time": "2026-05-03 23:00:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78700.6"
-      },
-      {
-        "time": "2026-05-03 23:00:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-03 23:00:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-03 23:00:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "不存在（首次运行）"
-      },
-      {
-        "time": "2026-05-03 23:00:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-03 23:00:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-03 23:30:01",
-    "checks_ok": 7,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-03 23:30:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=2388564 运行中"
-      },
-      {
-        "time": "2026-05-03 23:30:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78730.4"
-      },
-      {
-        "time": "2026-05-03 23:30:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-03 23:30:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-03 23:30:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "不存在（首次运行）"
-      },
-      {
-        "time": "2026-05-03 23:30:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-03 23:30:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
     "time": "2026-05-04 00:00:01",
     "checks_ok": 7,
     "checks_fail": 0,
@@ -5010,6 +4760,259 @@
       },
       {
         "time": "2026-05-05 23:00:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-05 23:30:01",
+    "checks_ok": 7,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-05 23:30:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=3183811 运行中"
+      },
+      {
+        "time": "2026-05-05 23:30:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$81578.5"
+      },
+      {
+        "time": "2026-05-05 23:30:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-05 23:30:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-05 23:30:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-05 23:21:12] [错误] index 13 is out of boun"
+      },
+      {
+        "time": "2026-05-05 23:30:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-05 23:30:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-06 00:00:01",
+    "checks_ok": 7,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-06 00:00:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=3183811 运行中"
+      },
+      {
+        "time": "2026-05-06 00:00:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$81488.7"
+      },
+      {
+        "time": "2026-05-06 00:00:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-06 00:00:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-06 00:00:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-05 23:21:12] [错误] index 13 is out of boun"
+      },
+      {
+        "time": "2026-05-06 00:00:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-06 00:00:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-06 00:30:01",
+    "checks_ok": 7,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-06 00:30:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=3183811 运行中"
+      },
+      {
+        "time": "2026-05-06 00:30:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$81380.0"
+      },
+      {
+        "time": "2026-05-06 00:30:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-06 00:30:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-06 00:30:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-05 23:21:12] [错误] index 13 is out of boun"
+      },
+      {
+        "time": "2026-05-06 00:30:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-06 00:30:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-06 01:00:01",
+    "checks_ok": 6,
+    "checks_fail": 1,
+    "items": [
+      {
+        "time": "2026-05-06 01:00:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=3183811 运行中"
+      },
+      {
+        "time": "2026-05-06 01:00:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$81250.7"
+      },
+      {
+        "time": "2026-05-06 01:00:01",
+        "item": "持仓同步",
+        "status": "❌ FAIL",
+        "detail": "持仓数据不一致！交易所qty=0.03 state=0 | 价差=$0.00",
+        "fix": "sync_ghost"
+      },
+      {
+        "time": "2026-05-06 01:00:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=0"
+      },
+      {
+        "time": "2026-05-06 01:00:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-05 23:21:12] [错误] index 13 is out of boun"
+      },
+      {
+        "time": "2026-05-06 01:00:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-06 01:00:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": [
+      "已同步1个幽灵持仓到state"
+    ]
+  },
+  {
+    "time": "2026-05-06 01:30:02",
+    "checks_ok": 7,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-06 01:30:02",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=3183811 运行中"
+      },
+      {
+        "time": "2026-05-06 01:30:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$81370.1"
+      },
+      {
+        "time": "2026-05-06 01:30:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-06 01:30:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-06 01:30:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-05 23:21:12] [错误] index 13 is out of boun"
+      },
+      {
+        "time": "2026-05-06 01:30:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-06 01:30:02",
         "item": "通知队列",
         "status": "✅ OK",
         "detail": "无积压"

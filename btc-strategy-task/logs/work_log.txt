@@ -379,3 +379,16 @@
 [2026-05-05 23:18:28] [错误] index 13 is out of bounds for axis 0 with size 12
 [2026-05-05 23:18:38] [错误] index 13 is out of bounds for axis 0 with size 12
 [2026-05-05 23:18:49] [错误] index 13 is out of bounds for axis 0 with size 12
+[2026-05-05 23:18:59] [错误] index 13 is out of bounds for axis 0 with size 12
+[2026-05-05 23:19:17] [错误] index 13 is out of bounds for axis 0 with size 12
+[2026-05-05 23:19:27] [错误] index 13 is out of bounds for axis 0 with size 12
+[2026-05-05 23:19:37] [错误] index 13 is out of bounds for axis 0 with size 12
+[2026-05-05 23:19:48] [错误] index 13 is out of bounds for axis 0 with size 12
+[2026-05-05 23:19:58] [错误] index 13 is out of bounds for axis 0 with size 12
+[2026-05-05 23:20:09] [错误] index 13 is out of bounds for axis 0 with size 12
+[2026-05-05 23:20:19] [错误] index 13 is out of bounds for axis 0 with size 12
+[2026-05-05 23:20:30] [错误] index 13 is out of bounds for axis 0 with size 12
+[2026-05-05 23:20:40] [错误] index 13 is out of bounds for axis 0 with size 12
+[2026-05-05 23:20:51] [错误] index 13 is out of bounds for axis 0 with size 12
+[2026-05-05 23:21:01] [错误] index 13 is out of bounds for axis 0 with size 12
+[2026-05-05 23:21:12] [错误] index 13 is out of bounds for axis 0 with size 12

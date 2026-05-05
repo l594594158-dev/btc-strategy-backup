@@ -1,1 +1,20 @@
-{"in_position": false, "positions": [], "last_close_time": 1777990353.8206573}
+{
+  "in_position": true,
+  "positions": [
+    {
+      "entry_price": 81281.0,
+      "qty": 0.03,
+      "direction": "long",
+      "stop_loss": 78842.56999999999,
+      "tp": 85345.05,
+      "sl_algo_id": null,
+      "tp_algo_id": null,
+      "reason": "bot_recovered",
+      "atr": 0,
+      "open_time": "2026-05-06T01:00:08.944440"
+    }
+  ],
+  "last_close_time": null,
+  "last_signal_time": {},
+  "peak_81281.0": 81400.0
+}

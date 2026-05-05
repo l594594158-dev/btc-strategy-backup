@@ -4,7 +4,7 @@ BTC合约 自动交易策略 v2.11.8
 - 5秒监控 + 多周期指标分析
 - 自定义止盈止损
 - 开仓理由记录 + 微信通知
-- v2.11.8: 修复reason幽灵仓位遗留bug - 旧格式reason标记为bot_recovered
+- v2.11.9: 深度修复幽灵仓位bug - 交易所与state一致性验证 - 旧格式reason标记为bot_recovered
 """
 import ccxt
 import pandas as pd
@@ -829,9 +829,18 @@ def main():
     if stats.get('consecutive_losses', 0) > 0:
         log(f"⚠️ 当前连续亏损: {stats['consecutive_losses']}次")
 
+    # v2.11.9: 启动时验证state与交易所一致性
     state = load_state()
+    exchange_pos = binance.fetch_positions()
+    exchange_qty = sum(float(p.get('contracts', 0)) for p in exchange_pos if p.get('symbol') == SYMBOL)
     positions = state.get('positions', [])
-    if positions:
+
+    if positions and exchange_qty == 0:
+        # 交易所无仓但state有仓 = 异常，清空state
+        log(f"⚠️ 检测到state有{len(positions)}个仓位但交易所无仓，清空state")
+        save_state({'in_position': False, 'positions': [], 'last_close_time': time.time()})
+        state = {'in_position': False, 'positions': []}
+    elif positions:
         total_qty = sum(p['qty'] for p in positions)
         log(f"⚠️ 检测到 {len(positions)} 个仓位，合计 {total_qty} BTC")
         for i, p in enumerate(positions):
@@ -867,11 +876,13 @@ def main():
             # 修复 in_position 状态一致性（基于交易所实际持仓）
             state['in_position'] = has_pos
 
-            # 全部平仓时清空state（以交易所为准）
-            if not has_pos and state.get('positions') == []:
+            # v2.11.9: 交易所无仓但state有仓 = 异常，清空state
+            if not has_pos and state.get('positions'):
+                log(f"⚠️ 交易所无仓但state有{len(state['positions'])}个仓位，清空state")
                 save_state({'in_position': False, 'positions': [], 'last_close_time': time.time()})
                 state = {'in_position': False, 'positions': []}
-            # 重要：has_pos为True但state有仓 = 继续用state（reason不丢失）
+            elif not has_pos and not state.get('positions'):
+                state['in_position'] = False
 
             # 打印状态
             print_status(data, state)
