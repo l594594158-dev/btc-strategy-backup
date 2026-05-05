@@ -148,9 +148,13 @@ def calc(df):
     volume = df['v']  # 成交量
     lv = len(df) - 1
 
+    # ========== v2.11.1: 数据量不足时直接跳过（修复ATR崩溃）==========
+    if len(df) < 14:
+        return None
+
     ma7 = ta.trend.SMAIndicator(close, 7).sma_indicator().iloc[lv]
     ma25 = ta.trend.SMAIndicator(close, 25).sma_indicator().iloc[lv]
-    macd_ind = ta.trend.MACD(close)
+    macd_ind = ta.trend.MACIndicator(close)
     macd = macd_ind.macd().iloc[lv]
     macd_sig = macd_ind.macd_signal().iloc[lv]
     rsi = ta.momentum.RSIIndicator(close).rsi().iloc[lv]
@@ -482,11 +486,19 @@ def open_position(direction, entry_price, atr, reason, qty):
 
     binance.set_leverage(LEVERAGE, SYMBOL)
 
-    # 开仓前检查是否已有同方向持仓（补仓）
+    # ========== v2.11: 二次开仓1.5%间隔检查（先下单再验证）==========
+    # 先下单，成交后再检查间隔，不合格则回撤
     existing_pos = [p for p in binance.fetch_positions()
                     if p.get('symbol') == SYMBOL and float(p.get('contracts', 0)) > 0
                     and p.get('side', '').lower() == direction]
     is_averaging = len(existing_pos) > 0
+
+    # 先记录现有均仓信息（用于下单后比对）
+    pre_existing_avg = 0
+    if is_averaging:
+        existing_entries = [(float(p['contracts']), float(p['entryPrice'])) for p in existing_pos]
+        pre_total_qty = sum(q for q, e in existing_entries)
+        pre_existing_avg = sum(q * e for q, e in existing_entries) / pre_total_qty if pre_total_qty > 0 else 0
 
     # 市价开仓
     if direction == 'long':
@@ -497,6 +509,27 @@ def open_position(direction, entry_price, atr, reason, qty):
     avg_price = order.get('average', entry_price)
     filled_qty = float(order.get('filled', qty))
     log(f"✅ 开仓成功: {direction.upper()} +{filled_qty} BTC @ ${avg_price:,.2f}" + (" (补仓)" if is_averaging else " (首仓)"))
+
+    # ========== v2.11: 二次开仓1.5%间隔检查（下单后验证）==========
+    if is_averaging:
+        # 计算新仓价格偏离现有均价的幅度
+        if direction == 'long':
+            price_gap_pct = (pre_existing_avg - avg_price) / pre_existing_avg * 100  # 做多：新仓比均价低才算有效间隔
+        else:
+            price_gap_pct = (avg_price - pre_existing_avg) / pre_existing_avg * 100  # 做空：新仓比均价高才算有效间隔
+
+        if price_gap_pct < 1.5:
+            log(f"⛔ 二次开仓间隔不足({price_gap_pct:.2f}% < 1.5%)，回撤仓单 | 均价=${pre_existing_avg:,.2f} 新仓=${avg_price:,.2f}")
+            # 平掉刚开的仓
+            try:
+                close_side = 'sell' if direction == 'long' else 'buy'
+                binance.create_order(SYMBOL, 'market', close_side, filled_qty,
+                                    params={'positionSide': positionSide})
+                log(f"🔙 已回撤刚开的仓 {filled_qty} BTC @ ${avg_price:,.2f}")
+            except Exception as e:
+                log(f"⚠️ 回撤仓单失败: {e}")
+            return None
+        log(f"📊 二次开仓间隔检查通过({price_gap_pct:.2f}% >= 1.5%) | 均价=${pre_existing_avg:,.2f} 新仓=${avg_price:,.2f}")
 
     # ========== v2.10: 补仓时撤销旧SL/TP，以新均价重新挂单 ==========
     total_qty = filled_qty
@@ -862,6 +895,13 @@ def main():
                 '4h': calc(df4h),
                 '1d': calc(df1d)
             }
+
+            # v2.11.1: 任何周期数据不足则跳过本轮（避免ATR崩溃）
+            if any(v is None for v in data.values()):
+                if cycle % 6 == 0:
+                    log(f"⚠️ 数据不足，跳过本轮 | 5m={len(df5m)} 1h={len(df1h)} 4h={len(df4h)} 1d={len(df1d)}")
+                time.sleep(10)
+                continue
 
             state = load_state()
 
