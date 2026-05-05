@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-BTC合约 自动交易策略 v2.11.6
+BTC合约 自动交易策略 v2.11.7
 - 5秒监控 + 多周期指标分析
 - 自定义止盈止损
 - 开仓理由记录 + 微信通知
-- v2.11.6: 修复OHLCV数据过期bug - 改用since参数强制拉最近数据 + ticker交叉验证
+- v2.11.7: 修复ATR崩溃bug - 移除since参数+ticker验证
 """
 import ccxt
 import pandas as pd
@@ -117,10 +117,11 @@ def get_data():
     import time as time_module
     now_ts = int(time_module.time() * 1000)
     # 用最近N小时的数据确保新鲜度
-    k5m = binance.fetch_ohlcv(SYMBOL, timeframe='5m', since=now_ts - 3600000, limit=100)  # 最近1小时
-    k1h = binance.fetch_ohlcv(SYMBOL, timeframe='1h', since=now_ts - 86400000, limit=200)  # 最近24小时
-    k4h = binance.fetch_ohlcv(SYMBOL, timeframe='4h', since=now_ts - 259200000, limit=200)  # 最近3天
-    k1d = binance.fetch_ohlcv(SYMBOL, timeframe='1d', since=now_ts - 604800000, limit=200)  # 最近7天
+    # v2.11.7: 移除since参数改用ticker验证，避免数据量不足导致ATR崩溃
+    k5m = binance.fetch_ohlcv(SYMBOL, timeframe='5m', limit=200)  # 无since保证足够数据量
+    k1h = binance.fetch_ohlcv(SYMBOL, timeframe='1h', limit=200)
+    k4h = binance.fetch_ohlcv(SYMBOL, timeframe='4h', limit=200)
+    k1d = binance.fetch_ohlcv(SYMBOL, timeframe='1d', limit=200)
 
     # 数据新鲜度校验：用ticker价格验证5m数据是否最新
     ticker = binance.fetch_ticker(SYMBOL)
@@ -130,7 +131,9 @@ def get_data():
         price_diff_pct = abs(current_price - latest_close) / current_price * 100
         if price_diff_pct > 2:  # 偏差超过2%说明数据不新鲜
             log(f"⚠️ 5m数据过期(偏差{price_diff_pct:.1f}%)，重新获取...")
-            k5m = binance.fetch_ohlcv(SYMBOL, timeframe='5m', since=now_ts - 1800000, limit=50)
+            k5m_retry = binance.fetch_ohlcv(SYMBOL, timeframe='5m', since=now_ts - 1800000, limit=100)
+            if k5m_retry and len(k5m_retry) >= 14:
+                k5m = k5m_retry
 
     return k5m, k1h, k4h, k1d
 
