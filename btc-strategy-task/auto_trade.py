@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-BTC合约 自动交易策略 v2.11.7
+BTC合约 自动交易策略 v2.11.8
 - 5秒监控 + 多周期指标分析
 - 自定义止盈止损
 - 开仓理由记录 + 微信通知
-- v2.11.7: 修复ATR崩溃bug - 移除since参数+ticker验证
+- v2.11.8: 修复reason幽灵仓位遗留bug - 旧格式reason标记为bot_recovered
 """
 import ccxt
 import pandas as pd
@@ -66,7 +66,11 @@ def load_state():
     if os.path.exists(STATE_FILE):
         with open(STATE_FILE) as f:
             s = json.load(f)
-        # v2.7: 兼容旧格式（单仓位），自动升级为positions数组
+        # v2.11.8: 兼容旧格式（单仓位），自动升级为positions数组
+        # 如果reason是"幽灵仓位同步"或空，说明是旧版遗留的仓位，标记为bot_recovered
+        old_reason = s.get('reason', '')
+        if old_reason in ('幽灵仓位同步', '', None):
+            old_reason = 'bot_recovered'
         if 'positions' not in s and s.get('in_position') and s.get('entry_price', 0) > 0:
             s['positions'] = [{
                 'entry_price': s['entry_price'],
@@ -76,7 +80,7 @@ def load_state():
                 'tp': s.get('tp1', s.get('tp', 0)),
                 'sl_algo_id': s.get('sl_algo_id'),
                 'tp_algo_id': s.get('tp_algo_id'),
-                'reason': s.get('reason', ''),
+                'reason': old_reason,
                 'atr': s.get('atr', 0),
                 'open_time': s.get('open_time', ''),
             }]
