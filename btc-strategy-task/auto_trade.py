@@ -488,21 +488,35 @@ def open_position(direction, entry_price, atr, reason, qty):
 
     binance.set_leverage(LEVERAGE, SYMBOL)
 
-    # ========== v2.11: 二次开仓1.5%间隔检查（先下单再验证）==========
-    # 先下单，成交后再检查间隔，不合格则回撤
-    existing_pos = [p for p in binance.fetch_positions()
-                    if p.get('symbol') == SYMBOL and float(p.get('contracts', 0)) > 0
-                    and p.get('side', '').lower() == direction]
-    is_averaging = len(existing_pos) > 0
+    # ========== v2.12: 所有仓位之间必须保持1.5%间隔（不分方向）==========
+    # 开仓前检查所有现有持仓，新仓价格与任何现有仓的偏离都必须>1.5%
+    exchange_pos = [p for p in binance.fetch_positions()
+                    if p.get('symbol') == SYMBOL and float(p.get('contracts', 0)) > 0]
+    
+    new_order = None  # 先不下单，等间隔验证通过再下
+    candidate_price = entry_price  # 预估价格（实际以下单后成交价为准）
+    
+    if exchange_pos:
+        # 有持仓时：验证间隔，不合格则拒绝开仓（不先下单）
+        for ep in exchange_pos:
+            existing_entry = float(ep['entryPrice'])
+            existing_dir = ep.get('side', '').lower()
+            
+            # 计算价格间隔（两个方向都要满足1.5%）
+            if direction == 'long':
+                # 新仓做多：检查是否比现有仓够低（对做多有利）
+                gap_pct = (existing_entry - candidate_price) / existing_entry * 100
+            else:
+                # 新仓做空：检查是否比现有仓够高（对做空有利）
+                gap_pct = (candidate_price - existing_entry) / existing_entry * 100
+            
+            if gap_pct < 1.5:
+                log(f"⛔ 开仓间隔不足({gap_pct:.2f}% < 1.5%) | 新仓={candidate_price} 现有仓={existing_entry}({existing_dir})")
+                return None
+        
+        log(f"📊 开仓间隔验证通过，共{len(exchange_pos)}个现有仓")
 
-    # 先记录现有均仓信息（用于下单后比对）
-    pre_existing_avg = 0
-    if is_averaging:
-        existing_entries = [(float(p['contracts']), float(p['entryPrice'])) for p in existing_pos]
-        pre_total_qty = sum(q for q, e in existing_entries)
-        pre_existing_avg = sum(q * e for q, e in existing_entries) / pre_total_qty if pre_total_qty > 0 else 0
-
-    # 市价开仓
+    # 间隔验证通过，市价开仓
     if direction == 'long':
         order = binance.create_order(SYMBOL, 'market', 'buy', qty, params={'positionSide': positionSide})
     else:
@@ -510,34 +524,13 @@ def open_position(direction, entry_price, atr, reason, qty):
 
     avg_price = order.get('average', entry_price)
     filled_qty = float(order.get('filled', qty))
-    log(f"✅ 开仓成功: {direction.upper()} +{filled_qty} BTC @ ${avg_price:,.2f}" + (" (补仓)" if is_averaging else " (首仓)"))
+    log(f"✅ 开仓成功: {direction.upper()} +{filled_qty} BTC @ ${avg_price:,.2f}" + (" (首仓)" if not exchange_pos else " (追加)"))
 
-    # ========== v2.11: 二次开仓1.5%间隔检查（下单后验证）==========
-    if is_averaging:
-        # 计算新仓价格偏离现有均价的幅度
-        if direction == 'long':
-            price_gap_pct = (pre_existing_avg - avg_price) / pre_existing_avg * 100  # 做多：新仓比均价低才算有效间隔
-        else:
-            price_gap_pct = (avg_price - pre_existing_avg) / pre_existing_avg * 100  # 做空：新仓比均价高才算有效间隔
-
-        if price_gap_pct < 1.5:
-            log(f"⛔ 二次开仓间隔不足({price_gap_pct:.2f}% < 1.5%)，回撤仓单 | 均价=${pre_existing_avg:,.2f} 新仓=${avg_price:,.2f}")
-            # 平掉刚开的仓
-            try:
-                close_side = 'sell' if direction == 'long' else 'buy'
-                binance.create_order(SYMBOL, 'market', close_side, filled_qty,
-                                    params={'positionSide': positionSide})
-                log(f"🔙 已回撤刚开的仓 {filled_qty} BTC @ ${avg_price:,.2f}")
-            except Exception as e:
-                log(f"⚠️ 回撤仓单失败: {e}")
-            return None
-        log(f"📊 二次开仓间隔检查通过({price_gap_pct:.2f}% >= 1.5%) | 均价=${pre_existing_avg:,.2f} 新仓=${avg_price:,.2f}")
-
-    # ========== v2.10: 补仓时撤销旧SL/TP，以新均价重新挂单 ==========
+    # ========== v2.12: 补仓时撤销旧SL/TP，以新均价重新挂单 ==========
     total_qty = filled_qty
-    if is_averaging:
-        # 计算所有仓的平均开仓价
-        existing_entries = [(float(p['contracts']), float(p['entryPrice'])) for p in existing_pos]
+    if exchange_pos:
+        # 有持仓 = 补仓，计算所有仓的平均价
+        existing_entries = [(float(p['contracts']), float(p['entryPrice'])) for p in exchange_pos]
         total_value = sum(q * e for q, e in existing_entries) + filled_qty * avg_price
         total_qty = sum(q for q, e in existing_entries) + filled_qty
         new_avg_price = total_value / total_qty
@@ -575,7 +568,7 @@ def open_position(direction, entry_price, atr, reason, qty):
         except Exception as e:
             log(f"⚠️ 新止盈单挂单失败: {e}")
 
-        # 更新state
+        # 更新state：合并为单仓位
         state = load_state()
         if 'positions' not in state:
             state['positions'] = []
@@ -596,7 +589,7 @@ def open_position(direction, entry_price, atr, reason, qty):
         log(f"📊 state已更新: 均价=${new_avg_price:,.2f}, 数量={total_qty} BTC, SL=${sl_price}, TP=${tp_price}")
         return
 
-    # 非补仓（首仓），挂独立SL/TP
+    # 无持仓（首仓），挂独立SL/TP
     sl_price, tp_price, sl_algo_id, tp_algo_id = place_sl_tp_for_entry(direction, avg_price, filled_qty, reason, atr)
 
     # 更新state：追加到positions列表
