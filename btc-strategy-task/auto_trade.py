@@ -66,7 +66,7 @@ def load_state():
     if os.path.exists(STATE_FILE):
         with open(STATE_FILE) as f:
             s = json.load(f)
-        # v2.11.8: 兼容旧格式（单仓位），自动升级为positions数组
+        # v2.11.9: 兼容旧格式（单仓位），自动升级为positions数组
         # 如果reason是"幽灵仓位同步"或空，说明是旧版遗留的仓位，标记为bot_recovered
         old_reason = s.get('reason', '')
         if old_reason in ('幽灵仓位同步', '', None):
@@ -86,6 +86,10 @@ def load_state():
             }]
         if 'positions' not in s:
             s['positions'] = []
+        # v2.11.12: 修复幽灵仓位标签 - 如果positions数组中有遗留的'幽灵仓位同步'标签，同步更新为bot_recovered
+        for pos in s['positions']:
+            if pos.get('reason', '') in ('幽灵仓位同步', '', None):
+                pos['reason'] = 'bot_recovered'
         return s
     return {'in_position': False, 'positions': []}
 
