@@ -3,15 +3,20 @@
 import subprocess
 import json
 import sys
+import os
 
 QUEUE_FILE = '/root/.openclaw/workspace/btc-strategy-task/databases/notify_queue.json'
 CHANNEL = 'openclaw-weixin'
 TARGET = 'o9cq80_h_BaEgBVnsrfqjOMF8Rug@im.wechat'
 
+# v2.12修复: cron环境下node不在PATH，直接用绝对路径
+os.environ['PATH'] = '/root/.nvm/versions/node/v22.22.2/bin:' + os.environ.get('PATH', '')
+
 def send_wechat(msg):
     """调用openclaw CLI发送微信"""
+    claw_bin = '/root/.local/share/pnpm/global/5/.pnpm/openclaw@2026.3.28_@napi-rs+canvas@0.1.97/node_modules/openclaw/openclaw.mjs'
     result = subprocess.run([
-        '/root/.local/share/pnpm/openclaw', 'message', 'send',
+        '/root/.nvm/versions/node/v22.22.2/bin/node', claw_bin, 'message', 'send',
         '--channel', CHANNEL,
         '--target', TARGET,
         '--message', msg

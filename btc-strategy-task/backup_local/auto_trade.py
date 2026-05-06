@@ -574,6 +574,29 @@ def open_position(direction, entry_price, atr, reason, qty):
         state['in_position'] = True
         save_state(state)
         log(f"📊 state已更新: 均价=${new_avg_price:,.2f}, 数量={total_qty} BTC, SL=${sl_price}, TP=${tp_price}")
+
+        # 发送微信通知（补仓也通知）
+        wechat_msg = (
+            f"🚨 BTC补仓通知（合并仓）\n"
+            f"━━━━━━━━━━━━━━━━\n"
+            f"方向: {'🟢【做多-LONG】📈' if direction == 'long' else '🔴【做空-SHORT】📉'}\n"
+            f"杠杆: {LEVERAGE}x\n"
+            f"数量: +{filled_qty} BTC（合并后共 {total_qty} BTC）\n"
+            f"合并均价: ${new_avg_price:,.2f}\n"
+            f"━━━━━━━━━━━━━━━━\n"
+            f"止损: ${sl_price:,.2f} (-{STOP_LOSS_PCT*100:.1f}%)\n"
+            f"止盈: ${tp_price:,.2f} (+{TAKE_PROFIT_PCT*100:.1f}%)\n"
+            f"━━━━━━━━━━━━━━━━\n"
+            f"📋 开仓理由:\n{reason}\n"
+            f"⏰ {datetime.now().strftime('%H:%M:%S')}"
+        )
+        try:
+            with open(NOTIFY_QUEUE, 'w') as f:
+                json.dump({'time': datetime.now().isoformat(), 'msg': wechat_msg, 'sent': False}, f)
+        except Exception as e:
+            log(f"⚠️ 通知写入失败: {e}")
+        notify_alert(wechat_msg)
+
         return
 
     # 无持仓（首仓），挂独立SL/TP
@@ -838,7 +861,7 @@ def print_status(data, state):
 
 # ========== 主循环 ==========
 def main():
-    log(f"🚀 BTC自动交易启动 v2.10 | 10秒周期 | {LEVERAGE}x | {QTY} BTC")
+    log(f"🚀 BTC自动交易启动 v2.12 | 5秒周期 | {LEVERAGE}x | {QTY} BTC")
     log(f"v2.10: 补仓撤销旧SL/TP，以新均价重新挂单 | 有信号就开仓追加")
     stats = load_stats()
     if stats.get('consecutive_losses', 0) > 0:
@@ -882,7 +905,7 @@ def main():
             if any(v is None for v in data.values()):
                 if cycle % 6 == 0:
                     log(f"⚠️ 数据不足，跳过本轮 | 5m={len(df5m)} 1h={len(df1h)} 4h={len(df4h)} 1d={len(df1d)}")
-                time.sleep(10)
+                time.sleep(5)
                 continue
 
             state = load_state()
