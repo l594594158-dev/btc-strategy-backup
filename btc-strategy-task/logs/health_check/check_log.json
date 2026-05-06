@@ -1,55 +1,5 @@
 [
   {
-    "time": "2026-05-04 06:00:02",
-    "checks_ok": 7,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-04 06:00:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=2502311 运行中"
-      },
-      {
-        "time": "2026-05-04 06:00:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78835.4"
-      },
-      {
-        "time": "2026-05-04 06:00:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-04 06:00:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-04 06:00:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "不存在（首次运行）"
-      },
-      {
-        "time": "2026-05-04 06:00:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-04 06:00:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
     "time": "2026-05-04 06:30:02",
     "checks_ok": 7,
     "checks_fail": 0,
@@ -5022,5 +4972,58 @@
       }
     ],
     "fixes": []
+  },
+  {
+    "time": "2026-05-06 08:00:01",
+    "checks_ok": 6,
+    "checks_fail": 1,
+    "items": [
+      {
+        "time": "2026-05-06 08:00:01",
+        "item": "进程状态",
+        "status": "❌ FAIL",
+        "detail": "进程未运行",
+        "fix": "restart"
+      },
+      {
+        "time": "2026-05-06 08:00:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80861.9"
+      },
+      {
+        "time": "2026-05-06 08:00:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-06 08:00:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-06 08:00:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-06 08:00:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-06 08:00:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": [
+      "已重启auto_trade.py"
+    ]
   }
 ]
