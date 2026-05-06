@@ -22,7 +22,7 @@ SECRET = "Ozht5MjazUu4JKhSLqx4ASmTBH4wlUMdbABOblxXGyhIuof1jhrzUEr9JkWHpUHM"
 binance = ccxt.binance({
     'apiKey': API_KEY,
     'secret': SECRET,
-    'options': {'defaultType': 'swap', 'defaultPositionSide': 'LONG', 'marginMode': 'cross'}
+    'options': {'defaultType': 'swap', 'defaultPositionSide': 'LONG', 'marginMode': 'isolated'}
 })
 
 SYMBOL = 'BTC/USDT:USDT'
