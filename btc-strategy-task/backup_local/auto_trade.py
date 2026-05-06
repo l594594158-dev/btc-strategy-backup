@@ -838,7 +838,7 @@ def print_status(data, state):
 
 # ========== 主循环 ==========
 def main():
-    log(f"🚀 BTC自动交易启动 v2.12 | 5秒周期 | {LEVERAGE}x | {QTY} BTC")
+    log(f"🚀 BTC自动交易启动 v2.10 | 10秒周期 | {LEVERAGE}x | {QTY} BTC")
     log(f"v2.10: 补仓撤销旧SL/TP，以新均价重新挂单 | 有信号就开仓追加")
     stats = load_stats()
     if stats.get('consecutive_losses', 0) > 0:
@@ -882,7 +882,7 @@ def main():
             if any(v is None for v in data.values()):
                 if cycle % 6 == 0:
                     log(f"⚠️ 数据不足，跳过本轮 | 5m={len(df5m)} 1h={len(df1h)} 4h={len(df4h)} 1d={len(df1d)}")
-                time.sleep(5)
+                time.sleep(10)
                 continue
 
             state = load_state()
