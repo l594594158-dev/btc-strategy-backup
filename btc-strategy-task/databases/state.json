@@ -1,1 +1,1 @@
-{"in_position": true, "positions": [{"entry_price": 81762.0, "qty": 0.001, "direction": "long", "stop_loss": 79309.1, "tp": 85850.1, "reason": "bot_recovered", "open_time": "2026-05-06T22:45:07.026529"}], "last_signal_time": {"long": 0, "short": 0}, "peak_81762.0": 81927.9}
+{"in_position": true, "positions": [{"entry_price": 81314.1, "qty": 0.001, "direction": "long", "stop_loss": 78874.7, "tp": 85379.8, "reason": "bot_recovered", "open_time": "2026-05-07T03:25:06.597110"}], "last_signal_time": {"long": 0, "short": 0}}

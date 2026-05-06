@@ -1,7 +1,7 @@
 [
   {
-    "time": "2026-05-06T22:45:07.075629",
-    "msg": "🔴 自检发现问题(2项)\n• 持仓同步: ⚠️ 交易所有1仓但state为空，同步到state\n• 持仓同步: 检查失败: 'HealthChecker' object has no attribute 'log'\n",
+    "time": "2026-05-07T03:25:06.642929",
+    "msg": "🔴 自检发现问题(2项)\n• 持仓同步: ⚠️ 交易所有1仓但state为空，同步到state\n• 持仓同步: 同步失败: 'HealthChecker' object has no attribute 'log'\n",
     "sent": true
   }
 ]

@@ -344,7 +344,7 @@ class HealthChecker:
             with open(STATE_FILE, 'w') as f:
                 json.dump(new_state, f)
             
-            self.log(f'✅ 已同步交易所持仓到state: {len(positions)}仓')
+            self.add_ok('持仓同步', f'已同步交易所持仓到state: {len(positions)}仓')
         except Exception as e:
             self.add_fail('持仓同步', f'同步失败: {e}')
 
