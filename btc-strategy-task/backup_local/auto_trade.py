@@ -59,8 +59,22 @@ def work_log(event_type, detail):
         f.write(line)
 
 def save_state(state):
-    with open(STATE_FILE, 'w') as f:
-        json.dump(state, f)
+    try:
+        with open(STATE_FILE, 'w') as f:
+            json.dump(state, f)
+        # v2.13: 验证写入成功
+        with open(STATE_FILE) as f:
+            verified = json.load(f)
+        if 'positions' in verified and len(verified.get('positions', [])) != len(state.get('positions', [])):
+            log(f"❌ save_state验证失败！期望{len(state.get('positions',[]))}仓，实际{len(verified.get('positions',[]))}仓，重试...")
+            raise Exception("save_state verification mismatch")
+    except Exception as e:
+        log(f"❌ save_state失败: {e}，重试...")
+        import time as time_module
+        time_module.sleep(0.5)
+        with open(STATE_FILE, 'w') as f:
+            json.dump(state, f)
+        log(f"✅ save_state重试成功")
 
 def load_state():
     if os.path.exists(STATE_FILE):
