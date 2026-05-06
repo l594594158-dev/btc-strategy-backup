@@ -157,9 +157,12 @@ class HealthChecker:
             self.add_fail('API-数据', f'获取失败: {e}', fix='restart')
             return False
 
-    # ========== 检查3: 持仓同步（核心！） ==========
+    # ========== 检查3: 持仓同步（v2.13修复） ==========
     def check_position_sync(self):
-        """检查state.json与交易所持仓是否一致"""
+        """
+        检查state.json与交易所持仓是否一致
+        v2.13: 交易所有仓但state无 = 异常（可能是save_state失败导致），应该同步到state
+        """
         try:
             binance = get_binance()
 
@@ -169,6 +172,7 @@ class HealthChecker:
             has_actual_pos = len(actual_positions) > 0
             actual_entries = [float(p['entryPrice']) for p in actual_positions]
             actual_total_qty = sum(float(p['contracts']) for p in actual_positions)
+            actual_sides = [p.get('side', '').lower() for p in actual_positions]
 
             # 读取本地state
             state_in_pos = False
@@ -184,8 +188,11 @@ class HealthChecker:
 
             # 对比判断
             if has_actual_pos and not state_in_pos:
-                # 交易所有持仓但state没有 → 手动仓位，不处理
-                self.add_ok('持仓同步', f'手动仓位(exchange有{len(actual_positions)}仓，state无，属正常)')
+                # v2.13修复：交易所有仓但state无 = 异常，应该同步到state
+                # 这通常是因为save_state写入失败导致的仓位丢失
+                msg = f'⚠️ 交易所有{len(actual_positions)}仓但state为空，同步到state'
+                self.add_fail('持仓同步', msg, fix='sync_actual_to_state')
+                self._sync_exchange_to_state(binance, actual_positions)
                 return True
             elif not has_actual_pos and state_in_pos:
                 msg = f'幽灵state！state有持仓但交易所实际无持仓'
@@ -208,6 +215,54 @@ class HealthChecker:
         except Exception as e:
             self.add_fail('持仓同步', f'检查失败: {e}')
             return False
+
+    def _sync_exchange_to_state(self, binance, actual_positions):
+        """将交易所实际持仓同步到state（修复save_state失败导致的丢失）"""
+        try:
+            from datetime import datetime
+            positions = []
+            for p in actual_positions:
+                qty = float(p.get('contracts', 0))
+                entry = float(p.get('entryPrice', 0))
+                direction = 'long' if p.get('side', '').lower() == 'long' else 'short'
+                
+                # 计算SL/TP（从交易所条件单获取）
+                exchange_algos = binance.fapiprivate_get_openalgoorders({'symbol': 'BTCUSDT'})
+                active_algos = [o for o in exchange_algos
+                                if o.get('algoStatus') not in ('CANCELED', 'FINISHED', 'EXPIRED', None)
+                                and o.get('side') == ('SELL' if direction == 'long' else 'BUY')]
+                
+                # 简单处理：用固定百分比计算SL/TP
+                import sys
+                sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+                STOP_LOSS_PCT = 0.03
+                TAKE_PROFIT_PCT = 0.05
+                
+                sl = round(entry * (1 - STOP_LOSS_PCT), 1) if direction == 'long' else round(entry * (1 + STOP_LOSS_PCT), 1)
+                tp = round(entry * (1 + TAKE_PROFIT_PCT), 1) if direction == 'long' else round(entry * (1 - TAKE_PROFIT_PCT), 1)
+                
+                positions.append({
+                    'entry_price': entry,
+                    'qty': qty,
+                    'direction': direction,
+                    'stop_loss': sl,
+                    'tp': tp,
+                    'reason': 'bot_recovered',  # 从交易所恢复的仓位标记
+                    'open_time': datetime.now().isoformat(),
+                })
+            
+            new_state = {
+                'in_position': True,
+                'positions': positions,
+                'last_signal_time': {'long': 0, 'short': 0},  # 重置冷却，允许后续开仓
+            }
+            
+            with open(STATE_FILE, 'w') as f:
+                json.dump(new_state, f)
+            
+            self.log(f'✅ 已同步交易所持仓到state: {len(positions)}仓')
+        except Exception as e:
+            self.log(f'❌ 同步失败: {e}')
 
     # ========== 检查4: 策略状态 ==========
     def check_strategy(self):
