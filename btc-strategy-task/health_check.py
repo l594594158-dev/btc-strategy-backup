@@ -346,7 +346,7 @@ class HealthChecker:
             
             self.log(f'✅ 已同步交易所持仓到state: {len(positions)}仓')
         except Exception as e:
-            self.log(f'❌ 同步失败: {e}')
+            self.add_fail('持仓同步', f'同步失败: {e}')
 
     # ========== 检查4: 策略状态 ==========
     def check_strategy(self):

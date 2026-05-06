@@ -40,3 +40,9 @@
 [2026-05-06 08:00:01] ❌ 进程状态: 进程未运行
 [2026-05-06 08:00:01] 🔧 修复: restart
 [2026-05-06 08:00:01] ✅ 已重启auto_trade.py
+[2026-05-06 16:35:02] ❌ 持仓同步: ⚠️ 交易所有1仓但state为空，同步到state
+[2026-05-06 16:35:02] 🔧 修复: sync_actual_to_state
+[2026-05-06 16:35:02] ❌ 持仓同步: 检查失败: 'HealthChecker' object has no attribute 'log'
+[2026-05-06 22:45:01] ❌ 持仓同步: ⚠️ 交易所有1仓但state为空，同步到state
+[2026-05-06 22:45:01] 🔧 修复: sync_actual_to_state
+[2026-05-06 22:45:01] ❌ 持仓同步: 检查失败: 'HealthChecker' object has no attribute 'log'
