@@ -131,9 +131,12 @@ class HealthChecker:
             self.add_fail('进程状态', f'检查失败: {e}')
             return False
 
-    # ========== 检查2: API数据获取 ==========
+    # ========== 检查2: API数据获取 & 策略指标 ==========
     def check_api_data(self):
-        """检查API数据获取"""
+        """
+        检查API数据获取 & 策略指标数据
+        v2.13: 扩展检查项，增加ATR/RSI/布林/ADX/成交量指标检查
+        """
         try:
             data = get_data()
             required = {'k5m': '5分钟', 'k1h': '1小时', 'k4h': '4小时', 'k1d': '1天'}
@@ -149,7 +152,88 @@ class HealthChecker:
                         return False
             price = data['k5m'][-1][4]
             self.add_ok('API数据', f'各周期数据正常，最新价格=${price}')
-            return True
+
+            # ========== v2.13: 策略指标检查 ==========
+            try:
+                import pandas as pd
+                import ta
+
+                def calc_indicator(df, name):
+                    close = df['c']
+                    high = df['h']
+                    low = df['l']
+                    volume = df['v']
+                    lv = len(df) - 1
+
+                    ma7 = ta.trend.SMAIndicator(close, 7).sma_indicator().iloc[lv]
+                    ma25 = ta.trend.SMAIndicator(close, 25).sma_indicator().iloc[lv]
+                    macd_ind = ta.trend.MACD(close)
+                    macd = macd_ind.macd().iloc[lv]
+                    macd_sig = macd_ind.macd_signal().iloc[lv]
+                    rsi = ta.momentum.RSIIndicator(close).rsi().iloc[lv]
+                    bb = ta.volatility.BollingerBands(close)
+                    bb_u = bb.bollinger_hband().iloc[lv]
+                    bb_l = bb.bollinger_lband().iloc[lv]
+                    atr = ta.volatility.AverageTrueRange(high, low, close).average_true_range().iloc[lv]
+                    pctb = (close.iloc[lv] - bb_l) / (bb_u - bb_l) if (bb_u - bb_l) > 0 else 0
+
+                    adx_ind = ta.trend.ADXIndicator(high, low, close)
+                    adx = adx_ind.adx().iloc[lv]
+
+                    avg_vol = volume.iloc[max(0, lv-20):lv+1].mean()
+                    vol_ratio = volume.iloc[lv] / avg_vol if avg_vol > 0 else 0
+
+                    return {
+                        'price': close.iloc[lv],
+                        'ma7': ma7, 'ma25': ma25,
+                        'macd': macd, 'macd_sig': macd_sig,
+                        'rsi': rsi, 'pctb': pctb,
+                        'atr': atr, 'adx': adx,
+                        'vol_ratio': vol_ratio,
+                        'bullish': close.iloc[lv] > ma7
+                    }
+
+                df5 = pd.DataFrame(data['k5m'], columns=['t','o','h','l','c','v'])
+                df1 = pd.DataFrame(data['k1h'], columns=['t','o','h','l','c','v'])
+                df4 = pd.DataFrame(data['k4h'], columns=['t','o','h','l','c','v'])
+                dfd = pd.DataFrame(data['k1d'], columns=['t','o','h','l','c','v'])
+
+                r5m = calc_indicator(df5, '5m')
+                r1h = calc_indicator(df1, '1h')
+                r4h = calc_indicator(df4, '4h')
+                rd = calc_indicator(dfd, '1d')
+
+                # 记录指标数据
+                indicator_msg = (
+                    f"5m: RSI={r5m['rsi']:.1f} %b={r5m['pctb']:.3f} vol={r5m['vol_ratio']:.2f}x | "
+                    f"1h: ADX={r1h['adx']:.1f} vol={r1h['vol_ratio']:.2f}x | "
+                    f"4h: RSI={r4h['rsi']:.1f} ADX={r4h['adx']:.1f} | "
+                    f"1d: RSI={rd['rsi']:.1f} %b={rd['pctb']:.3f}"
+                )
+                self.add_ok('策略指标', indicator_msg)
+
+                # 检查ATR是否有效
+                if r5m['atr'] <= 0:
+                    self.add_fail('指标-ATR', f'ATR无效: {r5m["atr"]}', fix='retry')
+                    return False
+
+                # 检查RSI是否有效
+                if r5m['rsi'] <= 0 or r5m['rsi'] >= 100:
+                    self.add_fail('指标-RSI', f'RSI无效: {r5m["rsi"]}', fix='retry')
+                    return False
+
+                # 检查成交量数据
+                if r5m['vol_ratio'] <= 0:
+                    self.add_fail('指标-成交量', f'成交量比为0', fix='retry')
+                    return False
+
+                self.add_ok('指标数据', 'ATR/RSI/布林/ADX/成交量均正常')
+                return True
+
+            except Exception as e:
+                self.add_fail('指标计算', f'计算失败: {e}', fix='retry')
+                return False
+
         except ccxt.NetworkError as e:
             self.add_fail('API-网络', f'网络错误: {e}', fix='network')
             return False
