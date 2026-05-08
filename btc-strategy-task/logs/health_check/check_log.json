@@ -1,2302 +1,5 @@
 [
   {
-    "time": "2026-05-08 10:35:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 10:35:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4030737 运行中"
-      },
-      {
-        "time": "2026-05-08 10:35:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79605.5"
-      },
-      {
-        "time": "2026-05-08 10:35:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=45.5 %b=0.420 vol=0.00x | 1h: ADX=29.3 vol=0.96x | 4h: RSI=44.5 ADX=27.8 | 1d: RSI=60.4 %b=0.728"
-      },
-      {
-        "time": "2026-05-08 10:35:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 10:35:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 10:35:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 10:35:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 10:35:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 10:35:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 10:40:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 10:40:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4030737 运行中"
-      },
-      {
-        "time": "2026-05-08 10:40:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79508.0"
-      },
-      {
-        "time": "2026-05-08 10:40:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=40.8 %b=0.233 vol=0.77x | 1h: ADX=29.3 vol=1.01x | 4h: RSI=43.9 ADX=27.8 | 1d: RSI=60.0 %b=0.716"
-      },
-      {
-        "time": "2026-05-08 10:40:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 10:40:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 10:40:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 10:40:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 10:40:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 10:40:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 10:45:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 10:45:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4030737 运行中"
-      },
-      {
-        "time": "2026-05-08 10:45:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79500.0"
-      },
-      {
-        "time": "2026-05-08 10:45:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=40.4 %b=0.242 vol=0.35x | 1h: ADX=29.3 vol=1.03x | 4h: RSI=43.8 ADX=27.8 | 1d: RSI=59.9 %b=0.715"
-      },
-      {
-        "time": "2026-05-08 10:45:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 10:45:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 10:45:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 10:45:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 10:45:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 10:45:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 10:50:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 10:50:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4030737 运行中"
-      },
-      {
-        "time": "2026-05-08 10:50:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79568.5"
-      },
-      {
-        "time": "2026-05-08 10:50:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=45.0 %b=0.402 vol=0.32x | 1h: ADX=29.3 vol=1.05x | 4h: RSI=44.3 ADX=27.8 | 1d: RSI=60.2 %b=0.722"
-      },
-      {
-        "time": "2026-05-08 10:50:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 10:50:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 10:50:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 10:50:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 10:50:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 10:50:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 10:55:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 10:55:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4030737 运行中"
-      },
-      {
-        "time": "2026-05-08 10:55:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79480.2"
-      },
-      {
-        "time": "2026-05-08 10:55:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=40.6 %b=0.239 vol=0.42x | 1h: ADX=29.3 vol=1.08x | 4h: RSI=43.7 ADX=27.8 | 1d: RSI=59.9 %b=0.712"
-      },
-      {
-        "time": "2026-05-08 10:55:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 10:55:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 10:55:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 10:55:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 10:55:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 10:55:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 11:00:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 11:00:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4030737 运行中"
-      },
-      {
-        "time": "2026-05-08 11:00:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79447.8"
-      },
-      {
-        "time": "2026-05-08 11:00:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=39.1 %b=0.231 vol=0.01x | 1h: ADX=30.4 vol=0.00x | 4h: RSI=43.5 ADX=27.8 | 1d: RSI=59.6 %b=0.706"
-      },
-      {
-        "time": "2026-05-08 11:00:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 11:00:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 11:00:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 11:00:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 11:00:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 11:00:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 11:05:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 11:05:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4030737 运行中"
-      },
-      {
-        "time": "2026-05-08 11:05:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79225.5"
-      },
-      {
-        "time": "2026-05-08 11:05:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=30.5 %b=-0.015 vol=0.03x | 1h: ADX=30.6 vol=0.18x | 4h: RSI=42.2 ADX=27.9 | 1d: RSI=58.8 %b=0.682"
-      },
-      {
-        "time": "2026-05-08 11:05:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 11:05:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 11:05:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 11:05:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 11:05:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 11:05:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 11:10:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 11:10:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4030737 运行中"
-      },
-      {
-        "time": "2026-05-08 11:10:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79319.8"
-      },
-      {
-        "time": "2026-05-08 11:10:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=36.4 %b=0.108 vol=3.55x | 1h: ADX=30.7 vol=0.49x | 4h: RSI=42.7 ADX=28.0 | 1d: RSI=59.2 %b=0.692"
-      },
-      {
-        "time": "2026-05-08 11:10:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 11:10:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 11:10:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 11:10:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 11:10:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 11:10:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 11:15:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 11:15:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4030737 运行中"
-      },
-      {
-        "time": "2026-05-08 11:15:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79435.3"
-      },
-      {
-        "time": "2026-05-08 11:15:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=43.3 %b=0.344 vol=0.01x | 1h: ADX=30.7 vol=0.57x | 4h: RSI=43.4 ADX=28.0 | 1d: RSI=59.7 %b=0.707"
-      },
-      {
-        "time": "2026-05-08 11:15:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 11:15:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 11:15:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 11:15:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 11:15:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 11:15:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 11:20:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 11:20:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4030737 运行中"
-      },
-      {
-        "time": "2026-05-08 11:20:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79538.2"
-      },
-      {
-        "time": "2026-05-08 11:20:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=48.7 %b=0.551 vol=0.00x | 1h: ADX=30.7 vol=0.66x | 4h: RSI=44.1 ADX=28.0 | 1d: RSI=60.1 %b=0.719"
-      },
-      {
-        "time": "2026-05-08 11:20:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 11:20:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 11:20:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 11:20:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 11:20:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 11:20:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 11:25:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 11:25:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4030737 运行中"
-      },
-      {
-        "time": "2026-05-08 11:25:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79556.9"
-      },
-      {
-        "time": "2026-05-08 11:25:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=49.6 %b=0.612 vol=0.00x | 1h: ADX=30.7 vol=0.70x | 4h: RSI=44.2 ADX=28.0 | 1d: RSI=60.2 %b=0.722"
-      },
-      {
-        "time": "2026-05-08 11:25:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 11:25:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 11:25:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 11:25:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 11:25:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 11:25:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 11:30:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 11:30:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4030737 运行中"
-      },
-      {
-        "time": "2026-05-08 11:30:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79547.1"
-      },
-      {
-        "time": "2026-05-08 11:30:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=49.1 %b=0.592 vol=0.41x | 1h: ADX=30.7 vol=0.74x | 4h: RSI=44.2 ADX=28.0 | 1d: RSI=60.2 %b=0.720"
-      },
-      {
-        "time": "2026-05-08 11:30:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 11:30:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 11:30:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 11:30:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 11:30:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 11:30:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 11:35:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 11:35:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4030737 运行中"
-      },
-      {
-        "time": "2026-05-08 11:35:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79591.1"
-      },
-      {
-        "time": "2026-05-08 11:35:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=51.5 %b=0.717 vol=0.37x | 1h: ADX=30.7 vol=0.77x | 4h: RSI=44.4 ADX=28.0 | 1d: RSI=60.3 %b=0.726"
-      },
-      {
-        "time": "2026-05-08 11:35:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 11:35:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 11:35:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 11:35:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 11:35:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 11:35:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 11:40:01",
-    "checks_ok": 8,
-    "checks_fail": 1,
-    "items": [
-      {
-        "time": "2026-05-08 11:40:01",
-        "item": "进程状态",
-        "status": "❌ FAIL",
-        "detail": "进程未运行",
-        "fix": "restart"
-      },
-      {
-        "time": "2026-05-08 11:40:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79585.0"
-      },
-      {
-        "time": "2026-05-08 11:40:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=51.1 %b=0.734 vol=0.00x | 1h: ADX=30.7 vol=0.80x | 4h: RSI=44.4 ADX=28.0 | 1d: RSI=60.3 %b=0.725"
-      },
-      {
-        "time": "2026-05-08 11:40:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 11:40:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 11:40:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 11:40:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 11:40:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 11:40:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": [
-      "已重启auto_trade.py"
-    ]
-  },
-  {
-    "time": "2026-05-08 11:45:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 11:45:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 11:45:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79610.3"
-      },
-      {
-        "time": "2026-05-08 11:45:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=52.6 %b=0.776 vol=0.00x | 1h: ADX=30.7 vol=0.82x | 4h: RSI=44.6 ADX=28.0 | 1d: RSI=60.4 %b=0.728"
-      },
-      {
-        "time": "2026-05-08 11:45:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 11:45:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 11:45:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 11:45:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 11:45:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 11:45:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 11:50:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 11:50:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 11:50:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79550.1"
-      },
-      {
-        "time": "2026-05-08 11:50:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=48.9 %b=0.638 vol=0.32x | 1h: ADX=30.7 vol=0.85x | 4h: RSI=44.2 ADX=28.0 | 1d: RSI=60.2 %b=0.721"
-      },
-      {
-        "time": "2026-05-08 11:50:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 11:50:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 11:50:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 11:50:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 11:50:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 11:50:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 11:55:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 11:55:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 11:55:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79562.9"
-      },
-      {
-        "time": "2026-05-08 11:55:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=49.7 %b=0.674 vol=0.27x | 1h: ADX=30.7 vol=0.87x | 4h: RSI=44.3 ADX=28.0 | 1d: RSI=60.2 %b=0.722"
-      },
-      {
-        "time": "2026-05-08 11:55:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 11:55:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 11:55:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 11:55:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 11:55:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 11:55:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 12:00:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 12:00:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 12:00:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79540.0"
-      },
-      {
-        "time": "2026-05-08 12:00:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=48.2 %b=0.596 vol=0.23x | 1h: ADX=32.0 vol=0.00x | 4h: RSI=44.1 ADX=26.3 | 1d: RSI=60.1 %b=0.719"
-      },
-      {
-        "time": "2026-05-08 12:00:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 12:00:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 12:00:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 12:00:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 12:00:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 12:00:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 12:05:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 12:05:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 12:05:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79584.7"
-      },
-      {
-        "time": "2026-05-08 12:05:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=51.3 %b=0.698 vol=0.44x | 1h: ADX=32.0 vol=0.03x | 4h: RSI=44.5 ADX=26.3 | 1d: RSI=60.3 %b=0.725"
-      },
-      {
-        "time": "2026-05-08 12:05:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 12:05:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 12:05:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 12:05:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 12:05:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 12:05:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 12:10:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 12:10:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 12:10:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79605.3"
-      },
-      {
-        "time": "2026-05-08 12:10:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=52.6 %b=0.731 vol=0.00x | 1h: ADX=32.0 vol=0.06x | 4h: RSI=44.7 ADX=26.3 | 1d: RSI=60.4 %b=0.728"
-      },
-      {
-        "time": "2026-05-08 12:10:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 12:10:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 12:10:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 12:10:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 12:10:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 12:10:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 12:15:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 12:15:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 12:15:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79686.3"
-      },
-      {
-        "time": "2026-05-08 12:15:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=57.8 %b=0.913 vol=0.74x | 1h: ADX=31.7 vol=0.11x | 4h: RSI=45.4 ADX=26.3 | 1d: RSI=60.8 %b=0.737"
-      },
-      {
-        "time": "2026-05-08 12:15:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 12:15:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 12:15:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 12:15:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 12:15:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 12:15:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 12:20:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 12:20:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 12:20:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79687.9"
-      },
-      {
-        "time": "2026-05-08 12:20:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=57.8 %b=0.832 vol=0.01x | 1h: ADX=31.7 vol=0.14x | 4h: RSI=45.4 ADX=26.3 | 1d: RSI=60.8 %b=0.738"
-      },
-      {
-        "time": "2026-05-08 12:20:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 12:20:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 12:20:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 12:20:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 12:20:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 12:20:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 12:25:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 12:25:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 12:25:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79681.8"
-      },
-      {
-        "time": "2026-05-08 12:25:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=57.1 %b=0.798 vol=0.01x | 1h: ADX=31.6 vol=0.19x | 4h: RSI=45.4 ADX=26.3 | 1d: RSI=60.7 %b=0.736"
-      },
-      {
-        "time": "2026-05-08 12:25:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 12:25:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 12:25:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 12:25:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 12:25:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 12:25:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 12:30:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 12:30:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 12:30:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79686.1"
-      },
-      {
-        "time": "2026-05-08 12:30:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=57.3 %b=0.776 vol=0.03x | 1h: ADX=31.6 vol=0.24x | 4h: RSI=45.4 ADX=26.3 | 1d: RSI=60.8 %b=0.737"
-      },
-      {
-        "time": "2026-05-08 12:30:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 12:30:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 12:30:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 12:30:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 12:30:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 12:30:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 12:35:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 12:35:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 12:35:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79607.8"
-      },
-      {
-        "time": "2026-05-08 12:35:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=50.6 %b=0.620 vol=0.47x | 1h: ADX=31.6 vol=0.27x | 4h: RSI=44.7 ADX=26.3 | 1d: RSI=60.4 %b=0.728"
-      },
-      {
-        "time": "2026-05-08 12:35:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 12:35:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 12:35:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 12:35:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 12:35:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 12:35:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 12:40:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 12:40:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 12:40:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79590.4"
-      },
-      {
-        "time": "2026-05-08 12:40:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=49.3 %b=0.568 vol=0.60x | 1h: ADX=31.6 vol=0.30x | 4h: RSI=44.6 ADX=26.3 | 1d: RSI=60.3 %b=0.726"
-      },
-      {
-        "time": "2026-05-08 12:40:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 12:40:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 12:40:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 12:40:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 12:40:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 12:40:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 12:45:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 12:45:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 12:45:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79528.4"
-      },
-      {
-        "time": "2026-05-08 12:45:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=44.7 %b=0.273 vol=0.00x | 1h: ADX=31.6 vol=0.35x | 4h: RSI=44.0 ADX=26.3 | 1d: RSI=60.1 %b=0.718"
-      },
-      {
-        "time": "2026-05-08 12:45:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 12:45:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 12:45:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 12:45:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 12:45:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 12:45:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 12:50:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 12:50:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 12:50:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79589.9"
-      },
-      {
-        "time": "2026-05-08 12:50:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=49.7 %b=0.507 vol=0.64x | 1h: ADX=31.6 vol=0.38x | 4h: RSI=44.6 ADX=26.3 | 1d: RSI=60.4 %b=0.726"
-      },
-      {
-        "time": "2026-05-08 12:50:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 12:50:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 12:50:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 12:50:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 12:50:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 12:50:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 12:55:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 12:55:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 12:55:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79631.9"
-      },
-      {
-        "time": "2026-05-08 12:55:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=52.9 %b=0.649 vol=0.00x | 1h: ADX=31.6 vol=0.41x | 4h: RSI=44.9 ADX=26.3 | 1d: RSI=60.5 %b=0.731"
-      },
-      {
-        "time": "2026-05-08 12:55:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 12:55:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 12:55:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 12:55:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 12:55:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 12:55:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 13:00:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 13:00:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 13:00:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79619.0"
-      },
-      {
-        "time": "2026-05-08 13:00:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=51.8 %b=0.573 vol=0.01x | 1h: ADX=32.4 vol=0.00x | 4h: RSI=44.8 ADX=26.3 | 1d: RSI=60.5 %b=0.729"
-      },
-      {
-        "time": "2026-05-08 13:00:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 13:00:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 13:00:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 13:00:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 13:00:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 13:00:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 13:05:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 13:05:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 13:05:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79616.5"
-      },
-      {
-        "time": "2026-05-08 13:05:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=51.4 %b=0.541 vol=0.03x | 1h: ADX=32.4 vol=0.05x | 4h: RSI=44.8 ADX=26.3 | 1d: RSI=60.5 %b=0.730"
-      },
-      {
-        "time": "2026-05-08 13:05:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 13:05:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 13:05:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 13:05:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 13:05:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 13:05:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 13:10:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 13:10:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 13:10:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79586.4"
-      },
-      {
-        "time": "2026-05-08 13:10:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=48.8 %b=0.385 vol=0.01x | 1h: ADX=32.4 vol=0.08x | 4h: RSI=44.5 ADX=26.3 | 1d: RSI=60.4 %b=0.727"
-      },
-      {
-        "time": "2026-05-08 13:10:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 13:10:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 13:10:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 13:10:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 13:10:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 13:10:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 13:15:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 13:15:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 13:15:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79594.6"
-      },
-      {
-        "time": "2026-05-08 13:15:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=49.5 %b=0.427 vol=0.47x | 1h: ADX=32.4 vol=0.10x | 4h: RSI=44.6 ADX=26.3 | 1d: RSI=60.4 %b=0.726"
-      },
-      {
-        "time": "2026-05-08 13:15:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 13:15:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 13:15:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 13:15:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 13:15:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 13:15:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 13:20:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 13:20:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 13:20:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79559.9"
-      },
-      {
-        "time": "2026-05-08 13:20:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=46.3 %b=0.251 vol=0.95x | 1h: ADX=32.4 vol=0.13x | 4h: RSI=44.3 ADX=26.3 | 1d: RSI=60.2 %b=0.722"
-      },
-      {
-        "time": "2026-05-08 13:20:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 13:20:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 13:20:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 13:20:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 13:20:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 13:20:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 13:25:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 13:25:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 13:25:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79578.0"
-      },
-      {
-        "time": "2026-05-08 13:25:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=48.2 %b=0.355 vol=0.54x | 1h: ADX=32.4 vol=0.15x | 4h: RSI=44.4 ADX=26.3 | 1d: RSI=60.3 %b=0.724"
-      },
-      {
-        "time": "2026-05-08 13:25:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 13:25:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 13:25:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 13:25:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 13:25:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 13:25:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 13:30:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 13:30:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 13:30:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79586.2"
-      },
-      {
-        "time": "2026-05-08 13:30:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=49.0 %b=0.385 vol=0.55x | 1h: ADX=32.4 vol=0.16x | 4h: RSI=44.5 ADX=26.3 | 1d: RSI=60.3 %b=0.725"
-      },
-      {
-        "time": "2026-05-08 13:30:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 13:30:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 13:30:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 13:30:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 13:30:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 13:30:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-08 13:35:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-08 13:35:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=4059168 运行中"
-      },
-      {
-        "time": "2026-05-08 13:35:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$79650.9"
-      },
-      {
-        "time": "2026-05-08 13:35:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=55.4 %b=0.714 vol=1.08x | 1h: ADX=32.4 vol=0.20x | 4h: RSI=45.1 ADX=26.3 | 1d: RSI=60.6 %b=0.733"
-      },
-      {
-        "time": "2026-05-08 13:35:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-08 13:35:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-08 13:35:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-08 13:35:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
-      },
-      {
-        "time": "2026-05-08 13:35:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-08 13:35:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
     "time": "2026-05-08 13:40:01",
     "checks_ok": 9,
     "checks_fail": 0,
@@ -6216,6 +3919,2317 @@
       },
       {
         "time": "2026-05-08 18:50:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 18:55:02",
+    "checks_ok": 8,
+    "checks_fail": 1,
+    "items": [
+      {
+        "time": "2026-05-08 18:55:02",
+        "item": "进程状态",
+        "status": "❌ FAIL",
+        "detail": "进程未运行",
+        "fix": "restart"
+      },
+      {
+        "time": "2026-05-08 18:55:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80164.7"
+      },
+      {
+        "time": "2026-05-08 18:55:02",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=71.3 %b=0.982 vol=0.00x | 1h: ADX=32.9 vol=0.97x | 4h: RSI=49.6 ADX=24.9 | 1d: RSI=62.7 %b=0.796"
+      },
+      {
+        "time": "2026-05-08 18:55:02",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 18:55:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 18:55:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 18:55:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 18:55:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 18:55:02",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": [
+      "已重启auto_trade.py"
+    ]
+  },
+  {
+    "time": "2026-05-08 19:00:03",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 19:00:03",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=4182115 运行中"
+      },
+      {
+        "time": "2026-05-08 19:00:03",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80209.3"
+      },
+      {
+        "time": "2026-05-08 19:00:03",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=73.1 %b=0.987 vol=0.10x | 1h: ADX=31.5 vol=0.01x | 4h: RSI=49.9 ADX=25.0 | 1d: RSI=62.8 %b=0.800"
+      },
+      {
+        "time": "2026-05-08 19:00:03",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 19:00:03",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 19:00:03",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 19:00:03",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 19:00:03",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 19:00:03",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "有未发送通知: 🔴 自检发现问题(1项)\n• 进程状态: 进程未运行\n\n🔧 ..."
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 19:05:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 19:05:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=4182115 运行中"
+      },
+      {
+        "time": "2026-05-08 19:05:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80188.4"
+      },
+      {
+        "time": "2026-05-08 19:05:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=72.3 %b=0.959 vol=2.32x | 1h: ADX=31.4 vol=0.23x | 4h: RSI=49.8 ADX=25.1 | 1d: RSI=62.8 %b=0.800"
+      },
+      {
+        "time": "2026-05-08 19:05:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 19:05:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 19:05:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 19:05:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 19:05:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 19:05:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "有未发送通知: 🔴 自检发现问题(1项)\n• 进程状态: 进程未运行\n\n🔧 ..."
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 19:10:02",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 19:10:02",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=4182115 运行中"
+      },
+      {
+        "time": "2026-05-08 19:10:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80154.1"
+      },
+      {
+        "time": "2026-05-08 19:10:02",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=68.3 %b=0.855 vol=0.96x | 1h: ADX=31.4 vol=0.32x | 4h: RSI=49.6 ADX=25.1 | 1d: RSI=62.6 %b=0.795"
+      },
+      {
+        "time": "2026-05-08 19:10:02",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 19:10:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 19:10:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 19:10:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 19:10:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 19:10:02",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "有未发送通知: 🔴 自检发现问题(1项)\n• 进程状态: 进程未运行\n\n🔧 ..."
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 19:15:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 19:15:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=4182115 运行中"
+      },
+      {
+        "time": "2026-05-08 19:15:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80182.2"
+      },
+      {
+        "time": "2026-05-08 19:15:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=70.6 %b=0.854 vol=0.91x | 1h: ADX=31.4 vol=0.41x | 4h: RSI=49.7 ADX=25.1 | 1d: RSI=62.7 %b=0.797"
+      },
+      {
+        "time": "2026-05-08 19:15:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 19:15:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 19:15:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 19:15:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 19:15:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 19:15:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 19:20:02",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 19:20:02",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=4182115 运行中"
+      },
+      {
+        "time": "2026-05-08 19:20:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80171.8"
+      },
+      {
+        "time": "2026-05-08 19:20:02",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=69.3 %b=0.803 vol=0.60x | 1h: ADX=31.4 vol=0.46x | 4h: RSI=49.7 ADX=25.1 | 1d: RSI=62.7 %b=0.796"
+      },
+      {
+        "time": "2026-05-08 19:20:02",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 19:20:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 19:20:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 19:20:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 19:20:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 19:20:02",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 19:25:02",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 19:25:02",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=4182115 运行中"
+      },
+      {
+        "time": "2026-05-08 19:25:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80228.1"
+      },
+      {
+        "time": "2026-05-08 19:25:02",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=72.3 %b=0.849 vol=0.95x | 1h: ADX=31.4 vol=0.55x | 4h: RSI=50.1 ADX=25.1 | 1d: RSI=62.8 %b=0.802"
+      },
+      {
+        "time": "2026-05-08 19:25:02",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 19:25:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 19:25:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 19:25:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 19:25:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 19:25:02",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 19:30:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 19:30:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=4182115 运行中"
+      },
+      {
+        "time": "2026-05-08 19:30:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80250.9"
+      },
+      {
+        "time": "2026-05-08 19:30:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=73.5 %b=0.844 vol=0.98x | 1h: ADX=31.4 vol=0.64x | 4h: RSI=50.3 ADX=25.1 | 1d: RSI=62.9 %b=0.806"
+      },
+      {
+        "time": "2026-05-08 19:30:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 19:30:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 19:30:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 19:30:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 19:30:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 19:30:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 19:35:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 19:35:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=4182115 运行中"
+      },
+      {
+        "time": "2026-05-08 19:35:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80209.0"
+      },
+      {
+        "time": "2026-05-08 19:35:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=67.9 %b=0.732 vol=0.00x | 1h: ADX=31.4 vol=0.69x | 4h: RSI=50.0 ADX=25.1 | 1d: RSI=62.8 %b=0.800"
+      },
+      {
+        "time": "2026-05-08 19:35:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 19:35:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 19:35:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 19:35:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 19:35:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 19:35:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 19:40:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 19:40:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=4182115 运行中"
+      },
+      {
+        "time": "2026-05-08 19:40:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80164.1"
+      },
+      {
+        "time": "2026-05-08 19:40:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=62.4 %b=0.653 vol=0.00x | 1h: ADX=31.4 vol=0.73x | 4h: RSI=49.6 ADX=25.1 | 1d: RSI=62.6 %b=0.795"
+      },
+      {
+        "time": "2026-05-08 19:40:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 19:40:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 19:40:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 19:40:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 19:40:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 19:40:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 19:45:02",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 19:45:02",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=4182115 运行中"
+      },
+      {
+        "time": "2026-05-08 19:45:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80112.7"
+      },
+      {
+        "time": "2026-05-08 19:45:02",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=56.5 %b=0.558 vol=0.01x | 1h: ADX=31.4 vol=0.81x | 4h: RSI=49.2 ADX=25.1 | 1d: RSI=62.5 %b=0.789"
+      },
+      {
+        "time": "2026-05-08 19:45:02",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 19:45:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 19:45:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 19:45:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 19:45:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 19:45:02",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 19:50:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 19:50:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=4182115 运行中"
+      },
+      {
+        "time": "2026-05-08 19:50:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80174.4"
+      },
+      {
+        "time": "2026-05-08 19:50:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=60.9 %b=0.657 vol=0.46x | 1h: ADX=31.4 vol=0.86x | 4h: RSI=49.7 ADX=25.1 | 1d: RSI=62.7 %b=0.797"
+      },
+      {
+        "time": "2026-05-08 19:50:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 19:50:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 19:50:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 19:50:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 19:50:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 19:50:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 19:55:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 19:55:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 19:55:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80209.4"
+      },
+      {
+        "time": "2026-05-08 19:55:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=63.1 %b=0.702 vol=0.32x | 1h: ADX=31.4 vol=0.88x | 4h: RSI=49.9 ADX=25.1 | 1d: RSI=62.8 %b=0.800"
+      },
+      {
+        "time": "2026-05-08 19:55:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 19:55:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 19:55:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 19:55:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 19:55:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 19:55:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 20:00:02",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 20:00:02",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 20:00:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80181.9"
+      },
+      {
+        "time": "2026-05-08 20:00:02",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=60.2 %b=0.631 vol=0.53x | 1h: ADX=31.4 vol=0.93x | 4h: RSI=49.7 ADX=25.1 | 1d: RSI=62.7 %b=0.797"
+      },
+      {
+        "time": "2026-05-08 20:00:02",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 20:00:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 20:00:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 20:00:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 20:00:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 20:00:02",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 20:05:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 20:05:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 20:05:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80188.0"
+      },
+      {
+        "time": "2026-05-08 20:05:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=60.6 %b=0.628 vol=0.94x | 1h: ADX=30.2 vol=0.10x | 4h: RSI=49.8 ADX=23.9 | 1d: RSI=62.7 %b=0.798"
+      },
+      {
+        "time": "2026-05-08 20:05:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 20:05:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 20:05:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 20:05:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 20:05:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 20:05:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 20:10:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 20:10:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 20:10:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80147.8"
+      },
+      {
+        "time": "2026-05-08 20:10:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=56.2 %b=0.479 vol=0.80x | 1h: ADX=30.2 vol=0.19x | 4h: RSI=49.4 ADX=23.9 | 1d: RSI=62.6 %b=0.793"
+      },
+      {
+        "time": "2026-05-08 20:10:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 20:10:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 20:10:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 20:10:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 20:10:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 20:10:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 20:15:02",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 20:15:02",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 20:15:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80231.8"
+      },
+      {
+        "time": "2026-05-08 20:15:02",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=62.4 %b=0.837 vol=0.00x | 1h: ADX=30.2 vol=0.25x | 4h: RSI=50.1 ADX=23.9 | 1d: RSI=62.8 %b=0.802"
+      },
+      {
+        "time": "2026-05-08 20:15:02",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 20:15:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 20:15:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 20:15:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 20:15:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 20:15:02",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 20:20:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 20:20:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 20:20:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80251.8"
+      },
+      {
+        "time": "2026-05-08 20:20:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=63.7 %b=0.941 vol=0.63x | 1h: ADX=30.2 vol=0.32x | 4h: RSI=50.3 ADX=23.9 | 1d: RSI=62.9 %b=0.805"
+      },
+      {
+        "time": "2026-05-08 20:20:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 20:20:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 20:20:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 20:20:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 20:20:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 20:20:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 20:25:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 20:25:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 20:25:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80250.5"
+      },
+      {
+        "time": "2026-05-08 20:25:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=63.5 %b=0.892 vol=0.53x | 1h: ADX=30.2 vol=0.37x | 4h: RSI=50.3 ADX=23.9 | 1d: RSI=62.9 %b=0.805"
+      },
+      {
+        "time": "2026-05-08 20:25:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 20:25:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 20:25:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 20:25:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 20:25:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 20:25:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 20:30:02",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 20:30:02",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 20:30:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80280.0"
+      },
+      {
+        "time": "2026-05-08 20:30:02",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=65.6 %b=0.945 vol=0.01x | 1h: ADX=30.2 vol=0.45x | 4h: RSI=50.5 ADX=23.9 | 1d: RSI=63.1 %b=0.814"
+      },
+      {
+        "time": "2026-05-08 20:30:02",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 20:30:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 20:30:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 20:30:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 20:30:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 20:30:02",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 20:35:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 20:35:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 20:35:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80207.8"
+      },
+      {
+        "time": "2026-05-08 20:35:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=57.4 %b=0.568 vol=4.69x | 1h: ADX=29.5 vol=1.00x | 4h: RSI=49.9 ADX=24.2 | 1d: RSI=62.8 %b=0.800"
+      },
+      {
+        "time": "2026-05-08 20:35:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 20:35:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 20:35:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 20:35:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 20:35:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 20:35:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 20:40:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 20:40:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 20:40:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80171.3"
+      },
+      {
+        "time": "2026-05-08 20:40:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=53.5 %b=0.345 vol=0.01x | 1h: ADX=29.5 vol=1.09x | 4h: RSI=49.6 ADX=24.2 | 1d: RSI=62.7 %b=0.796"
+      },
+      {
+        "time": "2026-05-08 20:40:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 20:40:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 20:40:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 20:40:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 20:40:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 20:40:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 20:45:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 20:45:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 20:45:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80177.1"
+      },
+      {
+        "time": "2026-05-08 20:45:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=54.1 %b=0.378 vol=0.43x | 1h: ADX=29.5 vol=1.13x | 4h: RSI=49.7 ADX=24.2 | 1d: RSI=62.7 %b=0.796"
+      },
+      {
+        "time": "2026-05-08 20:45:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 20:45:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，均无持仓"
+      },
+      {
+        "time": "2026-05-08 20:45:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=False, 持仓数=0"
+      },
+      {
+        "time": "2026-05-08 20:45:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 20:45:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 20:45:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 20:50:01",
+    "checks_ok": 9,
+    "checks_fail": 1,
+    "items": [
+      {
+        "time": "2026-05-08 20:50:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 20:50:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80045.0"
+      },
+      {
+        "time": "2026-05-08 20:50:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=42.2 %b=-0.198 vol=1.68x | 1h: ADX=29.5 vol=1.28x | 4h: RSI=48.6 ADX=24.2 | 1d: RSI=62.3 %b=0.782"
+      },
+      {
+        "time": "2026-05-08 20:50:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 20:50:01",
+        "item": "持仓同步",
+        "status": "❌ FAIL",
+        "detail": "⚠️ 交易所有1仓但state为空，同步到state",
+        "fix": "sync_actual_to_state"
+      },
+      {
+        "time": "2026-05-08 20:50:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "已同步交易所持仓到state: 1仓"
+      },
+      {
+        "time": "2026-05-08 20:50:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-08 20:50:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 20:50:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 20:50:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "有未发送通知: 🚨 BTC开仓通知（累计1仓）\n━━━━━━━━━━━━━━..."
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 20:55:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 20:55:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 20:55:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80075.5"
+      },
+      {
+        "time": "2026-05-08 20:55:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=45.2 %b=0.026 vol=2.02x | 1h: ADX=29.5 vol=1.47x | 4h: RSI=48.8 ADX=24.2 | 1d: RSI=62.4 %b=0.784"
+      },
+      {
+        "time": "2026-05-08 20:55:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 20:55:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-08 20:55:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-08 20:55:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 20:55:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 20:55:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 21:00:02",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 21:00:02",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 21:00:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$79987.7"
+      },
+      {
+        "time": "2026-05-08 21:00:02",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=38.9 %b=-0.152 vol=1.09x | 1h: ADX=29.5 vol=1.58x | 4h: RSI=48.1 ADX=24.2 | 1d: RSI=62.1 %b=0.774"
+      },
+      {
+        "time": "2026-05-08 21:00:02",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 21:00:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-08 21:00:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-08 21:00:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 21:00:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 21:00:02",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 21:05:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 21:05:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 21:05:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$80016.2"
+      },
+      {
+        "time": "2026-05-08 21:05:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=41.7 %b=0.028 vol=0.98x | 1h: ADX=27.7 vol=0.11x | 4h: RSI=48.4 ADX=24.2 | 1d: RSI=62.2 %b=0.777"
+      },
+      {
+        "time": "2026-05-08 21:05:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 21:05:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-08 21:05:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-08 21:05:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 21:05:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 21:05:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 21:10:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 21:10:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 21:10:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$79860.7"
+      },
+      {
+        "time": "2026-05-08 21:10:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=32.8 %b=-0.208 vol=2.01x | 1h: ADX=28.0 vol=0.34x | 4h: RSI=47.1 ADX=24.2 | 1d: RSI=61.5 %b=0.757"
+      },
+      {
+        "time": "2026-05-08 21:10:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 21:10:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-08 21:10:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-08 21:10:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 21:10:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 21:10:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 21:15:02",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 21:15:02",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 21:15:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$79646.4"
+      },
+      {
+        "time": "2026-05-08 21:15:02",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=24.9 %b=-0.125 vol=0.03x | 1h: ADX=28.6 vol=0.65x | 4h: RSI=45.6 ADX=24.2 | 1d: RSI=60.6 %b=0.733"
+      },
+      {
+        "time": "2026-05-08 21:15:02",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 21:15:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-08 21:15:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-08 21:15:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 21:15:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 21:15:02",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 21:20:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 21:20:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 21:20:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$79728.5"
+      },
+      {
+        "time": "2026-05-08 21:20:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=31.6 %b=0.034 vol=0.00x | 1h: ADX=28.6 vol=0.81x | 4h: RSI=46.2 ADX=24.2 | 1d: RSI=61.0 %b=0.743"
+      },
+      {
+        "time": "2026-05-08 21:20:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 21:20:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-08 21:20:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-08 21:20:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 21:20:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 21:20:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 21:25:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 21:25:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 21:25:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$79688.1"
+      },
+      {
+        "time": "2026-05-08 21:25:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=29.9 %b=0.059 vol=0.07x | 1h: ADX=28.6 vol=0.96x | 4h: RSI=45.9 ADX=24.2 | 1d: RSI=60.8 %b=0.739"
+      },
+      {
+        "time": "2026-05-08 21:25:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 21:25:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-08 21:25:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-08 21:25:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 21:25:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 21:25:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 21:30:02",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 21:30:02",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 21:30:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$79583.9"
+      },
+      {
+        "time": "2026-05-08 21:30:02",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=27.3 %b=0.045 vol=0.04x | 1h: ADX=28.7 vol=1.18x | 4h: RSI=45.0 ADX=24.2 | 1d: RSI=60.3 %b=0.723"
+      },
+      {
+        "time": "2026-05-08 21:30:02",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 21:30:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-08 21:30:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-08 21:30:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 21:30:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 21:30:02",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 21:35:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 21:35:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=32673 运行中"
+      },
+      {
+        "time": "2026-05-08 21:35:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$79748.1"
+      },
+      {
+        "time": "2026-05-08 21:35:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=38.8 %b=0.193 vol=1.52x | 1h: ADX=28.7 vol=1.39x | 4h: RSI=46.3 ADX=24.2 | 1d: RSI=61.1 %b=0.745"
+      },
+      {
+        "time": "2026-05-08 21:35:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 21:35:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-08 21:35:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-08 21:35:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 21:35:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 21:35:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 21:40:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 21:40:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=57367 运行中"
+      },
+      {
+        "time": "2026-05-08 21:40:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$79665.0"
+      },
+      {
+        "time": "2026-05-08 21:40:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=35.8 %b=0.182 vol=0.00x | 1h: ADX=28.7 vol=1.66x | 4h: RSI=45.7 ADX=24.2 | 1d: RSI=60.7 %b=0.735"
+      },
+      {
+        "time": "2026-05-08 21:40:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 21:40:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-08 21:40:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-08 21:40:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 21:40:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 21:40:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 21:45:02",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 21:45:02",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=57367 运行中"
+      },
+      {
+        "time": "2026-05-08 21:45:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$79563.4"
+      },
+      {
+        "time": "2026-05-08 21:45:02",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=32.4 %b=0.140 vol=0.00x | 1h: ADX=28.8 vol=1.89x | 4h: RSI=44.9 ADX=24.2 | 1d: RSI=60.2 %b=0.722"
+      },
+      {
+        "time": "2026-05-08 21:45:02",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 21:45:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-08 21:45:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-08 21:45:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 21:45:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 21:45:02",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 21:47:07",
+    "checks_ok": 9,
+    "checks_fail": 1,
+    "items": [
+      {
+        "time": "2026-05-08 21:47:07",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=57367 运行中"
+      },
+      {
+        "time": "2026-05-08 21:47:07",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$79525.3"
+      },
+      {
+        "time": "2026-05-08 21:47:07",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=31.1 %b=0.109 vol=0.42x | 1h: ADX=28.8 vol=1.95x | 4h: RSI=44.8 ADX=24.2 | 1d: RSI=60.1 %b=0.718"
+      },
+      {
+        "time": "2026-05-08 21:47:07",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 21:47:07",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-08 21:47:07",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-08 21:47:07",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 21:47:07",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 21:47:07",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      },
+      {
+        "time": "2026-05-08 21:47:07",
+        "item": "开仓通知",
+        "status": "❌ FAIL",
+        "detail": "未发送，已补写入队列 | LONG @ 80053.8",
+        "fix": null
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-08 21:48:43",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-08 21:48:43",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=57367 运行中"
+      },
+      {
+        "time": "2026-05-08 21:48:43",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$79613.4"
+      },
+      {
+        "time": "2026-05-08 21:48:43",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=35.6 %b=0.181 vol=0.66x | 1h: ADX=28.8 vol=1.99x | 4h: RSI=45.4 ADX=24.2 | 1d: RSI=60.5 %b=0.731"
+      },
+      {
+        "time": "2026-05-08 21:48:43",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-08 21:48:43",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-08 21:48:43",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-08 21:48:43",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-06 07:54:29] [错误] module 'ta.trend' has n"
+      },
+      {
+        "time": "2026-05-08 21:48:43",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-08 21:48:43",
         "item": "通知队列",
         "status": "✅ OK",
         "detail": "无积压"

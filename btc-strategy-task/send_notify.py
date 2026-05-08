@@ -14,9 +14,9 @@ os.environ['PATH'] = '/root/.nvm/versions/node/v22.22.2/bin:' + os.environ.get('
 
 def send_wechat(msg):
     """调用openclaw CLI发送微信"""
-    claw_bin = '/root/.local/share/pnpm/global/5/.pnpm/openclaw@2026.3.28_@napi-rs+canvas@0.1.97/node_modules/openclaw/openclaw.mjs'
+    # 用openclaw命令（不依赖版本路径）
     result = subprocess.run([
-        '/root/.nvm/versions/node/v22.22.2/bin/node', claw_bin, 'message', 'send',
+        '/root/.local/share/pnpm/openclaw', 'message', 'send',
         '--channel', CHANNEL,
         '--target', TARGET,
         '--message', msg
