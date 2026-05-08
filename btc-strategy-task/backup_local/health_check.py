@@ -344,9 +344,9 @@ class HealthChecker:
             with open(STATE_FILE, 'w') as f:
                 json.dump(new_state, f)
             
-            self.log(f'✅ 已同步交易所持仓到state: {len(positions)}仓')
+            self.add_ok('持仓同步', f'已同步交易所持仓到state: {len(positions)}仓')
         except Exception as e:
-            self.log(f'❌ 同步失败: {e}')
+            self.add_fail('持仓同步', f'同步失败: {e}')
 
     # ========== 检查4: 策略状态 ==========
     def check_strategy(self):
@@ -418,6 +418,92 @@ class HealthChecker:
             return True
         except Exception as e:
             self.add_fail('通知队列', str(e))
+            return False
+
+    # ========== 检查6: 开仓通知已发送验证 ==========
+    def check_entry_notify(self):
+        """有持仓时验证开仓通知是否已发送，未发送则补发"""
+        try:
+            # 检查是否有持仓
+            if not os.path.exists(STATE_FILE):
+                self.add_ok('开仓通知', '无持仓状态文件')
+                return True
+
+            with open(STATE_FILE) as f:
+                state = json.load(f)
+
+            positions = state.get('positions', [])
+            if not positions:
+                self.add_ok('开仓通知', '无持仓，无需通知')
+                return True
+
+            # 有持仓，检查最近开仓的通知是否已发送
+            latest_pos = positions[-1]
+            open_time = latest_pos.get('open_time', '')
+            entry_price = latest_pos.get('entry_price', 0)
+            direction = latest_pos.get('direction', 'long')
+            qty = latest_pos.get('qty', 0)
+            reason = latest_pos.get('reason', '')
+
+            # 检查通知队列是否有对应的已发送通知
+            notify_found = False
+            if os.path.exists(NOTIFY_QUEUE):
+                with open(NOTIFY_QUEUE) as f:
+                    q = json.load(f)
+                items = q if isinstance(q, list) else [q]
+                for item in items:
+                    if isinstance(item, dict) and item.get('sent'):
+                        msg = item.get('msg', '')
+                        if '开仓通知' in msg and str(entry_price) in msg:
+                            notify_found = True
+                            break
+
+            if notify_found:
+                self.add_ok('开仓通知', f'{direction.upper()} @ {entry_price} 通知已发送')
+                return True
+
+            # 通知未发送，补发
+            from datetime import datetime
+            sl = latest_pos.get('stop_loss', 0)
+            tp = latest_pos.get('tp', 0)
+            dir_label = '🟢【做多-LONG】📈' if direction == 'long' else '🔴【做空-SHORT】📉'
+
+            wechat_msg = (
+                f"🚨 BTC开仓通知（累计{len(positions)}仓）\n"
+                f"━━━━━━━━━━━━━━━━\n"
+                f"方向: {dir_label}\n"
+                f"杠杆: 20x\n"
+                f"数量: +{qty} BTC（合计 {sum(p.get('qty',0) for p in positions)} BTC）\n"
+                f"开仓价: ${entry_price:,.2f}\n"
+                f"━━━━━━━━━━━━━━━━\n"
+                f"止损: ${sl:,.2f} (-3.0%)\n"
+                f"止盈: ${tp:,.2f} (+5.0%)\n"
+                f"━━━━━━━━━━━━━━━━\n"
+                f"📋 开仓理由:\n{reason}\n"
+                f"⏰ {open_time[-8:] if len(open_time)>=8 else open_time}"
+            )
+
+            # 写入通知队列
+            try:
+                existing_queue = []
+                if os.path.exists(NOTIFY_QUEUE):
+                    with open(NOTIFY_QUEUE) as f:
+                        existing = json.load(f)
+                    existing_queue = existing if isinstance(existing, list) else [existing]
+                existing_queue.append({
+                    'time': datetime.now().isoformat(),
+                    'msg': wechat_msg,
+                    'sent': False
+                })
+                with open(NOTIFY_QUEUE, 'w') as f:
+                    json.dump(existing_queue, f, ensure_ascii=False, indent=2)
+                self.add_fail('开仓通知', f'未发送，已补写入队列 | {direction.upper()} @ {entry_price}')
+            except Exception as e:
+                self.add_fail('开仓通知', f'补写队列失败: {e}')
+
+            return True
+        except Exception as e:
+            self.add_fail('开仓通知', f'检查异常: {e}')
             return False
 
     # ========== 修复执行 ==========
@@ -566,7 +652,7 @@ class HealthChecker:
             for fix_result in fixes_applied:
                 f.write(f"[{ts}] ✅ {fix_result}\n")
 
-        # 发送微信通知（有问题时）
+        # 发送微信通知（有问题时）- 追加到队列不覆盖
         if self.checks_fail > 0:
             msg = f"🔴 自检发现问题({self.checks_fail}项)\n"
             for item in self.results:
@@ -577,10 +663,19 @@ class HealthChecker:
                 for fr in fixes_applied:
                     msg += f"• {fr}\n"
             try:
+                existing_queue = []
+                if os.path.exists(NOTIFY_QUEUE):
+                    with open(NOTIFY_QUEUE) as f:
+                        eq = json.load(f)
+                    existing_queue = eq if isinstance(eq, list) else [eq]
+                existing_queue.append({'time': datetime.now().isoformat(), 'msg': msg, 'sent': False})
                 with open(NOTIFY_QUEUE, 'w') as f:
-                    json.dump({'time': datetime.now().isoformat(), 'msg': msg, 'sent': False}, f)
+                    json.dump(existing_queue, f, ensure_ascii=False, indent=2)
             except:
                 pass
+
+        # 自检告警写完后再验证开仓通知（避免被覆盖）
+        self.check_entry_notify()
 
         log('=' * 60)
         log(f'📊 自检完成: {self.checks_ok}项通过, {self.checks_fail}项失败, {len(fixes_applied)}项已修复')

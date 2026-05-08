@@ -68,6 +68,7 @@ def save_state(state):
         if 'positions' in verified and len(verified.get('positions', [])) != len(state.get('positions', [])):
             log(f"❌ save_state验证失败！期望{len(state.get('positions',[]))}仓，实际{len(verified.get('positions',[]))}仓，重试...")
             raise Exception("save_state verification mismatch")
+        log(f"💾 state已写入: in_position={state.get('in_position')} positions={len(state.get('positions',[]))}仓")
     except Exception as e:
         log(f"❌ save_state失败: {e}，重试...")
         import time as time_module
@@ -946,8 +947,8 @@ def main():
             # 打印状态
             print_status(data, state)
 
-            # ========== 手动行情参考通知（仅持仓时检测）==========
-            if has_pos:
+            # ========== 手动行情参考通知（已关闭）==========
+            if False and has_pos:
                 last_alert = state.get('last_manual_alert', 0)
                 if time.time() - last_alert > 1800:  # 30分钟冷却
                     r5m = data['5m']
