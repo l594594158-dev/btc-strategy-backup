@@ -333,6 +333,7 @@ class HealthChecker:
                     'tp': tp,
                     'reason': 'bot_recovered',  # 从交易所恢复的仓位标记
                     'open_time': datetime.now().isoformat(),
+                    'notified': False,  # 恢复仓位尚未通知，将由check_entry_notify补发一次
                 })
             
             new_state = {
@@ -422,9 +423,8 @@ class HealthChecker:
 
     # ========== 检查6: 开仓通知已发送验证 ==========
     def check_entry_notify(self):
-        """有持仓时验证开仓通知是否已发送，未发送则补发"""
+        """有持仓时验证开仓通知是否已发送（基于position.notified标记，只推一次）"""
         try:
-            # 检查是否有持仓
             if not os.path.exists(STATE_FILE):
                 self.add_ok('开仓通知', '无持仓状态文件')
                 return True
@@ -437,70 +437,71 @@ class HealthChecker:
                 self.add_ok('开仓通知', '无持仓，无需通知')
                 return True
 
-            # 有持仓，检查最近开仓的通知是否已发送
-            latest_pos = positions[-1]
-            open_time = latest_pos.get('open_time', '')
-            entry_price = latest_pos.get('entry_price', 0)
-            direction = latest_pos.get('direction', 'long')
-            qty = latest_pos.get('qty', 0)
-            reason = latest_pos.get('reason', '')
-
-            # 检查通知队列是否有对应的已发送通知
-            notify_found = False
-            if os.path.exists(NOTIFY_QUEUE):
-                with open(NOTIFY_QUEUE) as f:
-                    q = json.load(f)
-                items = q if isinstance(q, list) else [q]
-                for item in items:
-                    if isinstance(item, dict) and item.get('sent'):
-                        msg = item.get('msg', '')
-                        if '开仓通知' in msg and str(entry_price) in msg:
-                            notify_found = True
-                            break
-
-            if notify_found:
-                self.add_ok('开仓通知', f'{direction.upper()} @ {entry_price} 通知已发送')
-                return True
-
-            # 通知未发送，补发
+            # 检查每个仓位是否已通知，未通知的补发一次
             from datetime import datetime
-            sl = latest_pos.get('stop_loss', 0)
-            tp = latest_pos.get('tp', 0)
-            dir_label = '🟢【做多-LONG】📈' if direction == 'long' else '🔴【做空-SHORT】📉'
+            needs_save = False
+            for i, pos in enumerate(positions):
+                if pos.get('notified'):
+                    continue  # 已通知，跳过
 
-            wechat_msg = (
-                f"🚨 BTC开仓通知（累计{len(positions)}仓）\n"
-                f"━━━━━━━━━━━━━━━━\n"
-                f"方向: {dir_label}\n"
-                f"杠杆: 20x\n"
-                f"数量: +{qty} BTC（合计 {sum(p.get('qty',0) for p in positions)} BTC）\n"
-                f"开仓价: ${entry_price:,.2f}\n"
-                f"━━━━━━━━━━━━━━━━\n"
-                f"止损: ${sl:,.2f} (-3.0%)\n"
-                f"止盈: ${tp:,.2f} (+5.0%)\n"
-                f"━━━━━━━━━━━━━━━━\n"
-                f"📋 开仓理由:\n{reason}\n"
-                f"⏰ {open_time[-8:] if len(open_time)>=8 else open_time}"
-            )
+                # 该仓位尚未通知 → 补发一次，然后标记已通知
+                entry_price = pos.get('entry_price', 0)
+                direction = pos.get('direction', 'long')
+                qty = pos.get('qty', 0)
+                reason = pos.get('reason', '')
+                sl = pos.get('stop_loss', 0)
+                tp = pos.get('tp', 0)
+                open_time = pos.get('open_time', '')
+                dir_label = '🟢【做多-LONG】📈' if direction == 'long' else '🔴【做空-SHORT】📉'
 
-            # 写入通知队列
-            try:
-                existing_queue = []
-                if os.path.exists(NOTIFY_QUEUE):
-                    with open(NOTIFY_QUEUE) as f:
-                        existing = json.load(f)
-                    existing_queue = existing if isinstance(existing, list) else [existing]
-                existing_queue.append({
-                    'time': datetime.now().isoformat(),
-                    'msg': wechat_msg,
-                    'sent': False
-                })
-                with open(NOTIFY_QUEUE, 'w') as f:
-                    json.dump(existing_queue, f, ensure_ascii=False, indent=2)
-                self.add_fail('开仓通知', f'未发送，已补写入队列 | {direction.upper()} @ {entry_price}')
-            except Exception as e:
-                self.add_fail('开仓通知', f'补写队列失败: {e}')
+                wechat_msg = (
+                    f"🚨 BTC开仓通知（累计{len(positions)}仓）\n"
+                    f"━━━━━━━━━━━━━━━━\n"
+                    f"方向: {dir_label}\n"
+                    f"杠杆: 20x\n"
+                    f"数量: +{qty} BTC（合计 {sum(p.get('qty',0) for p in positions)} BTC）\n"
+                    f"开仓价: ${entry_price:,.2f}\n"
+                    f"━━━━━━━━━━━━━━━━\n"
+                    f"止损: ${sl:,.2f} (-3.0%)\n"
+                    f"止盈: ${tp:,.2f} (+5.0%)\n"
+                    f"━━━━━━━━━━━━━━━━\n"
+                    f"📋 开仓理由:\n{reason}\n"
+                    f"⏰ {open_time[-8:] if len(open_time)>=8 else open_time}"
+                )
 
+                # 写入通知队列
+                try:
+                    existing_queue = []
+                    if os.path.exists(NOTIFY_QUEUE):
+                        with open(NOTIFY_QUEUE) as f:
+                            existing = json.load(f)
+                        existing_queue = existing if isinstance(existing, list) else [existing]
+                    existing_queue.append({
+                        'time': datetime.now().isoformat(),
+                        'msg': wechat_msg,
+                        'sent': False
+                    })
+                    with open(NOTIFY_QUEUE, 'w') as f:
+                        json.dump(existing_queue, f, ensure_ascii=False, indent=2)
+
+                    # 标记已通知，写入state防止重复
+                    pos['notified'] = True
+                    needs_save = True
+                    self.add_fail('开仓通知', f'未发送，已补写入队列 | {direction.upper()} @ {entry_price}')
+                except Exception as e:
+                    self.add_fail('开仓通知', f'补写队列失败: {e}')
+                    return False
+
+            if needs_save:
+                with open(STATE_FILE, 'w') as f:
+                    json.dump(state, f, ensure_ascii=False, indent=2)
+
+            if not any(pos.get('notified') for pos in positions):
+                self.add_ok('开仓通知', '无未通知仓位')
+            else:
+                direction = positions[-1].get('direction', 'long')
+                entry_price = positions[-1].get('entry_price', 0)
+                self.add_ok('开仓通知', f'{direction.upper()} @ {entry_price} 通知已发送')
             return True
         except Exception as e:
             self.add_fail('开仓通知', f'检查异常: {e}')

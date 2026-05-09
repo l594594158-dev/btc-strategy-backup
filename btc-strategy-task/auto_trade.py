@@ -585,6 +585,7 @@ def open_position(direction, entry_price, atr, reason, qty):
             'reason': reason,
             'atr': atr,
             'open_time': datetime.now().isoformat(),
+            'notified': True,  # 开仓即通知，健康检查不再补发
         }]
         state['in_position'] = True
         save_state(state)
@@ -633,6 +634,7 @@ def open_position(direction, entry_price, atr, reason, qty):
         'reason': reason,
         'atr': atr,
         'open_time': datetime.now().isoformat(),
+        'notified': True,  # 开仓即通知，健康检查不再补发
     }
     state['positions'].append(pos_entry)
     state['in_position'] = True
