@@ -254,7 +254,7 @@ def check_entry(data):
     adx1d = rd['adx']
 
     # === 做多分析：大周期空头 + 5m超卖反弹（逆势信号，需4h ADX不能太高）===
-    if not r4h['bullish'] and not rd['bullish'] and pctb < 0.18:
+    if not r4h['bullish'] and not rd['bullish'] and pctb < 0.17:
         # 方案2：逆势信号需趋势不能过强，4h ADX > 40 说明空头趋势很强，不做逆势
         if adx4h >= 40:
             observe = f"观望 | 4h ADX={adx4h:.1f}>=40 空头趋势过强，逆势做多风险大"
@@ -283,7 +283,7 @@ def check_entry(data):
 
     # === 震荡做多：弱趋势+5m超卖反弹（均值回归）===
     # v2.4新增: ADX<25说明趋势很弱，价格到布林下轨+RSI低迷是最佳均值回归做多机会
-    if adx1h < 25 and not r4h['bullish'] and not rd['bullish'] and pctb < 0.18 and rsi5m <= 60:
+    if adx1h < 25 and not r4h['bullish'] and not rd['bullish'] and pctb < 0.17 and rsi5m <= 60:
         bb_l = r5m['bb_l']
         dist = (price - bb_l) / price * 100
         sl = price * (1 - STOP_LOSS_PCT)
@@ -304,7 +304,7 @@ def check_entry(data):
         return 'long', entry_reason, price, atr
 
     # === 做多分析：大周期多头 + 回调支撑（顺势信号）===
-    if adx1h > 25 and r4h['bullish'] and rd['bullish'] and pctb < 0.18:
+    if adx1h > 25 and r4h['bullish'] and rd['bullish'] and pctb < 0.17:
         if rsi5m > MIN_RSI_LONG and rsi5m < 55:
             bb_l = r5m['bb_l']
             dist = (price - bb_l) / price * 100
