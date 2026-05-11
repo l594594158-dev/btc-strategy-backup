@@ -1141,19 +1141,29 @@ def main():
                     if last_sig.get(sig, 0) + 300 > time.time():
                         log(f"⏳ {sig}信号冷却中，跳过")
                     else:
-                        # ========== v2.11.2: 只检查state中的策略仓，不受手动仓影响 ==========
-                        # 手动仓位由用户自行管理，策略自动开仓不受1.5%间隔限制
-                        state_dir_count = sum(1 for p in state.get('positions', []) if p.get('direction') == sig)
-                        if state_dir_count >= MAX_POSITIONS_PER_DIR:
-                            log(f"⛔ {sig}方向已有{state_dir_count}仓(策略仓)，达到上限{MAX_POSITIONS_PER_DIR}，跳过开仓")
-                        else:
-                            log(f"🚨 触发信号! {sig} | {reason.split(chr(10))[0]}")
-                            try:
-                                open_position(sig, price, atr, reason, QTY)
+                        # ========== v2.12.5: 反方向开仓保护 + 单方向上限制 ==========
+                        positions = state.get('positions', [])
+                        blocked = False
+                        if positions:
+                            existing_dir = positions[0].get('direction')
+                            if (sig == 'long' and existing_dir == 'short') or (sig == 'short' and existing_dir == 'long'):
+                                log(f"⛔ 已有{existing_dir.upper()}持仓，拒绝{sig.upper()}反方向开仓")
                                 state.setdefault('last_signal_time', {})[sig] = time.time()
                                 save_state(state)
-                            except Exception as e:
-                                log(f"❌ 开仓失败: {e}")
+                                blocked = True
+                        if not blocked:
+                            # 手动仓位由用户自行管理，策略自动开仓不受1.5%间隔限制
+                            state_dir_count = sum(1 for p in positions if p.get('direction') == sig)
+                            if state_dir_count >= MAX_POSITIONS_PER_DIR:
+                                log(f"⛔ {sig}方向已有{state_dir_count}仓(策略仓)，达到上限{MAX_POSITIONS_PER_DIR}，跳过开仓")
+                            else:
+                                log(f"🚨 触发信号! {sig} | {reason.split(chr(10))[0]}")
+                                try:
+                                    open_position(sig, price, atr, reason, QTY)
+                                    state.setdefault('last_signal_time', {})[sig] = time.time()
+                                    save_state(state)
+                                except Exception as e:
+                                    log(f"❌ 开仓失败: {e}")
 
             time.sleep(5)
 
