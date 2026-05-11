@@ -1160,6 +1160,8 @@ def main():
                                 log(f"🚨 触发信号! {sig} | {reason.split(chr(10))[0]}")
                                 try:
                                     open_position(sig, price, atr, reason, QTY)
+                                    # v2.12.6: open_position内部已保存state，需重新加载后再更新last_signal_time
+                                    state = load_state()
                                     state.setdefault('last_signal_time', {})[sig] = time.time()
                                     save_state(state)
                                 except Exception as e:
