@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
-BTC合约 自动交易策略 v2.13
-- 5秒监控 + 多周期指标分析
+BTC合约 自动交易策略 v2.14
+- 2秒轮询 + 多周期指标分析
 - 自定义止盈止损
 - 开仓理由记录 + 微信通知
+- v2.14: 开仓价格验证(做空>100根低点1.01x,做多<100根高点0.99x)
+- v2.13: 轮询2秒, 移动止盈保持5秒
 - v2.11.9: 深度修复幽灵仓位bug - 交易所与state一致性验证 - 旧格式reason标记为bot_recovered
 """
 import ccxt
@@ -49,6 +51,37 @@ POLL_INTERVAL = 2                   # 价格/信号轮询间隔（秒）
 TRAIL_ACTIVATION_PCT = 1.0 / 100   # 激活条件：超出开仓价1.0%
 TRAIL_TRIGGER_PCT = 0.6 / 100      # 执行条件：从峰值回落0.6%
 TRAIL_INTERVAL = 5                  # 移动止盈检查间隔（秒）
+PRICE_VALIDATION_PCT = 1.0 / 100    # v2.14: 开仓价格验证阈值（1%）
+
+# ========== 工具 ==========
+def validate_entry_price(direction, entry_price):
+    """
+    v2.14: 开仓价格保护
+    - 做空: 开仓价需 > 100根5m最低价 × 1.01（不在底部做空）
+    - 做多: 开仓价需 < 100根5m最高价 × 0.99（不在顶部做多）
+    返回: (valid: bool, reason: str)
+    """
+    try:
+        k5m = binance.fetch_ohlcv(SYMBOL, '5m', limit=100)
+        highs = [x[2] for x in k5m]
+        lows = [x[3] for x in k5m]
+        h100 = max(highs)
+        l100 = min(lows)
+        if direction == 'short':
+            threshold = l100 * (1 + PRICE_VALIDATION_PCT)
+            if entry_price > threshold:
+                return True, f"${entry_price:,.0f} > {l100:.0f}×1.01=${threshold:,.0f} ✅"
+            else:
+                return False, f"${entry_price:,.0f} ≤ {l100:.0f}×1.01=${threshold:,.0f} ❌ 距底部太近"
+        else:  # long
+            threshold = h100 * (1 - PRICE_VALIDATION_PCT)
+            if entry_price < threshold:
+                return True, f"${entry_price:,.0f} < {h100:.0f}×0.99=${threshold:,.0f} ✅"
+            else:
+                return False, f"${entry_price:,.0f} ≥ {h100:.0f}×0.99=${threshold:,.0f} ❌ 距顶部太近"
+    except Exception as e:
+        log(f"⚠️ 价格验证异常，放行: {e}")
+        return True, "验证异常，放行"
 
 # ========== 工具 ==========
 def log(msg):
@@ -1164,6 +1197,14 @@ def main():
                                 log(f"⛔ {sig}方向已有{state_dir_count}仓(策略仓)，达到上限{MAX_POSITIONS_PER_DIR}，跳过开仓")
                             else:
                                 log(f"🚨 触发信号! {sig} | {reason.split(chr(10))[0]}")
+                                # v2.14: 开仓价格验证
+                                price_valid, price_valid_msg = validate_entry_price(sig, price)
+                                if not price_valid:
+                                    log(f"⛔ 价格验证不通过: {price_valid_msg}")
+                                    state.setdefault('last_signal_time', {})[sig] = time.time()
+                                    save_state(state)
+                                    continue
+                                log(f"✅ 价格验证通过: {price_valid_msg}")
                                 try:
                                     open_position(sig, price, atr, reason, QTY)
                                     # v2.12.6: open_position内部已保存state，需重新加载后再更新last_signal_time
