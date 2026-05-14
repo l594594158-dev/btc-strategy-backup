@@ -299,8 +299,8 @@ def check_entry(data):
         bb_l = r5m['bb_l']
         dist = (price - bb_l) / price * 100
 
-        # RSI也进入超卖区间才进（确认真超卖）
-        if rsi5m < 30:
+        # RSI也进入深度超卖区间才进（确认真超卖）
+        if rsi5m < 25:
             sl = price * (1 - STOP_LOSS_PCT)
             tp1 = price * (1 + TAKE_PROFIT_PCT)
 
@@ -319,7 +319,7 @@ def check_entry(data):
 
     # === 震荡做多：弱趋势+5m超卖反弹（均值回归）===
     # v2.4新增: ADX<25说明趋势很弱，价格到布林下轨+RSI低迷是最佳均值回归做多机会
-    if adx1h < 25 and not r4h['bullish'] and not rd['bullish'] and pctb <= 0.15 and rsi5m <= 45:
+    if adx1h < 25 and not r4h['bullish'] and not rd['bullish'] and pctb <= 0.15 and rsi5m <= 30:
         bb_l = r5m['bb_l']
         dist = (price - bb_l) / price * 100
         sl = price * (1 - STOP_LOSS_PCT)
@@ -329,7 +329,7 @@ def check_entry(data):
             f"【做多-v2.4】震荡市+5m超卖反弹(均值回归)\n"
             f"理由: 4h+1d均线空头但ADX={adx1h:.1f}<25趋势极弱\n"
             f"价格触及布林下轨偏离{dist:.1f}%\n"
-            f"5m %b={pctb:.3f} + RSI={rsi5m:.1f} 双超卖确认(RSI<=70)\n"
+            f"5m %b={pctb:.3f} + RSI={rsi5m:.1f} 双超卖确认(RSI<=30)\n"
             f"1h ADX<25确认震荡市，逆势均值回归概率高\n"
             f"放量({vol_ratio:.1f}x)确认\n"
             f"固定止盈止损(百分比)\n"
@@ -341,7 +341,7 @@ def check_entry(data):
 
     # === 做多分析：大周期多头 + 回调支撑（顺势信号）===
     if adx1h > 25 and r4h['bullish'] and rd['bullish'] and pctb <= 0.15:
-        if rsi5m > MIN_RSI_LONG and rsi5m < 55:
+        if rsi5m >= 30 and rsi5m <= 40:
             bb_l = r5m['bb_l']
             dist = (price - bb_l) / price * 100
             sl = price * (1 - STOP_LOSS_PCT)
@@ -350,7 +350,7 @@ def check_entry(data):
             entry_reason = (
                 f"【做多-v2.2】大周期多头+5m回调支撑\n"
                 f"理由: 4h+1d均线多头,价格回踩布林下轨偏离{dist:.1f}%\n"
-                f"5m RSI={rsi5m:.1f} 回调到位(35~60区间)\n"
+                f"5m RSI={rsi5m:.1f} 回调到位(30~40区间)\n"
                 f"1h ADX={adx1h:.1f}>25主趋势确认 | 放量({vol_ratio:.1f}x)\n"
                 f"固定止盈止损(百分比)\n"
                 f"入场: ${price:,.2f}\n"
