@@ -42,10 +42,13 @@ STOP_LOSS_PCT = 3.0 / 100     # 止损百分比（3.0%）
 TAKE_PROFIT_PCT = 5.0 / 100   # 止盈百分比（5%，全仓一次性）
 MAX_POSITIONS_PER_DIR = 3     # 单方向最大仓位数量（v2.8）
 
+# ========== 轮询间隔 ==========
+POLL_INTERVAL = 2                   # 价格/信号轮询间隔（秒）
+
 # ========== v2.9: 移动止盈参数（集成进主策略）==========
 TRAIL_ACTIVATION_PCT = 1.0 / 100   # 激活条件：超出开仓价1.0%
 TRAIL_TRIGGER_PCT = 0.6 / 100      # 执行条件：从峰值回落0.6%
-TRAIL_INTERVAL = 5                  # 移动止盈检查间隔（秒，与轮询同步）
+TRAIL_INTERVAL = 5                  # 移动止盈检查间隔（秒）
 
 # ========== 工具 ==========
 def log(msg):
@@ -254,7 +257,7 @@ def check_entry(data):
     adx1d = rd['adx']
 
     # === 做多分析：大周期空头 + 5m超卖反弹（逆势信号，需4h ADX不能太高）===
-    if not r4h['bullish'] and not rd['bullish'] and pctb < 0.17:
+    if not r4h['bullish'] and not rd['bullish'] and pctb <= 0.15:
         # 方案2：逆势信号需趋势不能过强，4h ADX > 40 说明空头趋势很强，不做逆势
         if adx4h >= 40:
             observe = f"观望 | 4h ADX={adx4h:.1f}>=40 空头趋势过强，逆势做多风险大"
@@ -264,7 +267,7 @@ def check_entry(data):
         dist = (price - bb_l) / price * 100
 
         # RSI也进入超卖区间才进（确认真超卖）
-        if rsi5m < 35:
+        if rsi5m < 30:
             sl = price * (1 - STOP_LOSS_PCT)
             tp1 = price * (1 + TAKE_PROFIT_PCT)
 
@@ -283,7 +286,7 @@ def check_entry(data):
 
     # === 震荡做多：弱趋势+5m超卖反弹（均值回归）===
     # v2.4新增: ADX<25说明趋势很弱，价格到布林下轨+RSI低迷是最佳均值回归做多机会
-    if adx1h < 25 and not r4h['bullish'] and not rd['bullish'] and pctb < 0.17 and rsi5m <= 60:
+    if adx1h < 25 and not r4h['bullish'] and not rd['bullish'] and pctb <= 0.15 and rsi5m <= 45:
         bb_l = r5m['bb_l']
         dist = (price - bb_l) / price * 100
         sl = price * (1 - STOP_LOSS_PCT)
@@ -304,7 +307,7 @@ def check_entry(data):
         return 'long', entry_reason, price, atr
 
     # === 做多分析：大周期多头 + 回调支撑（顺势信号）===
-    if adx1h > 25 and r4h['bullish'] and rd['bullish'] and pctb < 0.17:
+    if adx1h > 25 and r4h['bullish'] and rd['bullish'] and pctb <= 0.15:
         if rsi5m > MIN_RSI_LONG and rsi5m < 55:
             bb_l = r5m['bb_l']
             dist = (price - bb_l) / price * 100
@@ -878,7 +881,7 @@ def print_status(data, state):
 
 # ========== 主循环 ==========
 def main():
-    log(f"🚀 BTC自动交易启动 v2.12 | 5秒周期 | {LEVERAGE}x | {QTY} BTC")
+    log(f"🚀 BTC自动交易启动 v2.12 | {POLL_INTERVAL}秒轮询 | {LEVERAGE}x | {QTY} BTC")
     log(f"v2.10: 补仓撤销旧SL/TP，以新均价重新挂单 | 有信号就开仓追加")
     stats = load_stats()
     if stats.get('consecutive_losses', 0) > 0:
@@ -902,6 +905,7 @@ def main():
             log(f"  仓{i+1}: {p['direction']} {p['qty']} BTC @ ${p['entry_price']:,.2f} | SL=${p['stop_loss']:,.0f} TP=${p['tp']:,.0f}")
 
     cycle = 0
+    last_trail_check = 0  # 移动止盈上次检查时间戳
     while True:
         try:
             cycle += 1
@@ -922,7 +926,7 @@ def main():
             if any(v is None for v in data.values()):
                 if cycle % 6 == 0:
                     log(f"⚠️ 数据不足，跳过本轮 | 5m={len(df5m)} 1h={len(df1h)} 4h={len(df4h)} 1d={len(df1d)}")
-                time.sleep(5)
+                time.sleep(POLL_INTERVAL)
                 continue
 
             state = load_state()
@@ -1004,7 +1008,8 @@ def main():
             # 移动止盈只追踪bot在state['positions']中自己开的仓
             # 手动仓位不在state中，完全不受影响，与幽灵仓位问题彻底切割
             bot_positions = state.get('positions', [])
-            if has_pos and bot_positions:
+            now_ts = time.time()
+            if has_pos and bot_positions and now_ts - last_trail_check >= TRAIL_INTERVAL:
                 price = data['5m']['price']
                 trail_closed = []
                 for p in bot_positions:
@@ -1068,6 +1073,7 @@ def main():
                         state = {'in_position': False, 'positions': []}
                     else:
                         save_state(state)
+                last_trail_check = time.time()
 
             # ========== v2.7: 有持仓时，每分钟检查各仓位SL/TP是否完整 ==========
             if has_pos and cycle % 6 == 0:
@@ -1167,7 +1173,7 @@ def main():
                                 except Exception as e:
                                     log(f"❌ 开仓失败: {e}")
 
-            time.sleep(5)
+            time.sleep(POLL_INTERVAL)
 
         except KeyboardInterrupt:
             log("🛑 停止")

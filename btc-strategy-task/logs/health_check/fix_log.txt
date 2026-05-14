@@ -85,3 +85,45 @@
 [2026-05-09 12:24:48] ✅ 已同步1个幽灵持仓到state
 [2026-05-09 23:45:02] ❌ 持仓同步: ⚠️ 交易所有1仓但state为空，同步到state
 [2026-05-09 23:45:02] 🔧 修复: sync_actual_to_state
+[2026-05-11 22:35:02] ❌ 持仓同步: ⚠️ 交易所有1仓但state为空，同步到state
+[2026-05-11 22:35:02] 🔧 修复: sync_actual_to_state
+[2026-05-12 17:00:01] ❌ API-网络: 网络错误: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=200&symbol=BTCUSDT
+[2026-05-12 17:00:01] 🔧 修复: network
+[2026-05-12 17:00:01] ✅ 等待网络恢复
+[2026-05-12 21:25:02] ❌ 持仓同步: 持仓数据不一致！交易所qty=0.035 state=0.03 | 价差=$51.31
+[2026-05-12 21:25:02] 🔧 修复: sync_ghost
+[2026-05-12 21:25:02] ✅ 已同步1个幽灵持仓到state
+[2026-05-12 22:05:01] ❌ 持仓同步: 持仓数据不一致！交易所qty=0.04 state=0.035 | 价差=$60.09
+[2026-05-12 22:05:01] 🔧 修复: sync_ghost
+[2026-05-12 22:05:01] ✅ 已同步1个幽灵持仓到state
+[2026-05-12 23:30:01] ❌ 持仓同步: 持仓数据不一致！交易所qty=0.045 state=0.04 | 价差=$81.01
+[2026-05-12 23:30:01] 🔧 修复: sync_ghost
+[2026-05-12 23:30:01] ✅ 已同步1个幽灵持仓到state
+[2026-05-13 01:05:01] ❌ 持仓同步: 持仓数据不一致！交易所qty=0.05 state=0.045 | 价差=$78.25
+[2026-05-13 01:05:01] 🔧 修复: sync_ghost
+[2026-05-13 01:05:01] ✅ 已同步1个幽灵持仓到state
+[2026-05-13 17:00:01] ❌ API-网络: 网络错误: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1778662801529&recvWindow=10000&signature=602c6d5b4e344de6dcee93d7057fa7da6e2b4a1cb720329f13f1886ec54b7ebd 500 Internal Server Error <html>
+<head><title>500 Internal Server Error</title></head>
+<body>
+<center><h1>500 Internal Server Error</h1></center>
+</body>
+</html>
+[2026-05-13 17:00:01] 🔧 修复: network
+[2026-05-13 17:00:01] ✅ 等待网络恢复
+[2026-05-13 20:30:01] ❌ API-网络: 网络错误: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1778675401795&recvWindow=10000&signature=e001225ab0c9841dd1e3afa82a3ece22af908ce9d773d167b0a508f5513521ae 500 Internal Server Error <html>
+<head><title>500 Internal Server Error</title></head>
+<body>
+<center><h1>500 Internal Server Error</h1></center>
+</body>
+</html>
+[2026-05-13 20:30:01] 🔧 修复: network
+[2026-05-13 20:30:01] ✅ 等待网络恢复
+[2026-05-13 20:40:02] ❌ 持仓同步: 持仓数据不一致！交易所qty=0.04 state=0.03 | 价差=$220.94
+[2026-05-13 20:40:02] 🔧 修复: sync_ghost
+[2026-05-13 20:40:02] ✅ 已同步1个幽灵持仓到state
+[2026-05-13 21:55:02] ❌ 持仓同步: 持仓数据不一致！交易所qty=0.05 state=0.04 | 价差=$172.89
+[2026-05-13 21:55:02] 🔧 修复: sync_ghost
+[2026-05-13 21:55:02] ✅ 已同步1个幽灵持仓到state
+[2026-05-13 23:15:01] ❌ 持仓同步: 持仓数据不一致！交易所qty=0.06 state=0.05 | 价差=$139.89
+[2026-05-13 23:15:01] 🔧 修复: sync_ghost
+[2026-05-13 23:15:01] ✅ 已同步1个幽灵持仓到state

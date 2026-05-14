@@ -397,3 +397,4 @@
 [2026-05-06 07:54:09] [错误] module 'ta.trend' has no attribute 'MACIndicator'
 [2026-05-06 07:54:19] [错误] module 'ta.trend' has no attribute 'MACIndicator'
 [2026-05-06 07:54:29] [错误] module 'ta.trend' has no attribute 'MACIndicator'
+[2026-05-13 15:31:44] [错误] binance GET https://fapi.binance.com/fapi/v1/klines?interval=5m&limit=200&symbol=BTCUSDT
