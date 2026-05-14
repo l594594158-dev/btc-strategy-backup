@@ -1,1 +1,20 @@
-{"in_position": true, "positions": [{"entry_price": 79764.31444444666, "qty": 0.09, "direction": "long", "stop_loss": 77371.4, "tp": 83752.5, "sl_algo_id": "3000001530048643", "tp_algo_id": "3000001530048654", "reason": "\u3010\u505a\u591a-v2.2\u3011\u5927\u5468\u671f\u7a7a\u5934+5m\u8d85\u5356\u53cd\u5f39\n\u7406\u7531: 4h+1d\u5747\u7ebf\u7a7a\u5934,\u4ef7\u683c\u8dcc\u81f3\u5e03\u6797\u4e0b\u8f68\u504f\u79bb-0.0%\n5m %b=-0.014 + RSI=17.4 \u53cc\u8d85\u5356\u786e\u8ba4\n1h ADX=28.4>25\u4e3b\u8d8b\u52bf\u786e\u8ba4 | \u653e\u91cf(1.8x)\n4h ADX=20.3<40\u7a7a\u5934\u8d8b\u52bf\u672a\u8fc7\u5f3a\n\u56fa\u5b9a\u6b62\u76c8\u6b62\u635f(\u767e\u5206\u6bd4)\n\u5165\u573a: $78,901.80\n\u6b62\u635f: $76,534.75 (-3.0%)\n\u6b62\u76c8: $82,846.89 (+5.0%) \u5168\u4ed3\u4e00\u6b21\u6027", "atr": 137.56913768306012, "open_time": "2026-05-13T23:57:53.611345", "notified": true}], "last_close_time": null, "last_signal_time": {"long": 1778688605.5939448}}
+{
+  "in_position": true,
+  "positions": [
+    {
+      "entry_price": 81218.3,
+      "qty": 0.04,
+      "direction": "short",
+      "stop_loss": 83654.849,
+      "tp": 77157.385,
+      "sl_algo_id": null,
+      "tp_algo_id": null,
+      "reason": "幽灵仓位同步",
+      "atr": 0,
+      "open_time": "2026-05-15T01:00:10.669477",
+      "notified": true
+    }
+  ],
+  "last_close_time": null,
+  "last_signal_time": {}
+}
