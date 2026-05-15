@@ -398,3 +398,4 @@
 [2026-05-06 07:54:19] [错误] module 'ta.trend' has no attribute 'MACIndicator'
 [2026-05-06 07:54:29] [错误] module 'ta.trend' has no attribute 'MACIndicator'
 [2026-05-13 15:31:44] [错误] binance GET https://fapi.binance.com/fapi/v1/klines?interval=5m&limit=200&symbol=BTCUSDT
+[2026-05-15 15:15:31] [移动止盈平仓] SHORT 0.01 BTC @ 80765.8 从峰值$80274.8回升0.61%

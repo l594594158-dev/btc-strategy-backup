@@ -17,3 +17,4 @@ memory-tdai/
 # 临时文件
 *.tmp
 *.swp
+btc-strategy-task/logs/auto_trade.log
