@@ -43,6 +43,7 @@ MIN_RSI_LONG = 35              # 做多最高RSI要求
 STOP_LOSS_PCT = 3.0 / 100     # 止损百分比（3.0%）
 TAKE_PROFIT_PCT = 5.0 / 100   # 止盈百分比（5%，全仓一次性）
 MAX_POSITIONS_PER_DIR = 3     # 单方向最大仓位数量（v2.8）
+MAX_TOTAL_QTY = 0.12            # v2.14.3: 单方向最大总持仓量(BTC)，替代无效的仓位计数
 
 # ========== 轮询间隔 ==========
 POLL_INTERVAL = 2                   # 价格/信号轮询间隔（秒）
@@ -1191,10 +1192,12 @@ def main():
                                 save_state(state)
                                 blocked = True
                         if not blocked:
-                            # 手动仓位由用户自行管理，策略自动开仓不受1.5%间隔限制
-                            state_dir_count = sum(1 for p in positions if p.get('direction') == sig)
-                            if state_dir_count >= MAX_POSITIONS_PER_DIR:
-                                log(f"⛔ {sig}方向已有{state_dir_count}仓(策略仓)，达到上限{MAX_POSITIONS_PER_DIR}，跳过开仓")
+                            # v2.14.3: 检查同方向总持仓量（替代无效的仓位计数）
+                            total_qty_same_dir = sum(p.get('qty', 0) for p in positions if p.get('direction') == sig)
+                            if total_qty_same_dir + QTY > MAX_TOTAL_QTY + 0.001:
+                                log(f"⛔ {sig}方向总持仓{total_qty_same_dir}BTC + 新{QTY}BTC > 上限{MAX_TOTAL_QTY}BTC，跳过开仓")
+                                state.setdefault('last_signal_time', {})[sig] = time.time()
+                                save_state(state)
                             else:
                                 log(f"🚨 触发信号! {sig} | {reason.split(chr(10))[0]}")
                                 # v2.14: 开仓价格验证
