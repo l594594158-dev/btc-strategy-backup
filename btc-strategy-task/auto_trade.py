@@ -51,7 +51,7 @@ POLL_INTERVAL = 2                   # 价格/信号轮询间隔（秒）
 TRAIL_ACTIVATION_PCT = 1.0 / 100   # 激活条件：超出开仓价1.0%
 TRAIL_TRIGGER_PCT = 0.6 / 100      # 执行条件：从峰值回落0.6%
 TRAIL_INTERVAL = 5                  # 移动止盈检查间隔（秒）
-PRICE_VALIDATION_PCT = 1.0 / 100    # v2.14: 开仓价格验证阈值（1%）
+PRICE_VALIDATION_PCT = 1.5 / 100    # v2.14.1: 开仓价格验证阈值（1.5%）
 
 # ========== 工具 ==========
 def validate_entry_price(direction, entry_price):
