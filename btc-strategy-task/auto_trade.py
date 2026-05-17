@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-BTC合约 自动交易策略 v2.14
+BTC合约 自动交易策略 v2.15
 - 2秒轮询 + 多周期指标分析
 - 自定义止盈止损
 - 开仓理由记录 + 微信通知
-- v2.14: 开仓价格验证(做空>100根低点1.01x,做多<100根高点0.99x)
+- v2.15: 开仓价格验证阈值上调至2.0%，补仓间隔上调至2.5%
 - v2.13: 轮询2秒, 移动止盈保持5秒
 - v2.11.9: 深度修复幽灵仓位bug - 交易所与state一致性验证 - 旧格式reason标记为bot_recovered
 """
@@ -52,14 +52,14 @@ POLL_INTERVAL = 2                   # 价格/信号轮询间隔（秒）
 TRAIL_ACTIVATION_PCT = 1.0 / 100   # 激活条件：超出开仓价1.0%
 TRAIL_TRIGGER_PCT = 0.6 / 100      # 执行条件：从峰值回落0.6%
 TRAIL_INTERVAL = 5                  # 移动止盈检查间隔（秒）
-PRICE_VALIDATION_PCT = 1.5 / 100    # v2.14.1: 开仓价格验证阈值（1.5%）
+PRICE_VALIDATION_PCT = 2.0 / 100    # v2.15: 开仓价格验证阈值（2.0%）
 
 # ========== 工具 ==========
 def validate_entry_price(direction, entry_price):
     """
     v2.14: 开仓价格保护
-    - 做空: 开仓价需 > 100根5m最低价 × 1.01（不在底部做空）
-    - 做多: 开仓价需 < 100根5m最高价 × 0.99（不在顶部做多）
+    - 做空: 开仓价需 > 100根5m最低价 × 1.02（不在底部做空）
+    - 做多: 开仓价需 < 100根5m最高价 × 0.98（不在顶部做多）
     返回: (valid: bool, reason: str)
     """
     try:
@@ -71,15 +71,15 @@ def validate_entry_price(direction, entry_price):
         if direction == 'short':
             threshold = l100 * (1 + PRICE_VALIDATION_PCT)
             if entry_price > threshold:
-                return True, f"${entry_price:,.0f} > {l100:.0f}×1.01=${threshold:,.0f} ✅"
+                return True, f"${entry_price:,.0f} > {l100:.0f}×1.02=${threshold:,.0f} ✅"
             else:
-                return False, f"${entry_price:,.0f} ≤ {l100:.0f}×1.01=${threshold:,.0f} ❌ 距底部太近"
+                return False, f"${entry_price:,.0f} ≤ {l100:.0f}×1.02=${threshold:,.0f} ❌ 距底部太近"
         else:  # long
             threshold = h100 * (1 - PRICE_VALIDATION_PCT)
             if entry_price < threshold:
-                return True, f"${entry_price:,.0f} < {h100:.0f}×0.99=${threshold:,.0f} ✅"
+                return True, f"${entry_price:,.0f} < {h100:.0f}×0.98=${threshold:,.0f} ✅"
             else:
-                return False, f"${entry_price:,.0f} ≥ {h100:.0f}×0.99=${threshold:,.0f} ❌ 距顶部太近"
+                return False, f"${entry_price:,.0f} ≥ {h100:.0f}×0.98=${threshold:,.0f} ❌ 距顶部太近"
     except Exception as e:
         log(f"⚠️ 价格验证异常，放行: {e}")
         return True, "验证异常，放行"
@@ -527,8 +527,8 @@ def open_position(direction, entry_price, atr, reason, qty):
 
     binance.set_leverage(LEVERAGE, SYMBOL)
 
-    # ========== v2.12: 所有仓位之间必须保持1.5%间隔（不分方向）==========
-    # 开仓前检查所有现有持仓，新仓价格与任何现有仓的偏离都必须>1.5%
+    # ========== v2.15: 所有仓位之间必须保持2.5%间隔（不分方向）==========
+    # 开仓前检查所有现有持仓，新仓价格与任何现有仓的偏离都必须>2.5%
     exchange_pos = [p for p in binance.fetch_positions()
                     if p.get('symbol') == SYMBOL and float(p.get('contracts', 0)) > 0]
     
@@ -541,7 +541,7 @@ def open_position(direction, entry_price, atr, reason, qty):
             existing_entry = float(ep['entryPrice'])
             existing_dir = ep.get('side', '').lower()
             
-            # 计算价格间隔（两个方向都要满足1.5%）
+            # 计算价格间隔（两个方向都要满足2.5%）
             if direction == 'long':
                 # 新仓做多：检查是否比现有仓够低（对做多有利）
                 gap_pct = (existing_entry - candidate_price) / existing_entry * 100
@@ -549,8 +549,8 @@ def open_position(direction, entry_price, atr, reason, qty):
                 # 新仓做空：检查是否比现有仓够高（对做空有利）
                 gap_pct = (candidate_price - existing_entry) / existing_entry * 100
             
-            if gap_pct < 1.5:
-                log(f"⛔ 开仓间隔不足({gap_pct:.2f}% < 1.5%) | 新仓={candidate_price} 现有仓={existing_entry}({existing_dir})")
+            if gap_pct < 2.5:
+                log(f"⛔ 开仓间隔不足({gap_pct:.2f}% < 2.5%) | 新仓={candidate_price} 现有仓={existing_entry}({existing_dir})")
                 return None
         
         log(f"📊 开仓间隔验证通过，共{len(exchange_pos)}个现有仓")
