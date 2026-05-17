@@ -400,3 +400,6 @@
 [2026-05-13 15:31:44] [错误] binance GET https://fapi.binance.com/fapi/v1/klines?interval=5m&limit=200&symbol=BTCUSDT
 [2026-05-15 15:15:31] [移动止盈平仓] SHORT 0.01 BTC @ 80765.8 从峰值$80274.8回升0.61%
 [2026-05-16 13:00:11] [错误] binance GET https://fapi.binance.com/fapi/v3/positionRisk?timestamp=1778907601500&recvWindow=10000&s
+[2026-05-18 00:51:17] [错误] binance GET https://fapi.binance.com/fapi/v1/klines?interval=5m&limit=200&symbol=BTCUSDT
+[2026-05-18 01:17:39] [错误] binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=200&symbol=BTCUSDT
+[2026-05-18 01:18:03] [错误] binance GET https://fapi.binance.com/fapi/v1/klines?interval=5m&limit=200&symbol=BTCUSDT
