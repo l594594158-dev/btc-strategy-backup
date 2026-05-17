@@ -145,3 +145,4 @@
 [2026-05-15 13:45:02] ❌ 持仓同步: 持仓数据不一致！交易所qty=0.01 state=0.04 | 价差=$0.00
 [2026-05-15 13:45:02] 🔧 修复: sync_ghost
 [2026-05-15 13:45:02] ✅ 已同步1个幽灵持仓到state
+[2026-05-18 02:10:02] ❌ 持仓同步: 检查失败: binance GET https://fapi.binance.com/fapi/v1/leverageBracket?timestamp=1779041406989&recvWindow=10000&signature=cbb03106238136b0c0c5931bb664f6acb7e645e5dc55b623e0b47a32d2d89160
