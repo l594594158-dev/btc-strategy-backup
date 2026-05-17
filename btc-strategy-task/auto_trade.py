@@ -40,7 +40,7 @@ MAX_CONSECUTIVE_LOSS = 3      # 连续亏损达到此数则暂停交易
 LOSS_COOLDOWN_MINUTES = 300    # v2.15.1: 连续亏损后冷却时间（300分钟=5小时）
 MIN_RSI_SHORT = 82            # 做空最低RSI要求（更极端才进）
 MIN_RSI_LONG = 35              # 做多最高RSI要求
-STOP_LOSS_PCT = 3.0 / 100     # 止损百分比（3.0%）
+STOP_LOSS_PCT = 3.5 / 100     # v2.15.3: 止损百分比（3.5%）
 TAKE_PROFIT_PCT = 5.0 / 100   # 止盈百分比（5%，全仓一次性）
 MAX_POSITIONS_PER_DIR = 3     # 单方向最大仓位数量（v2.8）
 MAX_TOTAL_QTY = 0.12            # v2.14.3: 单方向最大总持仓量(BTC)，替代无效的仓位计数
