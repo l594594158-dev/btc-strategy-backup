@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-BTC合约 自动交易策略 v2.15.2
+BTC合约 自动交易策略 v2.16
 - 2秒轮询 + 多周期指标分析
 - 自定义止盈止损
 - 开仓理由记录 + 微信通知
-- v2.15.2: 开仓价格保护K线数100→200根 | v2.15: 保护阈值2.0%+补仓间隔2.5%
+- v2.16: 首仓0.025BTC+补仓0.035BTC+上限2仓 | v2.15.2: 开仓保护200根K线
 - v2.13: 轮询2秒, 移动止盈保持5秒
 - v2.11.9: 深度修复幽灵仓位bug - 交易所与state一致性验证 - 旧格式reason标记为bot_recovered
 """
@@ -28,7 +28,9 @@ binance = ccxt.binance({
 })
 
 SYMBOL = 'BTC/USDT:USDT'
-QTY = 0.030
+QTY = 0.030                     # 已废弃，保留兼容
+INITIAL_QTY = 0.025              # v2.16: 首次开仓数量
+ADDON_QTY = 0.035                # v2.16: 补仓数量
 LEVERAGE = 20
 STATE_FILE = '/root/.openclaw/workspace/btc-strategy-task/databases/state.json'
 ALERT_FILE = '/root/.openclaw/workspace/btc-strategy-task/databases/last_alert.json'
@@ -42,8 +44,8 @@ MIN_RSI_SHORT = 82            # 做空最低RSI要求（更极端才进）
 MIN_RSI_LONG = 35              # 做多最高RSI要求
 STOP_LOSS_PCT = 3.5 / 100     # v2.15.3: 止损百分比（3.5%）
 TAKE_PROFIT_PCT = 5.0 / 100   # 止盈百分比（5%，全仓一次性）
-MAX_POSITIONS_PER_DIR = 3     # 单方向最大仓位数量（v2.8）
-MAX_TOTAL_QTY = 0.12            # v2.14.3: 单方向最大总持仓量(BTC)，替代无效的仓位计数
+MAX_POSITIONS_PER_DIR = 2     # v2.16: 单方向最大仓位数量（首仓+补仓=2）
+MAX_TOTAL_QTY = 0.06            # v2.16: 单方向最大总持仓量(0.025+0.035=0.06BTC)
 
 # ========== 轮询间隔 ==========
 POLL_INTERVAL = 2                   # 价格/信号轮询间隔（秒）
@@ -126,7 +128,7 @@ def load_state():
         if 'positions' not in s and s.get('in_position') and s.get('entry_price', 0) > 0:
             s['positions'] = [{
                 'entry_price': s['entry_price'],
-                'qty': s.get('qty', QTY),
+                'qty': s.get('qty', INITIAL_QTY),
                 'direction': s.get('direction', 'long'),
                 'stop_loss': s.get('stop_loss', 0),
                 'tp': s.get('tp1', s.get('tp', 0)),
@@ -915,7 +917,7 @@ def print_status(data, state):
 
 # ========== 主循环 ==========
 def main():
-    log(f"🚀 BTC自动交易启动 v2.12 | {POLL_INTERVAL}秒轮询 | {LEVERAGE}x | {QTY} BTC")
+    log(f"🚀 BTC自动交易启动 v2.16 | {POLL_INTERVAL}秒轮询 | {LEVERAGE}x | 首仓{INITIAL_QTY}+补仓{ADDON_QTY}BTC | 上限{MAX_POSITIONS_PER_DIR}仓")
     log(f"v2.10: 补仓撤销旧SL/TP，以新均价重新挂单 | 有信号就开仓追加")
     stats = load_stats()
     if stats.get('consecutive_losses', 0) > 0:
@@ -1192,10 +1194,11 @@ def main():
                                 save_state(state)
                                 blocked = True
                         if not blocked:
-                            # v2.14.3: 检查同方向总持仓量（替代无效的仓位计数）
+                            # v2.16: 首仓0.025 / 补仓0.035 / 上限2仓
                             total_qty_same_dir = sum(p.get('qty', 0) for p in positions if p.get('direction') == sig)
-                            if total_qty_same_dir + QTY > MAX_TOTAL_QTY + 0.001:
-                                log(f"⛔ {sig}方向总持仓{total_qty_same_dir}BTC + 新{QTY}BTC > 上限{MAX_TOTAL_QTY}BTC，跳过开仓")
+                            use_qty = ADDON_QTY if total_qty_same_dir > 0 else INITIAL_QTY
+                            if total_qty_same_dir + use_qty > MAX_TOTAL_QTY + 0.001:
+                                log(f"⛔ {sig}方向总持仓{total_qty_same_dir}BTC + 新{use_qty}BTC > 上限{MAX_TOTAL_QTY}BTC，跳过开仓")
                                 state.setdefault('last_signal_time', {})[sig] = time.time()
                                 save_state(state)
                             else:
@@ -1209,7 +1212,7 @@ def main():
                                     continue
                                 log(f"✅ 价格验证通过: {price_valid_msg}")
                                 try:
-                                    open_position(sig, price, atr, reason, QTY)
+                                    open_position(sig, price, atr, reason, use_qty)
                                     # v2.12.6: open_position内部已保存state，需重新加载后再更新last_signal_time
                                     state = load_state()
                                     state.setdefault('last_signal_time', {})[sig] = time.time()
