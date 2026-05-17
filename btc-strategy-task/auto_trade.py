@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-BTC合约 自动交易策略 v2.15
+BTC合约 自动交易策略 v2.15.2
 - 2秒轮询 + 多周期指标分析
 - 自定义止盈止损
 - 开仓理由记录 + 微信通知
-- v2.15: 开仓价格验证阈值上调至2.0%，补仓间隔上调至2.5%
+- v2.15.2: 开仓价格保护K线数100→200根 | v2.15: 保护阈值2.0%+补仓间隔2.5%
 - v2.13: 轮询2秒, 移动止盈保持5秒
 - v2.11.9: 深度修复幽灵仓位bug - 交易所与state一致性验证 - 旧格式reason标记为bot_recovered
 """
@@ -57,29 +57,29 @@ PRICE_VALIDATION_PCT = 2.0 / 100    # v2.15: 开仓价格验证阈值（2.0%）
 # ========== 工具 ==========
 def validate_entry_price(direction, entry_price):
     """
-    v2.14: 开仓价格保护
-    - 做空: 开仓价需 > 100根5m最低价 × 1.02（不在底部做空）
-    - 做多: 开仓价需 < 100根5m最高价 × 0.98（不在顶部做多）
+    v2.15.2: 开仓价格保护（200根5m K线）
+    - 做空: 开仓价需 > 200根5m最低价 × 1.02（不在底部做空）
+    - 做多: 开仓价需 < 200根5m最高价 × 0.98（不在顶部做多）
     返回: (valid: bool, reason: str)
     """
     try:
-        k5m = binance.fetch_ohlcv(SYMBOL, '5m', limit=100)
+        k5m = binance.fetch_ohlcv(SYMBOL, '5m', limit=200)
         highs = [x[2] for x in k5m]
         lows = [x[3] for x in k5m]
-        h100 = max(highs)
-        l100 = min(lows)
+        h200 = max(highs)
+        l200 = min(lows)
         if direction == 'short':
-            threshold = l100 * (1 + PRICE_VALIDATION_PCT)
+            threshold = l200 * (1 + PRICE_VALIDATION_PCT)
             if entry_price > threshold:
-                return True, f"${entry_price:,.0f} > {l100:.0f}×1.02=${threshold:,.0f} ✅"
+                return True, f"${entry_price:,.0f} > {l200:.0f}×1.02=${threshold:,.0f} ✅"
             else:
-                return False, f"${entry_price:,.0f} ≤ {l100:.0f}×1.02=${threshold:,.0f} ❌ 距底部太近"
+                return False, f"${entry_price:,.0f} ≤ {l200:.0f}×1.02=${threshold:,.0f} ❌ 距底部太近"
         else:  # long
-            threshold = h100 * (1 - PRICE_VALIDATION_PCT)
+            threshold = h200 * (1 - PRICE_VALIDATION_PCT)
             if entry_price < threshold:
-                return True, f"${entry_price:,.0f} < {h100:.0f}×0.98=${threshold:,.0f} ✅"
+                return True, f"${entry_price:,.0f} < {h200:.0f}×0.98=${threshold:,.0f} ✅"
             else:
-                return False, f"${entry_price:,.0f} ≥ {h100:.0f}×0.98=${threshold:,.0f} ❌ 距顶部太近"
+                return False, f"${entry_price:,.0f} ≥ {h200:.0f}×0.98=${threshold:,.0f} ❌ 距顶部太近"
     except Exception as e:
         log(f"⚠️ 价格验证异常，放行: {e}")
         return True, "验证异常，放行"
