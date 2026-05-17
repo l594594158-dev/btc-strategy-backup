@@ -37,7 +37,7 @@ STATS_FILE = '/root/.openclaw/workspace/btc-strategy-task/databases/trade_stats.
 
 # ========== v2.0 新增风控参数 ==========
 MAX_CONSECUTIVE_LOSS = 3      # 连续亏损达到此数则暂停交易
-LOSS_COOLDOWN_MINUTES = 30    # 连续亏损后冷却时间（分钟）
+LOSS_COOLDOWN_MINUTES = 300    # v2.15.1: 连续亏损后冷却时间（300分钟=5小时）
 MIN_RSI_SHORT = 82            # 做空最低RSI要求（更极端才进）
 MIN_RSI_LONG = 35              # 做多最高RSI要求
 STOP_LOSS_PCT = 3.0 / 100     # 止损百分比（3.0%）
@@ -1175,10 +1175,10 @@ def main():
                 sig, reason, price, atr = check_entry(data)
 
                 if sig:
-                    # 信号去抖：同一方向开仓后冷却300秒，防止信号重复触发
+                    # 信号去抖：同一方向开仓后冷却5000秒，防止信号重复触发
                     state = load_state()
                     last_sig = state.get('last_signal_time', {})
-                    if last_sig.get(sig, 0) + 300 > time.time():
+                    if last_sig.get(sig, 0) + 5000 > time.time():
                         log(f"⏳ {sig}信号冷却中，跳过")
                     else:
                         # ========== v2.12.5: 反方向开仓保护 + 单方向上限制 ==========
