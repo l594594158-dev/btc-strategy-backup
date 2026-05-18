@@ -1,749 +1,5 @@
 [
   {
-    "time": "2026-05-18 05:05:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-18 05:05:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=3217789 运行中"
-      },
-      {
-        "time": "2026-05-18 05:05:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78215.9"
-      },
-      {
-        "time": "2026-05-18 05:05:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=47.3 %b=0.254 vol=0.84x | 1h: ADX=21.8 vol=0.05x | 4h: RSI=40.1 ADX=35.2 | 1d: RSI=49.3 %b=0.344"
-      },
-      {
-        "time": "2026-05-18 05:05:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-18 05:05:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-18 05:05:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-18 05:05:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 04:48:17] [错误] binance GET https://fap"
-      },
-      {
-        "time": "2026-05-18 05:05:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-18 05:05:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-18 05:10:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-18 05:10:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=3269611 运行中"
-      },
-      {
-        "time": "2026-05-18 05:10:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78223.2"
-      },
-      {
-        "time": "2026-05-18 05:10:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=48.6 %b=0.247 vol=0.00x | 1h: ADX=21.8 vol=0.06x | 4h: RSI=40.2 ADX=35.2 | 1d: RSI=49.3 %b=0.345"
-      },
-      {
-        "time": "2026-05-18 05:10:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-18 05:10:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-18 05:10:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-18 05:10:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 04:48:17] [错误] binance GET https://fap"
-      },
-      {
-        "time": "2026-05-18 05:10:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-18 05:10:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-18 05:15:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-18 05:15:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=3269611 运行中"
-      },
-      {
-        "time": "2026-05-18 05:15:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78261.2"
-      },
-      {
-        "time": "2026-05-18 05:15:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=55.0 %b=0.406 vol=0.00x | 1h: ADX=21.8 vol=0.09x | 4h: RSI=40.5 ADX=35.2 | 1d: RSI=49.4 %b=0.350"
-      },
-      {
-        "time": "2026-05-18 05:15:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-18 05:15:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-18 05:15:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-18 05:15:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 05:14:37] [错误] binance GET https://fap"
-      },
-      {
-        "time": "2026-05-18 05:15:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-18 05:15:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-18 05:20:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-18 05:20:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=3269611 运行中"
-      },
-      {
-        "time": "2026-05-18 05:20:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78273.5"
-      },
-      {
-        "time": "2026-05-18 05:20:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=56.9 %b=0.474 vol=0.01x | 1h: ADX=21.8 vol=0.12x | 4h: RSI=40.6 ADX=35.2 | 1d: RSI=49.5 %b=0.352"
-      },
-      {
-        "time": "2026-05-18 05:20:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-18 05:20:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-18 05:20:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-18 05:20:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 05:14:37] [错误] binance GET https://fap"
-      },
-      {
-        "time": "2026-05-18 05:20:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-18 05:20:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-18 05:25:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-18 05:25:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=3269611 运行中"
-      },
-      {
-        "time": "2026-05-18 05:25:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78393.1"
-      },
-      {
-        "time": "2026-05-18 05:25:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=69.9 %b=0.968 vol=2.90x | 1h: ADX=21.8 vol=0.30x | 4h: RSI=41.8 ADX=35.2 | 1d: RSI=49.9 %b=0.367"
-      },
-      {
-        "time": "2026-05-18 05:25:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-18 05:25:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-18 05:25:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-18 05:25:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 05:14:37] [错误] binance GET https://fap"
-      },
-      {
-        "time": "2026-05-18 05:25:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-18 05:25:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-18 05:30:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-18 05:30:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=3269611 运行中"
-      },
-      {
-        "time": "2026-05-18 05:30:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78388.0"
-      },
-      {
-        "time": "2026-05-18 05:30:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=69.0 %b=0.956 vol=1.50x | 1h: ADX=21.8 vol=0.38x | 4h: RSI=41.7 ADX=35.2 | 1d: RSI=49.9 %b=0.368"
-      },
-      {
-        "time": "2026-05-18 05:30:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-18 05:30:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-18 05:30:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-18 05:30:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 05:14:37] [错误] binance GET https://fap"
-      },
-      {
-        "time": "2026-05-18 05:30:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-18 05:30:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-18 05:35:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-18 05:35:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=3269611 运行中"
-      },
-      {
-        "time": "2026-05-18 05:35:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78393.7"
-      },
-      {
-        "time": "2026-05-18 05:35:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=69.4 %b=0.935 vol=0.06x | 1h: ADX=21.8 vol=0.44x | 4h: RSI=41.9 ADX=35.2 | 1d: RSI=49.9 %b=0.368"
-      },
-      {
-        "time": "2026-05-18 05:35:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-18 05:35:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-18 05:35:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-18 05:35:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 05:14:37] [错误] binance GET https://fap"
-      },
-      {
-        "time": "2026-05-18 05:35:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-18 05:35:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-18 05:40:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-18 05:40:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=3269611 运行中"
-      },
-      {
-        "time": "2026-05-18 05:40:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78340.0"
-      },
-      {
-        "time": "2026-05-18 05:40:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=59.5 %b=0.742 vol=0.03x | 1h: ADX=22.2 vol=0.61x | 4h: RSI=41.2 ADX=35.1 | 1d: RSI=49.7 %b=0.360"
-      },
-      {
-        "time": "2026-05-18 05:40:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-18 05:40:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-18 05:40:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-18 05:40:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 05:14:37] [错误] binance GET https://fap"
-      },
-      {
-        "time": "2026-05-18 05:40:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-18 05:40:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-18 05:45:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-18 05:45:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=3269611 运行中"
-      },
-      {
-        "time": "2026-05-18 05:45:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78391.9"
-      },
-      {
-        "time": "2026-05-18 05:45:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=65.2 %b=0.930 vol=2.08x | 1h: ADX=22.2 vol=0.72x | 4h: RSI=41.8 ADX=35.1 | 1d: RSI=49.9 %b=0.367"
-      },
-      {
-        "time": "2026-05-18 05:45:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-18 05:45:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-18 05:45:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-18 05:45:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 05:40:56] [错误] binance GET https://fap"
-      },
-      {
-        "time": "2026-05-18 05:45:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-18 05:45:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-18 05:50:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-18 05:50:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=3269611 运行中"
-      },
-      {
-        "time": "2026-05-18 05:50:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78392.1"
-      },
-      {
-        "time": "2026-05-18 05:50:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=65.2 %b=0.888 vol=1.37x | 1h: ADX=22.2 vol=0.81x | 4h: RSI=41.8 ADX=35.1 | 1d: RSI=49.9 %b=0.367"
-      },
-      {
-        "time": "2026-05-18 05:50:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-18 05:50:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-18 05:50:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-18 05:50:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 05:40:56] [错误] binance GET https://fap"
-      },
-      {
-        "time": "2026-05-18 05:50:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-18 05:50:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-18 05:55:01",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-18 05:55:01",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=3269611 运行中"
-      },
-      {
-        "time": "2026-05-18 05:55:01",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78355.3"
-      },
-      {
-        "time": "2026-05-18 05:55:01",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=58.9 %b=0.736 vol=0.68x | 1h: ADX=22.2 vol=0.85x | 4h: RSI=41.4 ADX=35.1 | 1d: RSI=49.8 %b=0.362"
-      },
-      {
-        "time": "2026-05-18 05:55:01",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-18 05:55:01",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-18 05:55:01",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-18 05:55:01",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 05:40:56] [错误] binance GET https://fap"
-      },
-      {
-        "time": "2026-05-18 05:55:01",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-18 05:55:01",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-18 06:00:02",
-    "checks_ok": 9,
-    "checks_fail": 0,
-    "items": [
-      {
-        "time": "2026-05-18 06:00:02",
-        "item": "进程状态",
-        "status": "✅ OK",
-        "detail": "PID=3269611 运行中"
-      },
-      {
-        "time": "2026-05-18 06:00:02",
-        "item": "API数据",
-        "status": "✅ OK",
-        "detail": "各周期数据正常，最新价格=$78365.4"
-      },
-      {
-        "time": "2026-05-18 06:00:02",
-        "item": "策略指标",
-        "status": "✅ OK",
-        "detail": "5m: RSI=60.1 %b=0.749 vol=0.80x | 1h: ADX=21.1 vol=0.03x | 4h: RSI=41.2 ADX=35.1 | 1d: RSI=49.7 %b=0.359"
-      },
-      {
-        "time": "2026-05-18 06:00:02",
-        "item": "指标数据",
-        "status": "✅ OK",
-        "detail": "ATR/RSI/布林/ADX/成交量均正常"
-      },
-      {
-        "time": "2026-05-18 06:00:02",
-        "item": "持仓同步",
-        "status": "✅ OK",
-        "detail": "一致，state和交易所均有1仓"
-      },
-      {
-        "time": "2026-05-18 06:00:02",
-        "item": "State文件",
-        "status": "✅ OK",
-        "detail": "in_position=True, 持仓数=1"
-      },
-      {
-        "time": "2026-05-18 06:00:02",
-        "item": "WorkLog",
-        "status": "✅ OK",
-        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 05:40:56] [错误] binance GET https://fap"
-      },
-      {
-        "time": "2026-05-18 06:00:02",
-        "item": "交易统计",
-        "status": "✅ OK",
-        "detail": "文件不存在"
-      },
-      {
-        "time": "2026-05-18 06:00:02",
-        "item": "通知队列",
-        "status": "✅ OK",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
     "time": "2026-05-18 06:05:02",
     "checks_ok": 9,
     "checks_fail": 0,
@@ -6192,6 +5448,750 @@
       },
       {
         "time": "2026-05-18 13:20:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-18 13:25:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-18 13:25:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=3389156 运行中"
+      },
+      {
+        "time": "2026-05-18 13:25:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$76999.2"
+      },
+      {
+        "time": "2026-05-18 13:25:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=54.4 %b=0.736 vol=0.49x | 1h: ADX=33.7 vol=0.26x | 4h: RSI=32.2 ADX=39.0 | 1d: RSI=45.2 %b=0.170"
+      },
+      {
+        "time": "2026-05-18 13:25:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-18 13:25:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-18 13:25:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-18 13:25:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 08:18:52] [错误] binance GET https://fap"
+      },
+      {
+        "time": "2026-05-18 13:25:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-18 13:25:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-18 13:30:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-18 13:30:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=3389156 运行中"
+      },
+      {
+        "time": "2026-05-18 13:30:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$77010.0"
+      },
+      {
+        "time": "2026-05-18 13:30:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=55.3 %b=0.734 vol=0.08x | 1h: ADX=33.7 vol=0.30x | 4h: RSI=32.2 ADX=39.0 | 1d: RSI=45.3 %b=0.172"
+      },
+      {
+        "time": "2026-05-18 13:30:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-18 13:30:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-18 13:30:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-18 13:30:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 08:18:52] [错误] binance GET https://fap"
+      },
+      {
+        "time": "2026-05-18 13:30:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-18 13:30:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-18 13:35:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-18 13:35:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=3389156 运行中"
+      },
+      {
+        "time": "2026-05-18 13:35:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$76962.1"
+      },
+      {
+        "time": "2026-05-18 13:35:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=50.9 %b=0.576 vol=0.05x | 1h: ADX=33.7 vol=0.36x | 4h: RSI=31.9 ADX=39.0 | 1d: RSI=45.1 %b=0.168"
+      },
+      {
+        "time": "2026-05-18 13:35:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-18 13:35:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-18 13:35:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-18 13:35:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 08:18:52] [错误] binance GET https://fap"
+      },
+      {
+        "time": "2026-05-18 13:35:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-18 13:35:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-18 13:40:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-18 13:40:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=3389156 运行中"
+      },
+      {
+        "time": "2026-05-18 13:40:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$76974.1"
+      },
+      {
+        "time": "2026-05-18 13:40:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=52.0 %b=0.601 vol=0.01x | 1h: ADX=33.7 vol=0.39x | 4h: RSI=31.9 ADX=39.0 | 1d: RSI=45.1 %b=0.168"
+      },
+      {
+        "time": "2026-05-18 13:40:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-18 13:40:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-18 13:40:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-18 13:40:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 08:18:52] [错误] binance GET https://fap"
+      },
+      {
+        "time": "2026-05-18 13:40:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-18 13:40:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-18 13:45:02",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-18 13:45:02",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=3389156 运行中"
+      },
+      {
+        "time": "2026-05-18 13:45:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$76865.9"
+      },
+      {
+        "time": "2026-05-18 13:45:02",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=42.8 %b=0.282 vol=0.00x | 1h: ADX=33.7 vol=0.49x | 4h: RSI=30.7 ADX=39.0 | 1d: RSI=44.8 %b=0.155"
+      },
+      {
+        "time": "2026-05-18 13:45:02",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-18 13:45:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-18 13:45:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-18 13:45:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 08:18:52] [错误] binance GET https://fap"
+      },
+      {
+        "time": "2026-05-18 13:45:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-18 13:45:02",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-18 13:50:02",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-18 13:50:02",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=3389156 运行中"
+      },
+      {
+        "time": "2026-05-18 13:50:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$76910.5"
+      },
+      {
+        "time": "2026-05-18 13:50:02",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=47.0 %b=0.417 vol=1.03x | 1h: ADX=33.7 vol=0.55x | 4h: RSI=31.1 ADX=39.0 | 1d: RSI=44.9 %b=0.160"
+      },
+      {
+        "time": "2026-05-18 13:50:02",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-18 13:50:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-18 13:50:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-18 13:50:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 08:18:52] [错误] binance GET https://fap"
+      },
+      {
+        "time": "2026-05-18 13:50:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-18 13:50:02",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-18 13:55:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-18 13:55:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=3389156 运行中"
+      },
+      {
+        "time": "2026-05-18 13:55:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$76902.6"
+      },
+      {
+        "time": "2026-05-18 13:55:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=46.3 %b=0.413 vol=0.00x | 1h: ADX=33.7 vol=0.60x | 4h: RSI=31.0 ADX=39.0 | 1d: RSI=44.9 %b=0.159"
+      },
+      {
+        "time": "2026-05-18 13:55:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-18 13:55:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-18 13:55:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-18 13:55:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 08:18:52] [错误] binance GET https://fap"
+      },
+      {
+        "time": "2026-05-18 13:55:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-18 13:55:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-18 14:00:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-18 14:00:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=3389156 运行中"
+      },
+      {
+        "time": "2026-05-18 14:00:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$76886.5"
+      },
+      {
+        "time": "2026-05-18 14:00:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=45.0 %b=0.328 vol=0.00x | 1h: ADX=33.7 vol=0.66x | 4h: RSI=30.9 ADX=39.0 | 1d: RSI=44.9 %b=0.157"
+      },
+      {
+        "time": "2026-05-18 14:00:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-18 14:00:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-18 14:00:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-18 14:00:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 08:18:52] [错误] binance GET https://fap"
+      },
+      {
+        "time": "2026-05-18 14:00:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-18 14:00:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-18 14:05:01",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-18 14:05:01",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=3389156 运行中"
+      },
+      {
+        "time": "2026-05-18 14:05:01",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$76811.7"
+      },
+      {
+        "time": "2026-05-18 14:05:01",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=39.2 %b=0.073 vol=0.01x | 1h: ADX=34.9 vol=0.05x | 4h: RSI=30.4 ADX=39.0 | 1d: RSI=44.6 %b=0.148"
+      },
+      {
+        "time": "2026-05-18 14:05:01",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-18 14:05:01",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-18 14:05:01",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-18 14:05:01",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 08:18:52] [错误] binance GET https://fap"
+      },
+      {
+        "time": "2026-05-18 14:05:01",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-18 14:05:01",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-18 14:10:02",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-18 14:10:02",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=3389156 运行中"
+      },
+      {
+        "time": "2026-05-18 14:10:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$76680.1"
+      },
+      {
+        "time": "2026-05-18 14:10:02",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=31.6 %b=-0.120 vol=0.02x | 1h: ADX=35.1 vol=0.25x | 4h: RSI=29.7 ADX=39.0 | 1d: RSI=44.2 %b=0.133"
+      },
+      {
+        "time": "2026-05-18 14:10:02",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-18 14:10:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-18 14:10:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-18 14:10:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 08:18:52] [错误] binance GET https://fap"
+      },
+      {
+        "time": "2026-05-18 14:10:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-18 14:10:02",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-18 14:15:02",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-18 14:15:02",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=3389156 运行中"
+      },
+      {
+        "time": "2026-05-18 14:15:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$76847.2"
+      },
+      {
+        "time": "2026-05-18 14:15:02",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=45.9 %b=0.255 vol=0.00x | 1h: ADX=35.3 vol=0.82x | 4h: RSI=30.6 ADX=39.1 | 1d: RSI=44.7 %b=0.152"
+      },
+      {
+        "time": "2026-05-18 14:15:02",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-18 14:15:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-18 14:15:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-18 14:15:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 08:18:52] [错误] binance GET https://fap"
+      },
+      {
+        "time": "2026-05-18 14:15:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-18 14:15:02",
+        "item": "通知队列",
+        "status": "✅ OK",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-18 14:20:02",
+    "checks_ok": 9,
+    "checks_fail": 0,
+    "items": [
+      {
+        "time": "2026-05-18 14:20:02",
+        "item": "进程状态",
+        "status": "✅ OK",
+        "detail": "PID=3389156 运行中"
+      },
+      {
+        "time": "2026-05-18 14:20:02",
+        "item": "API数据",
+        "status": "✅ OK",
+        "detail": "各周期数据正常，最新价格=$76790.1"
+      },
+      {
+        "time": "2026-05-18 14:20:02",
+        "item": "策略指标",
+        "status": "✅ OK",
+        "detail": "5m: RSI=42.6 %b=0.106 vol=1.39x | 1h: ADX=35.3 vol=0.94x | 4h: RSI=30.2 ADX=39.1 | 1d: RSI=44.5 %b=0.143"
+      },
+      {
+        "time": "2026-05-18 14:20:02",
+        "item": "指标数据",
+        "status": "✅ OK",
+        "detail": "ATR/RSI/布林/ADX/成交量均正常"
+      },
+      {
+        "time": "2026-05-18 14:20:02",
+        "item": "持仓同步",
+        "status": "✅ OK",
+        "detail": "一致，state和交易所均有1仓"
+      },
+      {
+        "time": "2026-05-18 14:20:02",
+        "item": "State文件",
+        "status": "✅ OK",
+        "detail": "in_position=True, 持仓数=1"
+      },
+      {
+        "time": "2026-05-18 14:20:02",
+        "item": "WorkLog",
+        "status": "✅ OK",
+        "detail": "最近错误(进程运行中，忽略历史): [2026-05-18 08:18:52] [错误] binance GET https://fap"
+      },
+      {
+        "time": "2026-05-18 14:20:02",
+        "item": "交易统计",
+        "status": "✅ OK",
+        "detail": "文件不存在"
+      },
+      {
+        "time": "2026-05-18 14:20:02",
         "item": "通知队列",
         "status": "✅ OK",
         "detail": "无积压"
