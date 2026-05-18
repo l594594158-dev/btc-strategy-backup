@@ -952,8 +952,8 @@ def print_status(data, state):
 
 # ========== 主循环 ==========
 def main():
-    log(f"🚀 BTC自动交易启动 v2.18 | {POLL_INTERVAL}秒轮询 | {LEVERAGE}x | 首仓{INITIAL_QTY}+补仓{ADDON_QTY}BTC | 上限{MAX_POSITIONS_PER_DIR}仓")
-    log(f"v2.18: 全局4h ADX<35统一过滤 | v2.17: 补仓ADX保护")
+    log(f"🚀 BTC自动交易启动 v2.21 | {POLL_INTERVAL}秒轮询 | {LEVERAGE}x | 首仓{INITIAL_QTY}+补仓{ADDON_QTY}BTC | 上限{MAX_POSITIONS_PER_DIR}仓")
+    log(f"v2.21: 信号1 RSI 30→20 | 信号3/6 1h ADX→<30 | v2.18: 全局4h ADX<35")
     log(f"v2.10: 补仓撤销旧SL/TP，以新均价重新挂单 | 有信号就开仓追加")
     stats = load_stats()
     if stats.get('consecutive_losses', 0) > 0:
