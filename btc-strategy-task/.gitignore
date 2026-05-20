@@ -1,1 +1,3 @@
 logs/auto_trade.log
+backtest_data/*.pkl
+logs/auto_trade*.log
