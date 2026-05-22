@@ -33,7 +33,7 @@ binance = ccxt.binance({
 SYMBOL = 'BTC/USDT:USDT'
 
 # ========== 全局参数 ==========
-QTY = 0.03                # 每仓 0.03 BTC
+QTY = 0.003               # 每仓 0.003 BTC
 LEVERAGE = 50             # 50x 逐仓
 TP_PCT = 2.5 / 100        # 止盈 +2.5%
 SL_PCT = 1.5 / 100        # 止损 -1.5%

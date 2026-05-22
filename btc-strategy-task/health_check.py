@@ -21,7 +21,7 @@ SECRET = "Ozht5MjazUu4JKhSLqx4ASmTBH4wlUMdbABOblxXGyhIuof1jhrzUEr9JkWHpUHM"
 SYMBOL = 'BTC/USDT:USDT'
 LEVERAGE = 50
 TP_PCT = 0.025; SL_PCT = 0.015
-QTY = 0.03
+QTY = 0.003
 
 os.makedirs(LOG_DIR, exist_ok=True)
 
