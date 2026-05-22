@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-BTC v4.0 趋势回调策略 · 自检脚本
+BTC v4.1 趋势回调策略 · 自检脚本
 - 每5分钟执行一次自动检查
 - 检查进程运行、API数据、持仓同步、策略状态
 - 发现问题自动修复并通知
@@ -21,7 +21,7 @@ SECRET = "Ozht5MjazUu4JKhSLqx4ASmTBH4wlUMdbABOblxXGyhIuof1jhrzUEr9JkWHpUHM"
 SYMBOL = 'BTC/USDT:USDT'
 LEVERAGE = 50
 TP_PCT = 0.025; SL_PCT = 0.015
-QTY = 0.001
+QTY = 0.003
 
 os.makedirs(LOG_DIR, exist_ok=True)
 
@@ -42,21 +42,46 @@ def get_data():
         'k1d': ex.fetch_ohlcv(SYMBOL, '1d', limit=200),
     }
 
-def calc_indicator(kline_data):
-    """v4.0 指标: SMA20, RSI14, ADX14, 成交量比值"""
+# ========== v4.1 指标计算（4个独立函数）==========
+
+def calc_5m(kline_data):
     df = pd.DataFrame(kline_data, columns=['t','o','h','l','c','v'])
-    c = df['c'].astype(float); h = df['h'].astype(float)
-    l = df['l'].astype(float); v = df['v'].astype(float)
-    lv = len(df)-1
-    if len(df) < 20: return None
-    sma20 = ta.trend.SMAIndicator(c, 20).sma_indicator().iloc[lv]
-    rsi14 = ta.momentum.RSIIndicator(c, 14).rsi().iloc[lv]
-    avg_v = v.iloc[max(0,lv-19):lv+1].mean()
-    vol_r = v.iloc[lv]/avg_v if avg_v>0 else 1
-    try:
-        adx = ta.trend.ADXIndicator(h,l,c,14).adx().iloc[lv]
-    except: adx = 25
-    return {'price':c.iloc[lv],'sma20':sma20,'rsi14':rsi14,'adx':adx,'vol_ratio':vol_r}
+    c=df['c'].astype(float); h=df['h'].astype(float); l=df['l'].astype(float); v=df['v'].astype(float)
+    lv=len(df)-1; clv=max(0,lv-1)
+    if len(df)<20: return None
+    price = c.iloc[lv]
+    sma20 = ta.trend.SMAIndicator(c,20).sma_indicator().iloc[lv]
+    rsi = ta.momentum.RSIIndicator(c,14).rsi().iloc[lv]
+    avg_v = v.iloc[max(0,clv-19):clv+1].mean()
+    vol_r = v.iloc[clv]/avg_v if avg_v>0 else 1
+    return {'price':price,'sma20':sma20,'rsi':rsi,'vol_ratio':vol_r}
+
+def calc_1h(kline_data):
+    df = pd.DataFrame(kline_data, columns=['t','o','h','l','c','v'])
+    c=df['c'].astype(float); h=df['h'].astype(float); l=df['l'].astype(float)
+    clv=max(0,len(df)-2)
+    if len(df)<20: return None
+    try: adx=ta.trend.ADXIndicator(h,l,c,14).adx().iloc[clv]
+    except: adx=25
+    return {'adx_closed':adx}
+
+def calc_4h(kline_data):
+    df = pd.DataFrame(kline_data, columns=['t','o','h','l','c','v'])
+    c=df['c'].astype(float); h=df['h'].astype(float); l=df['l'].astype(float)
+    clv=max(0,len(df)-2)
+    if len(df)<20: return None
+    cc=c.iloc[clv]
+    sc=ta.trend.SMAIndicator(c,20).sma_indicator().iloc[clv]
+    try: ac=ta.trend.ADXIndicator(h,l,c,14).adx().iloc[clv]
+    except: ac=25
+    return {'close_closed':cc,'sma_closed':sc,'adx_closed':ac}
+
+def calc_1d(kline_data):
+    df = pd.DataFrame(kline_data, columns=['t','o','h','l','c','v'])
+    c=df['c'].astype(float)
+    clv=max(0,len(df)-2)
+    if len(df)<20: return None
+    return {'close_closed':c.iloc[clv],'sma_closed':ta.trend.SMAIndicator(c,20).sma_indicator().iloc[clv]}
 
 class HealthChecker:
     def __init__(self):
@@ -97,27 +122,29 @@ class HealthChecker:
             price = data['k5m'][-1][4]
             self.ok('API数据', f'各周期正常, 最新${price:,.0f}')
 
-            # v4.0 指标检查
-            r5 = calc_indicator(data['k5m'])
-            r1 = calc_indicator(data['k1h'])
-            r4 = calc_indicator(data['k4h'])
-            rd = calc_indicator(data['k1d'])
+            # v4.1 指标检查 (4个独立函数)
+            r5 = calc_5m(data['k5m'])
+            r1 = calc_1h(data['k1h'])
+            r4 = calc_4h(data['k4h'])
+            rd = calc_1d(data['k1d'])
             if any(v is None for v in [r5,r1,r4,rd]):
                 self.fail('策略指标', '计算失败', 'retry')
                 return
 
             pct_sma = (r5['price']-r5['sma20'])/r5['sma20']*100
+            h4_trend = '多' if r4['close_closed']>r4['sma_closed'] else '空'
+            d1_trend = '多' if rd['close_closed']>rd['sma_closed'] else '空'
             info = (f"${r5['price']:,.0f} | SMA5距{pct_sma:+.1f}% | "
-                    f"RSI5={r5['rsi14']:.0f} | 1hADX={r1['adx']:.0f} | "
-                    f"4hADX={r4['adx']:.0f} | 量比={r5['vol_ratio']:.1f}x")
+                    f"RSI5={r5['rsi']:.0f} | 1hADX={r1['adx_closed']:.0f} | "
+                    f"4hADX={r4['adx_closed']:.0f} | 量比={r5['vol_ratio']:.1f}x | "
+                    f"4h闭K{h4_trend}/1d闭K{d1_trend}")
             self.ok('策略指标', info)
 
-            # 检查RSI有效性
-            if r5['rsi14'] <= 0 or r5['rsi14'] >= 100:
-                self.fail('RSI异常', f'{r5["rsi14"]}', 'retry')
-            # 检查SMA20有效性
-            if r4['sma20'] <= 0:
-                self.fail('SMA20_4h异常', f'{r4["sma20"]}', 'retry')
+            # 有效性检查
+            if r5['rsi'] <= 0 or r5['rsi'] >= 100:
+                self.fail('RSI异常', f'{r5["rsi"]}', 'retry')
+            if r4['sma_closed'] <= 0:
+                self.fail('SMA20_4h异常', f'{r4["sma_closed"]}', 'retry')
 
         except ccxt.NetworkError as e:
             self.fail('API网络', str(e)[:50], 'network')
@@ -142,7 +169,6 @@ class HealthChecker:
                 log(f"持仓不一致: 交易所LONG={long_ex}/SHORT={short_ex} vs state LONG={st_long}/SHORT={st_short}")
                 if not long_ex: state['long_pos'] = None
                 if not short_ex: state['short_pos'] = None
-                # 交易所多出的仓位不导入state（v4.0自行开仓）
                 new_long = state.get('long_pos') is not None
                 new_short = state.get('short_pos') is not None
                 with open(STATE_FILE,'w') as f: json.dump(state, f, default=str)
@@ -185,12 +211,9 @@ class HealthChecker:
             if os.path.exists(NOTIFY_QUEUE):
                 with open(NOTIFY_QUEUE) as f:
                     q = json.load(f)
-                pending = []
                 items = q if isinstance(q, list) else [q]
-                for x in items:
-                    if isinstance(x, dict) and not x.get('sent', True):
-                        pending.append(x)
-                self.ok('通知队列', f'待发送{len(pending)}条' if pending else '无积压')
+                pending = sum(1 for x in items if isinstance(x, dict) and not x.get('sent', True))
+                self.ok('通知队列', f'待发送{pending}条' if pending else '无积压')
             else:
                 self.ok('通知队列', '无积压')
         except Exception as e:
@@ -202,7 +225,7 @@ class HealthChecker:
                 subprocess.run(['pkill','-f','auto_trade.py'], capture_output=True)
                 time.sleep(2)
                 subprocess.Popen(
-                    f'cd {TASK_DIR} && python3 -u auto_trade.py > logs/auto_trade_$(date +%Y%m%d_%H%M%S).log 2>&1 &',
+                    f'cd {TASK_DIR} && python3 -u auto_trade.py > logs/v41_$(date +%Y%m%d_%H%M%S).log 2>&1 &',
                     shell=True, preexec_fn=os.setsid)
                 return '已重启'
             elif fix == 'network': return '等待网络恢复'
@@ -211,7 +234,7 @@ class HealthChecker:
 
     def run(self):
         log('='*50)
-        log('🔍 BTC v4.0 自检')
+        log('🔍 BTC v4.1 自检')
         log('='*50)
 
         self.check_process()
@@ -246,27 +269,25 @@ class HealthChecker:
             for fr in fixes_done:
                 f.write(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] ✅ {fr}\n")
 
-        # 有问题发通知（含v4.0策略摘要）
+        # 有问题发通知（含v4.1策略快照）
         if self.checks_fail > 0:
-            # 补充策略快照
             snapshot = ''
             try:
                 data = get_data()
-                r5 = calc_indicator(data['k5m'])
-                r1 = calc_indicator(data['k1h'])
-                r4 = calc_indicator(data['k4h'])
-                rd = calc_indicator(data['k1d'])
+                r5 = calc_5m(data['k5m']); r1 = calc_1h(data['k1h'])
+                r4 = calc_4h(data['k4h']); rd = calc_1d(data['k1d'])
                 if all(v is not None for v in [r5,r1,r4,rd]):
                     pct = (r5['price']-r5['sma20'])/r5['sma20']*100
-                    trend4 = '多' if r5['price']>r4['sma20'] else '空'
-                    trend1 = '多' if r5['price']>rd['sma20'] else '空'
-                    sig_long = (trend4=='多' and trend1=='多' and abs(pct)<=1 and r1['adx']>25 and r4['adx']<40 and r5['vol_ratio']>=1 and r5['rsi14']>40)
-                    sig_short = (trend4=='空' and trend1=='空' and abs(pct)<=1 and r1['adx']>25 and r4['adx']<40 and r5['vol_ratio']>=1 and r5['rsi14']<60)
-                    sig = '🟢LONG' if sig_long else ('🔴SHORT' if sig_short else '⏳观望')
-                    snapshot = (f"\n📊 v4.0快照: ${r5['price']:,.0f} | 4h{trend4}/1d{trend1} | "
-                               f"RSI{r5['rsi14']:.0f} | 1hADX{r1['adx']:.0f} | 信号:{sig}")
+                    h4b=r4['close_closed']>r4['sma_closed']; d1b=rd['close_closed']>rd['sma_closed']
+                    sig=None
+                    if r1['adx_closed']>25 and r4['adx_closed']<40 and abs(pct)<=1 and r5['vol_ratio']>=1:
+                        if h4b and d1b and r5['rsi']>40: sig='LONG'
+                        elif not h4b and not d1b and r5['rsi']<60: sig='SHORT'
+                    snapshot = (f"\n📊 v4.1快照: ${r5['price']:,.0f} | "
+                               f"4h闭K{'多'if h4b else'空'}/1d闭K{'多'if d1b else'空'} | "
+                               f"RSI{r5['rsi']:.0f} | 1hADX{r1['adx_closed']:.0f} | 信号:{sig or '观望'}")
             except: pass
-            msg = f"🔴 v4.0 自检发现{self.checks_fail}项问题{snapshot}\n"
+            msg = f"🔴 v4.1 自检发现{self.checks_fail}项问题{snapshot}\n"
             for item in self.results:
                 if item['status'] == '❌':
                     msg += f"• {item['item']}: {item['detail']}\n"
