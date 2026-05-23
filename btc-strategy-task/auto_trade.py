@@ -409,15 +409,18 @@ def cancel_algo_orders(direction, reason=''):
             and a.get('algoStatus') not in ('CANCELED', 'FINISHED', 'EXPIRED')
         ]
         if to_cancel:
+            cancelled = 0
             for a in to_cancel:
                 try:
                     binance.fapiprivate_delete_algoorder({
                         'symbol': 'BTCUSDT',
-                        'algoOrderId': a['algoId']
+                        'algoid': a['algoId']
                     })
+                    cancelled += 1
                 except Exception as e:
                     log(f"⚠️ 撤单失败 algoId={a.get('algoId')}: {e}")
-            log(f"🧹 已撤{direction} {len(to_cancel)}条algo {reason}")
+            if cancelled > 0:
+                log(f"🧹 已撤{direction} {cancelled}/{len(to_cancel)}条algo {reason}")
     except Exception as e:
         log(f"⚠️ 查询algo失败: {e}")
 
