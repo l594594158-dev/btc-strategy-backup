@@ -41,7 +41,7 @@ SYMBOL = 'BTC/USDT:USDT'       # 合约交易对 (下单用)
 SYMBOL_SPOT = 'BTC/USDT'       # 现货交易对 (K线用)
 
 # ========== 全局参数 ==========
-QTY = 0.007               # 每仓 0.007 BTC
+QTY = 0.035               # 每仓 0.035 BTC
 LEVERAGE = 50             # 50x 逐仓
 TP_PCT = 2.5 / 100        # 止盈 +2.5%
 SL_PCT = 1.5 / 100        # 止损 -1.5%

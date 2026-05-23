@@ -1,6 +1,25 @@
 {
-  "long_pos": null,
-  "short_pos": null,
   "last_long_signal": false,
-  "last_short_signal": false
+  "last_short_signal": true,
+  "short_pos": {
+    "entry_price": 75196.2,
+    "qty": 0.007,
+    "sl": 76358.1,
+    "tp": 73348.9,
+    "open_time": "2026-05-23T15:33:13.272138",
+    "reason": {
+      "name": "SHORT-\u987a\u52bf\u6478\u9876",
+      "price": 75229.69,
+      "sma5": 75406.0015,
+      "pct_sma": -0.2338162699158583,
+      "rsi5": 21.322323482985112,
+      "adx_1h": 47.08082421985369,
+      "adx_4h": 31.219851997462886,
+      "close_4h": 75635.22,
+      "sma_4h": 77153.1605,
+      "close_1d": 75539.5,
+      "sma_1d": 79289.29400000001,
+      "vol_ratio": 1.7085967882012711
+    }
+  }
 }
