@@ -398,59 +398,64 @@ def do_open(direction, reason):
 
 # ========== 五、被动出场: SL/TP 挂单 ==========
 
-def ensure_sl_tp(direction, qty, sl_price, tp_price):
-    """
-    被动挂止损止盈单，不重复挂。
-    先检查已有活动条件单，缺失则补挂。
-    """
+def cancel_algo_orders(direction, reason=''):
+    """撤销指定方向所有活动algo订单"""
     try:
         algos = binance.fapiprivate_get_openalgoorders({'symbol': 'BTCUSDT'})
-        active_algos = [
-            o for o in algos
-            if o.get('algoStatus') not in ('CANCELED', 'FINISHED', 'EXPIRED')
+        pos_side = direction
+        to_cancel = [
+            a for a in algos
+            if a.get('positionSide') == pos_side
+            and a.get('algoStatus') not in ('CANCELED', 'FINISHED', 'EXPIRED')
         ]
+        if to_cancel:
+            for a in to_cancel:
+                try:
+                    binance.fapiprivate_delete_algoorder({
+                        'symbol': 'BTCUSDT',
+                        'algoOrderId': a['algoId']
+                    })
+                except Exception as e:
+                    log(f"⚠️ 撤单失败 algoId={a.get('algoId')}: {e}")
+            log(f"🧹 已撤{direction} {len(to_cancel)}条algo {reason}")
     except Exception as e:
-        log(f"⚠️ 查询挂单失败: {e}")
-        return
+        log(f"⚠️ 查询algo失败: {e}")
 
+def cancel_all_algo_orders():
+    """启动时清空所有algo订单"""
+    for d in ['LONG', 'SHORT']:
+        cancel_algo_orders(d, '启动清盘')
+
+def ensure_sl_tp(direction, qty, sl_price, tp_price):
+    """
+    被动挂止损止盈单。先撤该方向所有旧algo，再挂新的。
+    """
+    # 先撤旧单
+    cancel_algo_orders(direction, '重挂SLTP')
+    
     pos_side = direction
-    pos_close = 'SELL' if direction == 'LONG' else 'BUY'
 
-    # 检查止损
-    has_sl = any(
-        a.get('positionSide') == pos_side
-        and a.get('closePosition', False) != True
-        and a.get('algoType') == 'STOP_MARKET'
-        for a in active_algos
-    )
-    if not has_sl:
-        try:
-            close_side = 'sell' if direction == 'LONG' else 'buy'
-            binance.create_order(
-                SYMBOL, 'STOP_MARKET', close_side, qty,
-                params={'stopPrice': sl_price, 'positionSide': pos_side}
-            )
-            log(f"✅ 止损已挂: ${sl_price:,.1f}")
-        except Exception as e:
-            log(f"⚠️ 挂止损失败: {e}")
+    # 挂止损
+    try:
+        close_side = 'sell' if direction == 'LONG' else 'buy'
+        binance.create_order(
+            SYMBOL, 'STOP_MARKET', close_side, qty,
+            params={'stopPrice': sl_price, 'positionSide': pos_side}
+        )
+        log(f"✅ 止损已挂: ${sl_price:,.1f}")
+    except Exception as e:
+        log(f"⚠️ 挂止损失败: {e}")
 
-    # 检查止盈
-    has_tp = any(
-        a.get('positionSide') == pos_side
-        and a.get('algoType') == 'TAKE_PROFIT_MARKET'
-        for a in active_algos
-    )
-    if not has_tp:
-        try:
-            close_side = 'sell' if direction == 'LONG' else 'buy'
-            binance.create_order(
-                SYMBOL, 'TAKE_PROFIT_MARKET', close_side, qty,
-                params={'stopPrice': tp_price, 'positionSide': pos_side}
-            )
-            log(f"✅ 止盈已挂: ${tp_price:,.1f}")
-        except Exception as e:
-            log(f"⚠️ 挂止盈失败: {e}")
-
+    # 挂止盈
+    try:
+        close_side = 'sell' if direction == 'LONG' else 'buy'
+        binance.create_order(
+            SYMBOL, 'TAKE_PROFIT_MARKET', close_side, qty,
+            params={'stopPrice': tp_price, 'positionSide': pos_side}
+        )
+        log(f"✅ 止盈已挂: ${tp_price:,.1f}")
+    except Exception as e:
+        log(f"⚠️ 挂止盈失败: {e}")
 # ========== 六、主动出场: pnl检查 ==========
 
 def manage_positions(state):
@@ -517,6 +522,7 @@ def manage_positions(state):
                 state[pos_key] = None
                 state[f'last_{direction.lower()}_signal'] = False
                 changed = True
+                cancel_algo_orders(direction, '主动止损')
             except Exception as e:
                 log(f"❌ 主动止损失败: {e}")
 
@@ -539,6 +545,7 @@ def manage_positions(state):
                 state[pos_key] = None
                 state[f'last_{direction.lower()}_signal'] = False
                 changed = True
+                cancel_algo_orders(direction, '主动止盈')
             except Exception as e:
                 log(f"❌ 主动止盈失败: {e}")
 
@@ -576,6 +583,7 @@ def check_close(state):
         state['long_pos'] = None
         state['last_long_signal'] = False
         changed = True
+        cancel_algo_orders('LONG', '被动平仓')
 
     if state.get('short_pos') and not short_alive:
         pos = state['short_pos']
@@ -585,6 +593,7 @@ def check_close(state):
         state['short_pos'] = None
         state['last_short_signal'] = False
         changed = True
+        cancel_algo_orders('SHORT', '被动平仓')
 
     if changed:
         save_state(state)
@@ -638,6 +647,9 @@ def main():
     log(f"QTY={QTY} | LEV={LEVERAGE}x | TP=+{TP_PCT*100}% SL=-{SL_PCT*100}%")
     log(f"LONG: 4h多+1d多(闭K) + 5mSMA±1% + 1hADX>25(闭) + 4hADX<40(闭) + RSI>40 + 量≥1.0(闭)")
     log(f"SHORT: 4h空+1d空(闭K) + 5mSMA±1% + 1hADX>25(闭) + 4hADX<40(闭) + RSI<60 + 量≥1.0(闭)")
+
+    # 启动时清盘所有algo订单
+    cancel_all_algo_orders()
 
     # 启动时同步持仓状态
     state = load_state()
