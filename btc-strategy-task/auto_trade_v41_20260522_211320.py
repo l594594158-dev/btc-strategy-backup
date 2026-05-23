@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
-BTC合约 趋势回调策略 v4.2
+BTC合约 趋势回调策略 v4.1
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-· 现货K线指标 + 合约执行（与回测同源）
 · 方向用闭K: 4h/1d取已关闭收盘价，冻结不跳
 · ADX用闭K: 1h/4h ADX取已关闭，冻结不跳
 · 成交量用闭K: 验证上一根5m放量
@@ -25,23 +24,16 @@ from datetime import datetime
 API_KEY = "CUPwmVULosVO24NBKmoaMm0pvga2msasOa4nBhvPvybrGdA2RcXBYA4aRtGMZjWH"
 SECRET = "Ozht5MjazUu4JKhSLqx4ASmTBH4wlUMdbABOblxXGyhIuof1jhrzUEr9JkWHpUHM"
 
-# 合约客户端 — 仅用于下单/仓位
 binance = ccxt.binance({
     'apiKey': API_KEY,
     'secret': SECRET,
     'options': {'defaultType': 'swap', 'defaultPositionSide': 'LONG', 'marginMode': 'isolated'}
 })
 
-# 现货客户端 — 仅用于K线指标计算
-binance_spot = ccxt.binance({
-    'options': {'defaultType': 'spot'}
-})
-
-SYMBOL = 'BTC/USDT:USDT'       # 合约交易对 (下单用)
-SYMBOL_SPOT = 'BTC/USDT'       # 现货交易对 (K线用)
+SYMBOL = 'BTC/USDT:USDT'
 
 # ========== 全局参数 ==========
-QTY = 0.007               # 每仓 0.007 BTC
+QTY = 0.003               # 每仓 0.003 BTC
 LEVERAGE = 50             # 50x 逐仓
 TP_PCT = 2.5 / 100        # 止盈 +2.5%
 SL_PCT = 1.5 / 100        # 止损 -1.5%
@@ -98,10 +90,10 @@ def send_wechat(msg):
 
 # ========== 一、数据获取 ==========
 def get_data():
-    k5m = binance_spot.fetch_ohlcv(SYMBOL_SPOT, timeframe='5m', limit=LIMIT_5M)
-    k1h = binance_spot.fetch_ohlcv(SYMBOL_SPOT, timeframe='1h', limit=LIMIT_1H)
-    k4h = binance_spot.fetch_ohlcv(SYMBOL_SPOT, timeframe='4h', limit=LIMIT_4H)
-    k1d = binance_spot.fetch_ohlcv(SYMBOL_SPOT, timeframe='1d', limit=LIMIT_1D)
+    k5m = binance.fetch_ohlcv(SYMBOL, timeframe='5m', limit=LIMIT_5M)
+    k1h = binance.fetch_ohlcv(SYMBOL, timeframe='1h', limit=LIMIT_1H)
+    k4h = binance.fetch_ohlcv(SYMBOL, timeframe='4h', limit=LIMIT_4H)
+    k1d = binance.fetch_ohlcv(SYMBOL, timeframe='1d', limit=LIMIT_1D)
     return k5m, k1h, k4h, k1d
 
 # ========== 二、指标计算（4个独立函数）==========
@@ -381,7 +373,7 @@ def do_open(direction, reason):
         f"量比: {reason['vol_ratio']:.1f}x"
     )
     wechat_msg = (
-        f"🚨 BTC v4.2 开仓\n"
+        f"🚨 BTC v4.1 开仓\n"
         f"━━━━━━━━━━━━━━━━\n"
         f"方向: {'🟢LONG📈' if direction == 'LONG' else '🔴SHORT📉'}\n"
         f"数量: {QTY} BTC | 杠杆: {LEVERAGE}x\n"
@@ -508,7 +500,7 @@ def manage_positions(state):
                     params={'positionSide': direction, 'reduceOnly': True}
                 )
                 send_wechat(
-                    f"🛑 BTC v4.2 主动止损\n"
+                    f"🛑 BTC v4.1 主动止损\n"
                     f"{direction} {qty}BTC @ ${entry:,.2f}\n"
                     f"触发价: ${mark_price:,.1f} | pnl: {pnl_pct:+.2f}%\n"
                     f"⏰ {datetime.now().strftime('%H:%M:%S')}"
@@ -530,7 +522,7 @@ def manage_positions(state):
                     params={'positionSide': direction, 'reduceOnly': True}
                 )
                 send_wechat(
-                    f"🎯 BTC v4.2 主动止盈\n"
+                    f"🎯 BTC v4.1 主动止盈\n"
                     f"{direction} {qty}BTC @ ${entry:,.2f}\n"
                     f"触发价: ${mark_price:,.1f} | pnl: {pnl_pct:+.2f}%\n"
                     f"⏰ {datetime.now().strftime('%H:%M:%S')}"
@@ -571,7 +563,7 @@ def check_close(state):
     if state.get('long_pos') and not long_alive:
         pos = state['long_pos']
         log(f"📤 LONG已平仓 | 开仓=${pos['entry_price']:,.2f}")
-        send_wechat(f"✅ BTC v4.2 平仓\nLONG {pos['qty']}BTC @ ${pos['entry_price']:,.2f}\n⏰ {datetime.now().strftime('%H:%M:%S')}")
+        send_wechat(f"✅ BTC v4.1 平仓\nLONG {pos['qty']}BTC @ ${pos['entry_price']:,.2f}\n⏰ {datetime.now().strftime('%H:%M:%S')}")
         work_log('平仓', f"LONG {pos['qty']}BTC @ {pos['entry_price']}")
         state['long_pos'] = None
         state['last_long_signal'] = False
@@ -580,7 +572,7 @@ def check_close(state):
     if state.get('short_pos') and not short_alive:
         pos = state['short_pos']
         log(f"📤 SHORT已平仓 | 开仓=${pos['entry_price']:,.2f}")
-        send_wechat(f"✅ BTC v4.2 平仓\nSHORT {pos['qty']}BTC @ ${pos['entry_price']:,.2f}\n⏰ {datetime.now().strftime('%H:%M:%S')}")
+        send_wechat(f"✅ BTC v4.1 平仓\nSHORT {pos['qty']}BTC @ ${pos['entry_price']:,.2f}\n⏰ {datetime.now().strftime('%H:%M:%S')}")
         work_log('平仓', f"SHORT {pos['qty']}BTC @ {pos['entry_price']}")
         state['short_pos'] = None
         state['last_short_signal'] = False
@@ -620,7 +612,7 @@ def print_status(r5, r1, r4, rd, state, signal, reason):
 
     print(f"""
 ╔════════════════════════════════════════════╗
-║  BTC v4.2 趋势回调  |  {pos_str}
+║  BTC v4.1 趋势回调  |  {pos_str}
 ╠════════════════════════════════════════════╣
 ║  💰 ${price:>12,.2f}  | 距SMA5 {pct_sma:+.1f}%  | RSI {rsi5:.1f}         ║
 ║  4h闭K: ${c4h:,.0f} vs SMA${s4h:,.0f} → {trend4}头          ║
@@ -634,7 +626,7 @@ def print_status(r5, r1, r4, rd, state, signal, reason):
 # ========== 九、主循环 ==========
 
 def main():
-    log("═══════════ BTC v4.2 启动 ═══════════")
+    log("═══════════ BTC v4.1 启动 ═══════════")
     log(f"QTY={QTY} | LEV={LEVERAGE}x | TP=+{TP_PCT*100}% SL=-{SL_PCT*100}%")
     log(f"LONG: 4h多+1d多(闭K) + 5mSMA±1% + 1hADX>25(闭) + 4hADX<40(闭) + RSI>40 + 量≥1.0(闭)")
     log(f"SHORT: 4h空+1d空(闭K) + 5mSMA±1% + 1hADX>25(闭) + 4hADX<40(闭) + RSI<60 + 量≥1.0(闭)")

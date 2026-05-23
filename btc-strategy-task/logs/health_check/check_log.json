@@ -1,6 +1,6 @@
 [
   {
-    "time": "2026-05-21T17:40:06.883512",
+    "time": "2026-05-22T17:45:07.080581",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -12,12 +12,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,640"
+        "detail": "各周期正常, 最新$77,281"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,640 | SMA5距-0.3% | RSI5=33 | 1hADX=14 | 4hADX=35 | 量比=1.1x"
+        "detail": "$77,281 | SMA5距-0.0% | RSI5=47 | 1hADX=12 | 4hADX=28 | 量比=0.7x"
       },
       {
         "item": "持仓同步",
@@ -43,7 +43,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T17:45:07.155492",
+    "time": "2026-05-22T17:50:06.918131",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -55,12 +55,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,657"
+        "detail": "各周期正常, 最新$77,277"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,657 | SMA5距-0.3% | RSI5=35 | 1hADX=14 | 4hADX=35 | 量比=0.0x"
+        "detail": "$77,277 | SMA5距-0.0% | RSI5=47 | 1hADX=12 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -86,7 +86,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T17:50:06.458882",
+    "time": "2026-05-22T17:55:06.824642",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -98,12 +98,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,677"
+        "detail": "各周期正常, 最新$77,303"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,677 | SMA5距-0.2% | RSI5=37 | 1hADX=14 | 4hADX=35 | 量比=0.0x"
+        "detail": "$77,303 | SMA5距+0.0% | RSI5=50 | 1hADX=12 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -129,7 +129,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T17:55:06.441591",
+    "time": "2026-05-22T18:00:08.395218",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -141,12 +141,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,622"
+        "detail": "各周期正常, 最新$77,270"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,622 | SMA5距-0.3% | RSI5=34 | 1hADX=14 | 4hADX=35 | 量比=0.7x"
+        "detail": "$77,270 | SMA5距-0.0% | RSI5=46 | 1hADX=12 | 4hADX=28 | 量比=0.4x"
       },
       {
         "item": "持仓同步",
@@ -172,7 +172,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T18:00:07.655463",
+    "time": "2026-05-22T18:05:07.246129",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -184,12 +184,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,585"
+        "detail": "各周期正常, 最新$77,256"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,585 | SMA5距-0.3% | RSI5=31 | 1hADX=14 | 4hADX=35 | 量比=0.1x"
+        "detail": "$77,256 | SMA5距-0.0% | RSI5=45 | 1hADX=12 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -215,7 +215,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T18:05:06.818687",
+    "time": "2026-05-22T18:10:08.711424",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -227,12 +227,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,617"
+        "detail": "各周期正常, 最新$77,306"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,617 | SMA5距-0.2% | RSI5=35 | 1hADX=13 | 4hADX=35 | 量比=0.0x"
+        "detail": "$77,306 | SMA5距+0.1% | RSI5=51 | 1hADX=12 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -258,652 +258,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T18:10:07.367354",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,630"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,630 | SMA5距-0.2% | RSI5=36 | 1hADX=13 | 4hADX=35 | 量比=1.1x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T18:15:07.631228",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,600"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,600 | SMA5距-0.2% | RSI5=34 | 1hADX=13 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T18:20:06.823168",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,628"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,628 | SMA5距-0.2% | RSI5=38 | 1hADX=13 | 4hADX=35 | 量比=0.8x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T18:25:06.492132",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,634"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,634 | SMA5距-0.1% | RSI5=39 | 1hADX=13 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T18:30:06.781636",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,349"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,349 | SMA5距-0.5% | RSI5=23 | 1hADX=14 | 4hADX=36 | 量比=9.8x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T18:35:06.221668",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,402"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,402 | SMA5距-0.4% | RSI5=29 | 1hADX=14 | 4hADX=36 | 量比=2.2x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T18:40:07.419547",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,210"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,210 | SMA5距-0.6% | RSI5=22 | 1hADX=14 | 4hADX=36 | 量比=1.2x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T18:45:07.313931",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,325"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,325 | SMA5距-0.4% | RSI5=32 | 1hADX=14 | 4hADX=36 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T18:50:06.858773",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,254"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,254 | SMA5距-0.5% | RSI5=30 | 1hADX=14 | 4hADX=36 | 量比=1.1x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T18:55:06.850605",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,258"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,258 | SMA5距-0.4% | RSI5=30 | 1hADX=14 | 4hADX=36 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T19:00:07.144784",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,166"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,166 | SMA5距-0.4% | RSI5=27 | 1hADX=14 | 4hADX=36 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T19:05:06.690913",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,220"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,220 | SMA5距-0.4% | RSI5=31 | 1hADX=14 | 4hADX=36 | 量比=1.4x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T19:10:07.522294",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,208"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,208 | SMA5距-0.3% | RSI5=31 | 1hADX=14 | 4hADX=36 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T19:15:07.322913",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,275"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,275 | SMA5距-0.2% | RSI5=36 | 1hADX=14 | 4hADX=36 | 量比=0.5x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T19:20:07.478521",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,294"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,294 | SMA5距-0.2% | RSI5=38 | 1hADX=14 | 4hADX=36 | 量比=0.6x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T19:25:07.646689",
+    "time": "2026-05-22T18:15:06.934616",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -920,7 +275,7 @@
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,262 | SMA5距-0.2% | RSI5=36 | 1hADX=14 | 4hADX=36 | 量比=0.5x"
+        "detail": "$77,262 | SMA5距+0.0% | RSI5=46 | 1hADX=12 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -946,7 +301,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T19:30:07.697517",
+    "time": "2026-05-22T18:20:06.303369",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -958,12 +313,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,288"
+        "detail": "各周期正常, 最新$77,234"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,288 | SMA5距-0.1% | RSI5=38 | 1hADX=14 | 4hADX=36 | 量比=0.0x"
+        "detail": "$77,234 | SMA5距-0.0% | RSI5=43 | 1hADX=12 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -989,7 +344,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T19:35:06.433889",
+    "time": "2026-05-22T18:25:07.772819",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -1001,12 +356,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,262"
+        "detail": "各周期正常, 最新$77,296"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,262 | SMA5距-0.1% | RSI5=37 | 1hADX=14 | 4hADX=36 | 量比=0.3x"
+        "detail": "$77,296 | SMA5距+0.1% | RSI5=50 | 1hADX=12 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -1032,7 +387,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T19:40:07.584325",
+    "time": "2026-05-22T18:30:07.206343",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -1044,12 +399,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,219"
+        "detail": "各周期正常, 最新$77,319"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,219 | SMA5距-0.2% | RSI5=35 | 1hADX=14 | 4hADX=36 | 量比=0.5x"
+        "detail": "$77,319 | SMA5距+0.1% | RSI5=52 | 1hADX=12 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -1075,7 +430,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T19:45:07.456930",
+    "time": "2026-05-22T18:35:07.783836",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -1087,12 +442,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,226"
+        "detail": "各周期正常, 最新$77,307"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,226 | SMA5距-0.1% | RSI5=35 | 1hADX=14 | 4hADX=36 | 量比=0.3x"
+        "detail": "$77,307 | SMA5距+0.1% | RSI5=51 | 1hADX=12 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -1118,652 +473,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T19:50:07.252179",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,214"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,214 | SMA5距-0.1% | RSI5=35 | 1hADX=14 | 4hADX=36 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T19:55:07.367340",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,191"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,191 | SMA5距-0.1% | RSI5=33 | 1hADX=14 | 4hADX=36 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T20:00:07.954482",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,168"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,168 | SMA5距-0.1% | RSI5=33 | 1hADX=14 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T20:05:06.791447",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,233"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,233 | SMA5距-0.0% | RSI5=40 | 1hADX=14 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T20:10:06.294843",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,176"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,176 | SMA5距-0.1% | RSI5=37 | 1hADX=14 | 4hADX=35 | 量比=0.4x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T20:15:06.817817",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,162"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,162 | SMA5距-0.1% | RSI5=36 | 1hADX=14 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T20:20:06.492531",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,184"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,184 | SMA5距-0.0% | RSI5=38 | 1hADX=14 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T20:25:07.076252",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,103"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,103 | SMA5距-0.1% | RSI5=34 | 1hADX=15 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T20:30:06.723434",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,080"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,080 | SMA5距-0.2% | RSI5=32 | 1hADX=15 | 4hADX=35 | 量比=1.1x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T20:35:06.236397",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,246"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,246 | SMA5距+0.0% | RSI5=47 | 1hADX=15 | 4hADX=35 | 量比=1.9x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T20:40:06.639441",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,255"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,255 | SMA5距+0.1% | RSI5=48 | 1hADX=15 | 4hADX=35 | 量比=1.2x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T20:45:07.367397",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,208"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,208 | SMA5距-0.0% | RSI5=45 | 1hADX=15 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T20:50:07.182977",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,263"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,263 | SMA5距+0.1% | RSI5=49 | 1hADX=15 | 4hADX=35 | 量比=0.6x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T20:55:07.049524",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,297"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,297 | SMA5距+0.1% | RSI5=52 | 1hADX=15 | 4hADX=35 | 量比=0.8x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T21:00:08.903346",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,244"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,244 | SMA5距+0.0% | RSI5=48 | 1hADX=15 | 4hADX=35 | 量比=0.9x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T21:05:06.919872",
+    "time": "2026-05-22T18:40:07.668462",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -1780,7 +490,7 @@
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,300 | SMA5距+0.1% | RSI5=52 | 1hADX=15 | 4hADX=35 | 量比=0.9x"
+        "detail": "$77,300 | SMA5距+0.0% | RSI5=50 | 1hADX=12 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -1806,7 +516,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T21:10:06.495027",
+    "time": "2026-05-22T18:45:07.747932",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -1818,12 +528,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,304"
+        "detail": "各周期正常, 最新$77,293"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,304 | SMA5距+0.1% | RSI5=52 | 1hADX=15 | 4hADX=35 | 量比=0.5x"
+        "detail": "$77,293 | SMA5距+0.0% | RSI5=49 | 1hADX=12 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -1849,7 +559,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T21:15:07.494647",
+    "time": "2026-05-22T18:50:08.256819",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -1861,12 +571,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,225"
+        "detail": "各周期正常, 最新$77,288"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,225 | SMA5距+0.0% | RSI5=46 | 1hADX=15 | 4hADX=35 | 量比=0.7x"
+        "detail": "$77,288 | SMA5距+0.0% | RSI5=49 | 1hADX=12 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -1892,7 +602,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T21:20:07.665588",
+    "time": "2026-05-22T18:55:08.393666",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -1904,12 +614,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,218"
+        "detail": "各周期正常, 最新$77,254"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,218 | SMA5距+0.0% | RSI5=46 | 1hADX=15 | 4hADX=35 | 量比=0.0x"
+        "detail": "$77,254 | SMA5距-0.0% | RSI5=44 | 1hADX=12 | 4hADX=28 | 量比=0.1x"
       },
       {
         "item": "持仓同步",
@@ -1935,7 +645,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T21:25:07.600529",
+    "time": "2026-05-22T19:00:08.601736",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -1947,12 +657,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,255"
+        "detail": "各周期正常, 最新$77,282"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,255 | SMA5距+0.0% | RSI5=49 | 1hADX=15 | 4hADX=35 | 量比=0.0x"
+        "detail": "$77,282 | SMA5距+0.0% | RSI5=48 | 1hADX=13 | 4hADX=28 | 量比=1.3x"
       },
       {
         "item": "持仓同步",
@@ -1978,7 +688,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T21:30:07.710643",
+    "time": "2026-05-22T19:05:08.363423",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -1990,12 +700,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,261"
+        "detail": "各周期正常, 最新$77,294"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,261 | SMA5距+0.0% | RSI5=49 | 1hADX=15 | 4hADX=35 | 量比=0.1x"
+        "detail": "$77,294 | SMA5距+0.0% | RSI5=50 | 1hADX=13 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -2021,7 +731,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T21:35:06.498483",
+    "time": "2026-05-22T19:10:08.672170",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -2033,12 +743,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,193"
+        "detail": "各周期正常, 最新$77,275"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,193 | SMA5距-0.0% | RSI5=44 | 1hADX=15 | 4hADX=35 | 量比=1.8x"
+        "detail": "$77,275 | SMA5距-0.0% | RSI5=47 | 1hADX=13 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -2064,7 +774,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T21:40:07.285108",
+    "time": "2026-05-22T19:15:07.943427",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -2076,12 +786,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$76,847"
+        "detail": "各周期正常, 最新$77,262"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$76,847 | SMA5距-0.4% | RSI5=28 | 1hADX=16 | 4hADX=35 | 量比=0.0x"
+        "detail": "$77,262 | SMA5距-0.0% | RSI5=45 | 1hADX=13 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -2107,7 +817,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T21:45:07.217178",
+    "time": "2026-05-22T19:20:07.611362",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -2119,12 +829,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$76,723"
+        "detail": "各周期正常, 最新$77,175"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$76,723 | SMA5距-0.6% | RSI5=24 | 1hADX=16 | 4hADX=35 | 量比=0.2x"
+        "detail": "$77,175 | SMA5距-0.1% | RSI5=35 | 1hADX=13 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -2150,7 +860,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T21:50:07.249850",
+    "time": "2026-05-22T19:25:07.937191",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -2162,12 +872,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$76,744"
+        "detail": "各周期正常, 最新$77,214"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$76,744 | SMA5距-0.5% | RSI5=26 | 1hADX=16 | 4hADX=35 | 量比=2.1x"
+        "detail": "$77,214 | SMA5距-0.1% | RSI5=42 | 1hADX=13 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -2193,7 +903,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T21:55:06.995149",
+    "time": "2026-05-22T19:30:08.890846",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -2205,12 +915,12 @@
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,077"
+        "detail": "各周期正常, 最新$77,279"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,077 | SMA5距-0.1% | RSI5=46 | 1hADX=16 | 4hADX=35 | 量比=0.0x"
+        "detail": "$77,279 | SMA5距+0.0% | RSI5=50 | 1hADX=13 | 4hADX=28 | 量比=0.1x"
       },
       {
         "item": "持仓同步",
@@ -2236,24 +946,25 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T22:00:06.477890",
-    "ok": 7,
-    "fail": 0,
+    "time": "2026-05-22T19:35:09.592405",
+    "ok": 6,
+    "fail": 1,
     "items": [
       {
         "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
+        "status": "❌",
+        "detail": "未运行",
+        "fix": "restart"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,090"
+        "detail": "各周期正常, 最新$77,276"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,090 | SMA5距-0.1% | RSI5=47 | 1hADX=17 | 4hADX=35 | 量比=1.6x"
+        "detail": "$77,276 | SMA5距+0.0% | RSI5=50 | 1hADX=13 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -2276,27 +987,29 @@
         "detail": "无积压"
       }
     ],
-    "fixes": []
+    "fixes": [
+      "已重启"
+    ]
   },
   {
-    "time": "2026-05-21T22:05:06.982225",
+    "time": "2026-05-22T19:40:07.036189",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,173"
+        "detail": "各周期正常, 最新$77,311"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,173 | SMA5距+0.0% | RSI5=51 | 1hADX=17 | 4hADX=35 | 量比=1.2x"
+        "detail": "$77,311 | SMA5距+0.0% | RSI5=54 | 1hADX=13 | 4hADX=28 | 量比=1.2x"
       },
       {
         "item": "持仓同步",
@@ -2322,24 +1035,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T22:10:07.010151",
+    "time": "2026-05-22T19:45:06.981785",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,158"
+        "detail": "各周期正常, 最新$77,307"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,158 | SMA5距+0.0% | RSI5=50 | 1hADX=17 | 4hADX=35 | 量比=0.0x"
+        "detail": "$77,307 | SMA5距+0.0% | RSI5=53 | 1hADX=13 | 4hADX=28 | 量比=0.6x"
       },
       {
         "item": "持仓同步",
@@ -2365,24 +1078,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T22:15:07.046518",
+    "time": "2026-05-22T19:50:06.361034",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,058"
+        "detail": "各周期正常, 最新$77,371"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,058 | SMA5距-0.1% | RSI5=46 | 1hADX=17 | 4hADX=35 | 量比=0.0x"
+        "detail": "$77,371 | SMA5距+0.1% | RSI5=60 | 1hADX=13 | 4hADX=28 | 量比=3.0x"
       },
       {
         "item": "持仓同步",
@@ -2408,24 +1121,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T22:20:06.909177",
+    "time": "2026-05-22T19:55:07.253215",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$76,880"
+        "detail": "各周期正常, 最新$77,367"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$76,880 | SMA5距-0.3% | RSI5=39 | 1hADX=17 | 4hADX=35 | 量比=1.1x"
+        "detail": "$77,367 | SMA5距+0.1% | RSI5=60 | 1hADX=13 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -2451,24 +1164,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T22:25:07.368504",
+    "time": "2026-05-22T20:00:07.443563",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$76,904"
+        "detail": "各周期正常, 最新$77,397"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$76,904 | SMA5距-0.2% | RSI5=40 | 1hADX=17 | 4hADX=35 | 量比=0.0x"
+        "detail": "$77,397 | SMA5距+0.1% | RSI5=63 | 1hADX=13 | 4hADX=28 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -2494,24 +1207,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T22:30:07.671176",
+    "time": "2026-05-22T20:05:07.208836",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,017"
+        "detail": "各周期正常, 最新$77,401"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,017 | SMA5距-0.1% | RSI5=46 | 1hADX=17 | 4hADX=35 | 量比=0.5x"
+        "detail": "$77,401 | SMA5距+0.1% | RSI5=63 | 1hADX=13 | 4hADX=27 | 量比=2.0x"
       },
       {
         "item": "持仓同步",
@@ -2537,24 +1250,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T22:35:07.115195",
+    "time": "2026-05-22T20:10:07.233835",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,060"
+        "detail": "各周期正常, 最新$77,399"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,060 | SMA5距-0.0% | RSI5=48 | 1hADX=17 | 4hADX=35 | 量比=0.6x"
+        "detail": "$77,399 | SMA5距+0.1% | RSI5=63 | 1hADX=13 | 4hADX=27 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -2580,24 +1293,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T22:40:07.009126",
+    "time": "2026-05-22T20:15:07.448478",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,082"
+        "detail": "各周期正常, 最新$77,517"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,082 | SMA5距+0.0% | RSI5=49 | 1hADX=17 | 4hADX=35 | 量比=0.4x"
+        "detail": "$77,517 | SMA5距+0.2% | RSI5=73 | 1hADX=13 | 4hADX=27 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -2623,24 +1336,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T22:45:07.224271",
+    "time": "2026-05-22T20:20:07.128332",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$76,957"
+        "detail": "各周期正常, 最新$77,492"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$76,957 | SMA5距-0.1% | RSI5=44 | 1hADX=17 | 4hADX=35 | 量比=0.0x"
+        "detail": "$77,492 | SMA5距+0.2% | RSI5=71 | 1hADX=13 | 4hADX=27 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -2666,24 +1379,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T22:50:06.251433",
+    "time": "2026-05-22T20:25:07.206410",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$76,904"
+        "detail": "各周期正常, 最新$77,437"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$76,904 | SMA5距-0.2% | RSI5=41 | 1hADX=17 | 4hADX=35 | 量比=0.0x"
+        "detail": "$77,437 | SMA5距+0.1% | RSI5=61 | 1hADX=13 | 4hADX=27 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -2709,24 +1422,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T22:55:06.868920",
+    "time": "2026-05-22T20:30:16.303554",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$76,958"
+        "detail": "各周期正常, 最新$77,384"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$76,958 | SMA5距-0.1% | RSI5=44 | 1hADX=17 | 4hADX=35 | 量比=0.0x"
+        "detail": "$77,384 | SMA5距+0.1% | RSI5=54 | 1hADX=13 | 4hADX=27 | 量比=0.1x"
       },
       {
         "item": "持仓同步",
@@ -2752,24 +1465,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T23:00:06.993326",
+    "time": "2026-05-22T20:35:09.305431",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$76,964"
+        "detail": "各周期正常, 最新$77,413"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$76,964 | SMA5距-0.0% | RSI5=45 | 1hADX=18 | 4hADX=35 | 量比=0.0x"
+        "detail": "$77,413 | SMA5距+0.1% | RSI5=57 | 1hADX=13 | 4hADX=27 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -2795,24 +1508,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T23:05:07.473310",
+    "time": "2026-05-22T20:40:08.766986",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,026"
+        "detail": "各周期正常, 最新$77,414"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,026 | SMA5距+0.0% | RSI5=48 | 1hADX=18 | 4hADX=35 | 量比=0.0x"
+        "detail": "$77,414 | SMA5距+0.1% | RSI5=58 | 1hADX=13 | 4hADX=27 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -2838,24 +1551,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T23:10:08.114693",
+    "time": "2026-05-22T20:45:08.751829",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$76,935"
+        "detail": "各周期正常, 最新$77,394"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$76,935 | SMA5距-0.1% | RSI5=44 | 1hADX=18 | 4hADX=35 | 量比=0.4x"
+        "detail": "$77,394 | SMA5距+0.0% | RSI5=55 | 1hADX=13 | 4hADX=27 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -2881,24 +1594,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T23:15:07.600130",
+    "time": "2026-05-22T20:50:07.503374",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,126"
+        "detail": "各周期正常, 最新$77,440"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,126 | SMA5距+0.2% | RSI5=54 | 1hADX=18 | 4hADX=35 | 量比=0.0x"
+        "detail": "$77,440 | SMA5距+0.1% | RSI5=60 | 1hADX=13 | 4hADX=27 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -2924,1003 +1637,14 @@
     "fixes": []
   },
   {
-    "time": "2026-05-21T23:20:06.821908",
+    "time": "2026-05-22T20:55:06.886849",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,180"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,180 | SMA5距+0.2% | RSI5=56 | 1hADX=18 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T23:25:06.026130",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,204"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,204 | SMA5距+0.2% | RSI5=57 | 1hADX=17 | 4hADX=35 | 量比=0.9x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T23:30:07.383620",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,231"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,231 | SMA5距+0.2% | RSI5=58 | 1hADX=17 | 4hADX=35 | 量比=0.5x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T23:35:07.762505",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,070"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,070 | SMA5距+0.0% | RSI5=49 | 1hADX=17 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T23:40:06.049511",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,138"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,138 | SMA5距+0.1% | RSI5=53 | 1hADX=17 | 4hADX=35 | 量比=0.9x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T23:45:07.228632",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,178"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,178 | SMA5距+0.2% | RSI5=54 | 1hADX=17 | 4hADX=35 | 量比=0.5x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T23:50:06.786237",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,310"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,310 | SMA5距+0.3% | RSI5=60 | 1hADX=17 | 4hADX=35 | 量比=1.6x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-21T23:55:07.209017",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,122"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,122 | SMA5距+0.1% | RSI5=51 | 1hADX=17 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-22T00:00:11.933915",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,232"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,232 | SMA5距+0.2% | RSI5=55 | 1hADX=17 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-22T00:05:07.038218",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,232"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,232 | SMA5距+0.2% | RSI5=55 | 1hADX=17 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-22T00:10:07.120889",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,291"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,291 | SMA5距+0.2% | RSI5=57 | 1hADX=17 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-22T00:15:06.868734",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,249"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,249 | SMA5距+0.2% | RSI5=55 | 1hADX=17 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-22T00:20:06.326771",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,144"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,144 | SMA5距+0.0% | RSI5=50 | 1hADX=17 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-22T00:25:06.608461",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,128"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,128 | SMA5距-0.0% | RSI5=49 | 1hADX=17 | 4hADX=35 | 量比=0.7x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-22T00:30:07.384010",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,147"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,147 | SMA5距-0.0% | RSI5=50 | 1hADX=17 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-22T00:35:07.055853",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,218"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,218 | SMA5距+0.1% | RSI5=54 | 1hADX=17 | 4hADX=35 | 量比=0.4x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-22T00:40:06.731757",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,082"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,082 | SMA5距-0.1% | RSI5=47 | 1hADX=17 | 4hADX=35 | 量比=2.4x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-22T00:45:06.388972",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,030"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,030 | SMA5距-0.2% | RSI5=44 | 1hADX=17 | 4hADX=35 | 量比=0.7x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-22T00:50:06.619704",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,020"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,020 | SMA5距-0.2% | RSI5=44 | 1hADX=17 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-22T00:55:07.404287",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,070"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,070 | SMA5距-0.1% | RSI5=47 | 1hADX=17 | 4hADX=35 | 量比=0.0x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-22T01:00:07.745076",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,194"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,194 | SMA5距+0.0% | RSI5=54 | 1hADX=18 | 4hADX=35 | 量比=0.1x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-22T01:05:06.904388",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,199"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,199 | SMA5距+0.0% | RSI5=54 | 1hADX=18 | 4hADX=35 | 量比=1.3x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-22T01:10:06.251130",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$77,178"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$77,178 | SMA5距+0.0% | RSI5=53 | 1hADX=18 | 4hADX=35 | 量比=0.8x"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-22T01:15:06.907032",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
@@ -3930,7 +1654,7 @@
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,482 | SMA5距+0.4% | RSI5=65 | 1hADX=17 | 4hADX=35 | 量比=5.0x"
+        "detail": "$77,482 | SMA5距+0.1% | RSI5=64 | 1hADX=13 | 4hADX=27 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -3956,24 +1680,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-22T01:20:06.292035",
+    "time": "2026-05-22T21:00:06.743338",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,732"
+        "detail": "各周期正常, 最新$77,499"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,732 | SMA5距+0.7% | RSI5=72 | 1hADX=16 | 4hADX=34 | 量比=6.4x"
+        "detail": "$77,499 | SMA5距+0.1% | RSI5=65 | 1hADX=13 | 4hADX=27 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -3999,24 +1723,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-22T01:25:06.784473",
+    "time": "2026-05-22T21:05:07.036077",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,853"
+        "detail": "各周期正常, 最新$77,445"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,853 | SMA5距+0.8% | RSI5=74 | 1hADX=17 | 4hADX=34 | 量比=0.0x"
+        "detail": "$77,445 | SMA5距+0.0% | RSI5=57 | 1hADX=12 | 4hADX=27 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -4042,24 +1766,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-22T01:30:05.870606",
+    "time": "2026-05-22T21:10:06.782991",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=669024"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,939"
+        "detail": "各周期正常, 最新$77,482"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,939 | SMA5距+0.9% | RSI5=76 | 1hADX=17 | 4hADX=34 | 量比=2.2x"
+        "detail": "$77,482 | SMA5距+0.1% | RSI5=60 | 1hADX=12 | 4hADX=27 | 量比=0.0x"
       },
       {
         "item": "持仓同步",
@@ -4085,24 +1809,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-22T01:35:06.782661",
+    "time": "2026-05-22T21:14:35.579588",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=692307"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,900"
+        "detail": "各周期正常, 最新$77,442"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,900 | SMA5距+0.7% | RSI5=74 | 1hADX=17 | 4hADX=34 | 量比=0.0x"
+        "detail": "$77,442 | SMA5距+0.0% | RSI5=55 | 1hADX=13 | 4hADX=28 | 量比=1.1x | 4h闭K多/1d闭K空"
       },
       {
         "item": "持仓同步",
@@ -4128,24 +1852,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-22T01:40:06.265930",
+    "time": "2026-05-22T21:15:06.795364",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=692307"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,899"
+        "detail": "各周期正常, 最新$77,460"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,899 | SMA5距+0.7% | RSI5=74 | 1hADX=17 | 4hADX=34 | 量比=0.0x"
+        "detail": "$77,460 | SMA5距+0.1% | RSI5=57 | 1hADX=13 | 4hADX=28 | 量比=1.1x | 4h闭K多/1d闭K空"
       },
       {
         "item": "持仓同步",
@@ -4171,24 +1895,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-22T01:45:06.584493",
+    "time": "2026-05-22T21:20:06.662450",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=693925"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,862"
+        "detail": "各周期正常, 最新$77,435"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,862 | SMA5距+0.6% | RSI5=71 | 1hADX=17 | 4hADX=34 | 量比=0.0x"
+        "detail": "$77,435 | SMA5距+0.0% | RSI5=54 | 1hADX=13 | 4hADX=28 | 量比=1.2x | 4h闭K多/1d闭K空"
       },
       {
         "item": "持仓同步",
@@ -4214,24 +1938,24 @@
     "fixes": []
   },
   {
-    "time": "2026-05-22T01:50:07.189404",
+    "time": "2026-05-22T21:25:07.321521",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=693925"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,874"
+        "detail": "各周期正常, 最新$77,355"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,874 | SMA5距+0.6% | RSI5=71 | 1hADX=17 | 4hADX=34 | 量比=1.1x"
+        "detail": "$77,355 | SMA5距-0.1% | RSI5=45 | 1hADX=13 | 4hADX=28 | 量比=1.2x | 4h闭K多/1d闭K空"
       },
       {
         "item": "持仓同步",
@@ -4257,24 +1981,2303 @@
     "fixes": []
   },
   {
-    "time": "2026-05-22T01:55:06.705871",
+    "time": "2026-05-22T21:30:07.485144",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=40411"
+        "detail": "PID=693925"
       },
       {
         "item": "API数据",
         "status": "✅",
-        "detail": "各周期正常, 最新$77,985"
+        "detail": "各周期正常, 最新$77,258"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$77,985 | SMA5距+0.6% | RSI5=74 | 1hADX=17 | 4hADX=34 | 量比=0.0x"
+        "detail": "$77,258 | SMA5距-0.2% | RSI5=37 | 1hADX=13 | 4hADX=28 | 量比=1.4x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T21:35:07.256949",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,191"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,191 | SMA5距-0.3% | RSI5=34 | 1hADX=13 | 4hADX=28 | 量比=4.3x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T21:40:07.459072",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,232"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,232 | SMA5距-0.2% | RSI5=39 | 1hADX=13 | 4hADX=28 | 量比=1.8x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T21:45:07.487943",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,187"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,187 | SMA5距-0.3% | RSI5=36 | 1hADX=13 | 4hADX=28 | 量比=2.4x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T21:50:07.631592",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,214"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,214 | SMA5距-0.2% | RSI5=39 | 1hADX=13 | 4hADX=28 | 量比=1.0x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T21:55:07.947464",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,206"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,206 | SMA5距-0.2% | RSI5=38 | 1hADX=13 | 4hADX=28 | 量比=1.0x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T22:00:07.244308",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,256"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,256 | SMA5距-0.1% | RSI5=43 | 1hADX=13 | 4hADX=28 | 量比=1.1x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T22:05:07.464659",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,098"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,098 | SMA5距-0.3% | RSI5=33 | 1hADX=13 | 4hADX=28 | 量比=0.8x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T22:10:07.442609",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,061"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,061 | SMA5距-0.3% | RSI5=31 | 1hADX=13 | 4hADX=28 | 量比=3.6x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=True | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T22:15:07.589462",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,022"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,022 | SMA5距-0.3% | RSI5=29 | 1hADX=13 | 4hADX=28 | 量比=1.1x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=True | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T22:20:07.370700",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,881"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,881 | SMA5距-0.5% | RSI5=24 | 1hADX=13 | 4hADX=28 | 量比=2.4x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=True | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T22:25:07.891694",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,783"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,783 | SMA5距-0.6% | RSI5=21 | 1hADX=13 | 4hADX=28 | 量比=3.4x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T22:30:06.690189",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,827"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,827 | SMA5距-0.5% | RSI5=25 | 1hADX=13 | 4hADX=28 | 量比=3.4x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T22:35:06.523721",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,797"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,797 | SMA5距-0.5% | RSI5=24 | 1hADX=13 | 4hADX=28 | 量比=1.7x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T22:40:08.313948",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,774"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,774 | SMA5距-0.4% | RSI5=23 | 1hADX=13 | 4hADX=28 | 量比=1.5x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T22:45:07.425162",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,788"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,788 | SMA5距-0.4% | RSI5=25 | 1hADX=13 | 4hADX=28 | 量比=1.2x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T22:50:07.159775",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,755"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,755 | SMA5距-0.4% | RSI5=24 | 1hADX=13 | 4hADX=28 | 量比=3.0x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T22:55:06.958506",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,753"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,753 | SMA5距-0.4% | RSI5=24 | 1hADX=13 | 4hADX=28 | 量比=3.0x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T23:00:07.864189",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,710"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,710 | SMA5距-0.3% | RSI5=22 | 1hADX=13 | 4hADX=28 | 量比=0.5x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T23:05:06.868681",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,796"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,796 | SMA5距-0.2% | RSI5=31 | 1hADX=15 | 4hADX=28 | 量比=1.7x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T23:10:07.921135",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,849"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,849 | SMA5距-0.1% | RSI5=37 | 1hADX=15 | 4hADX=28 | 量比=1.7x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T23:15:06.967528",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,738"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,738 | SMA5距-0.2% | RSI5=31 | 1hADX=15 | 4hADX=28 | 量比=0.5x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T23:20:06.745028",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,809"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,809 | SMA5距-0.1% | RSI5=38 | 1hADX=15 | 4hADX=28 | 量比=0.5x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T23:25:06.282935",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,591"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,591 | SMA5距-0.3% | RSI5=28 | 1hADX=15 | 4hADX=28 | 量比=1.2x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T23:30:08.589814",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,852"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,852 | SMA5距-0.0% | RSI5=46 | 1hADX=15 | 4hADX=28 | 量比=1.3x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T23:35:09.503523",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,887"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,887 | SMA5距+0.1% | RSI5=47 | 1hADX=15 | 4hADX=28 | 量比=0.9x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T23:40:09.021986",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,681"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,681 | SMA5距-0.2% | RSI5=39 | 1hADX=15 | 4hADX=28 | 量比=0.4x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T23:45:07.391021",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,686"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,686 | SMA5距-0.1% | RSI5=39 | 1hADX=15 | 4hADX=28 | 量比=0.7x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T23:50:06.547064",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,680"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,680 | SMA5距-0.1% | RSI5=39 | 1hADX=15 | 4hADX=28 | 量比=0.3x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-22T23:55:07.141668",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,753"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,753 | SMA5距-0.0% | RSI5=43 | 1hADX=15 | 4hADX=28 | 量比=0.4x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T00:00:07.595281",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,753"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,753 | SMA5距-0.0% | RSI5=43 | 1hADX=17 | 4hADX=28 | 量比=0.2x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T00:05:07.018875",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,838"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,838 | SMA5距+0.1% | RSI5=48 | 1hADX=17 | 4hADX=28 | 量比=0.2x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T00:10:06.417749",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,774"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,774 | SMA5距+0.0% | RSI5=45 | 1hADX=17 | 4hADX=28 | 量比=0.6x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T00:15:07.188373",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,841"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,841 | SMA5距+0.1% | RSI5=49 | 1hADX=17 | 4hADX=28 | 量比=0.2x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T00:20:06.534850",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,798"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,798 | SMA5距+0.0% | RSI5=47 | 1hADX=17 | 4hADX=28 | 量比=0.3x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T00:25:08.364196",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,813"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,813 | SMA5距+0.1% | RSI5=48 | 1hADX=17 | 4hADX=28 | 量比=0.4x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T00:30:06.808886",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,902"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,902 | SMA5距+0.2% | RSI5=53 | 1hADX=17 | 4hADX=28 | 量比=0.2x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T00:35:09.014990",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,870"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,870 | SMA5距+0.1% | RSI5=51 | 1hADX=17 | 4hADX=28 | 量比=0.5x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T00:40:06.752862",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,868"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,868 | SMA5距+0.1% | RSI5=51 | 1hADX=17 | 4hADX=28 | 量比=0.3x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T00:45:06.620281",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,859"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,859 | SMA5距+0.1% | RSI5=50 | 1hADX=17 | 4hADX=28 | 量比=0.3x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T00:50:07.484304",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,917"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,917 | SMA5距+0.1% | RSI5=54 | 1hADX=17 | 4hADX=28 | 量比=0.4x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T00:55:07.319265",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,959"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,959 | SMA5距+0.2% | RSI5=56 | 1hADX=17 | 4hADX=28 | 量比=0.5x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T01:00:06.974905",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,918"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,918 | SMA5距+0.1% | RSI5=53 | 1hADX=17 | 4hADX=28 | 量比=0.4x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T01:05:06.804689",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,959"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,959 | SMA5距+0.2% | RSI5=56 | 1hADX=19 | 4hADX=28 | 量比=0.5x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T01:10:06.646474",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,910"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,910 | SMA5距+0.1% | RSI5=52 | 1hADX=19 | 4hADX=28 | 量比=0.5x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T01:15:07.783969",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,930"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,930 | SMA5距+0.1% | RSI5=54 | 1hADX=19 | 4hADX=28 | 量比=0.5x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T01:20:07.302640",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,786"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,786 | SMA5距-0.1% | RSI5=44 | 1hADX=19 | 4hADX=28 | 量比=1.4x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T01:25:07.277988",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,773"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,773 | SMA5距-0.1% | RSI5=43 | 1hADX=19 | 4hADX=28 | 量比=1.4x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T01:30:07.225167",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,061"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,061 | SMA5距+0.2% | RSI5=60 | 1hADX=19 | 4hADX=28 | 量比=2.9x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T01:35:06.991420",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,941"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,941 | SMA5距+0.1% | RSI5=53 | 1hADX=19 | 4hADX=28 | 量比=2.9x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T01:40:07.288956",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,973"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,973 | SMA5距+0.1% | RSI5=55 | 1hADX=19 | 4hADX=28 | 量比=0.5x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T01:45:07.773510",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,935"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,935 | SMA5距+0.0% | RSI5=52 | 1hADX=19 | 4hADX=28 | 量比=0.3x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T01:50:08.296156",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,775"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,775 | SMA5距-0.1% | RSI5=44 | 1hADX=19 | 4hADX=28 | 量比=0.3x | 4h闭K空/1d闭K空"
+      },
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "交易所LONG=True/SHORT=False | state忽略旧仓"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=无 SHORT=无"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-18 08:18:52] [错误] binance GET https://fapi.binance."
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-23T01:55:06.913055",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=693925"
+      },
+      {
+        "item": "API数据",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,771"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,771 | SMA5距-0.1% | RSI5=44 | 1hADX=19 | 4hADX=28 | 量比=1.0x | 4h闭K空/1d闭K空"
       },
       {
         "item": "持仓同步",
