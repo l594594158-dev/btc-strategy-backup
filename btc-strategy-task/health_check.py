@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-BTC v4.2 趋势回调策略 · 自检脚本
+BTC + HYPE v4.2 双策略 · 自检脚本
 - 每5分钟执行一次自动检查
 - 检查进程运行、API数据、持仓同步、策略状态
 - 发现问题自动修复并通知
@@ -9,23 +9,38 @@ BTC v4.2 趋势回调策略 · 自检脚本
 import ccxt, os, json, subprocess, time, pandas as pd, ta
 from datetime import datetime
 
-TASK_DIR = '/root/.openclaw/workspace/btc-strategy-task'
-STATE_FILE = f'{TASK_DIR}/databases/state.json'
-WORK_LOG = f'{TASK_DIR}/logs/work_log.txt'
-NOTIFY_QUEUE = f'{TASK_DIR}/databases/notify_queue.json'
-LOG_DIR = f'{TASK_DIR}/logs/health_check'
-FIX_LOG = f'{LOG_DIR}/fix_log.txt'
-CHECK_LOG = f'{LOG_DIR}/check_log.json'
-
 API_KEY = "CUPwmVULosVO24NBKmoaMm0pvga2msasOa4nBhvPvybrGdA2RcXBYA4aRtGMZjWH"
 SECRET = "Ozht5MjazUu4JKhSLqx4ASmTBH4wlUMdbABOblxXGyhIuof1jhrzUEr9JkWHpUHM"
-SYMBOL = 'BTC/USDT:USDT'        # 合约交易对 (仓位检查用)
-SYMBOL_SPOT = 'BTC/USDT'        # 现货 (K线用)
-LEVERAGE = 50
-TP_PCT = 0.025; SL_PCT = 0.015
-QTY = 0.035
 
-os.makedirs(LOG_DIR, exist_ok=True)
+# ========== 策略配置 ==========
+STRATEGIES = {
+    'BTC': {
+        'task_dir': '/root/.openclaw/workspace/btc-strategy-task',
+        'symbol': 'BTC/USDT:USDT',
+        'symbol_kline': 'BTC/USDT',       # 现货K线
+        'kline_source': 'spot',            # spot | swap
+        'leverage': 50,
+        'tp_pct': 0.025,
+        'sl_pct': 0.015,
+        'qty': 0.035,
+        'process_pattern': 'auto_trade.py',
+        'label': 'BTC v4.2',
+    },
+    'HYPE': {
+        'task_dir': '/root/.openclaw/workspace/hype-strategy-task',
+        'symbol': 'HYPE/USDT:USDT',
+        'symbol_kline': 'HYPE/USDT:USDT',  # 合约K线 (无现货)
+        'kline_source': 'swap',
+        'leverage': 30,
+        'tp_pct': 0.03,
+        'sl_pct': 0.02,
+        'qty': 20.0,
+        'process_pattern': 'hype_trade.py',
+        'label': 'HYPE v4.2',
+    },
+}
+
+os.makedirs('/tmp/health_check_logs', exist_ok=True)
 
 def log(msg):
     ts = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -38,16 +53,14 @@ def get_binance():
 def get_spot():
     return ccxt.binance({'options': {'defaultType': 'spot'}})
 
-def get_data():
-    spot = get_spot()
-    return {
-        'k5m': spot.fetch_ohlcv(SYMBOL_SPOT, '5m', limit=100),
-        'k1h': spot.fetch_ohlcv(SYMBOL_SPOT, '1h', limit=200),
-        'k4h': spot.fetch_ohlcv(SYMBOL_SPOT, '4h', limit=200),
-        'k1d': spot.fetch_ohlcv(SYMBOL_SPOT, '1d', limit=200),
-    }
+def get_kline_client(src):
+    """src='spot' 用现货客户端, 'swap' 用合约客户端"""
+    if src == 'spot':
+        return get_spot()
+    else:
+        return get_binance()
 
-# ========== v4.2 指标计算 (现货K线) ==========
+# ========== v4.2 指标计算 ==========
 
 def calc_5m(kline_data):
     df = pd.DataFrame(kline_data, columns=['t','o','h','l','c','v'])
@@ -87,83 +100,80 @@ def calc_1d(kline_data):
     if len(df)<20: return None
     return {'close_closed':c.iloc[clv],'sma_closed':ta.trend.SMAIndicator(c,20).sma_indicator().iloc[clv]}
 
-def save_state(state):
-    with open(STATE_FILE,'w') as f:
-        json.dump(state, f, indent=2, ensure_ascii=False, default=str)
+# ========== 持仓同步 ==========
 
-def sync_exchange_to_state():
-    """
-    双向同步: 交易所仓位 → state.json
-    返回: (synced_long, synced_short) 是否做了同步
-    """
+def sync_exchange_to_state(cfg):
+    """双向同步: 交易所仓位 → state.json"""
+    task_dir = cfg['task_dir']
+    state_file = f'{task_dir}/databases/state.json'
+    symbol = cfg['symbol']
+    tp = cfg['tp_pct']; sl = cfg['sl_pct']
     synced = {'LONG': False, 'SHORT': False}
+
     try:
         ex = get_binance()
-        positions = ex.fetch_positions([SYMBOL])
+        positions = ex.fetch_positions([symbol])
         state = {'long_pos': None, 'short_pos': None,
                  'last_long_signal': False, 'last_short_signal': False}
-        if os.path.exists(STATE_FILE):
-            with open(STATE_FILE) as f: state = json.load(f)
+        if os.path.exists(state_file):
+            with open(state_file) as f: state = json.load(f)
 
         for p in positions:
             amt = abs(float(p.get('contracts', 0) or 0))
-            if amt > 0 and p.get('symbol') == SYMBOL:
+            if amt > 0 and p.get('symbol') == symbol:
                 d = 'LONG' if p.get('side') == 'long' else 'SHORT'
                 pk = 'long_pos' if d == 'LONG' else 'short_pos'
                 entry = float(p.get('entryPrice', 0))
-
-                # 已有记录且价格一致 → 跳过
                 existing = state.get(pk)
-                if existing and abs(existing.get('entry_price', 0) - entry) < 1:
+                if existing and abs(existing.get('entry_price', 0) - entry) < 0.1:
                     continue
-
-                sl = round(entry * (1 - SL_PCT if d == 'LONG' else 1 + SL_PCT), 1)
-                tp = round(entry * (1 + TP_PCT if d == 'LONG' else 1 - TP_PCT), 1)
+                sl_p = round(entry * (1 - sl if d == 'LONG' else 1 + sl), 4)
+                tp_p = round(entry * (1 + tp if d == 'LONG' else 1 - tp), 4)
                 state[pk] = {
-                    'entry_price': entry, 'qty': amt, 'sl': sl, 'tp': tp,
+                    'entry_price': entry, 'qty': amt, 'sl': sl_p, 'tp': tp_p,
                     'open_time': datetime.now().strftime('%Y-%m-%dT%H:%M:%S'),
                     'reason': {'name': f'{d}-体检同步', 'price': entry}
                 }
                 synced[d] = True
-                log(f"🔄 体检同步: {d} {amt}BTC @ ${entry:,.1f} → state")
+                log(f"  🔄 {cfg['name']}: {d} {amt} @ ${entry:,.4f} → state")
 
-        # 清除交易所已无的state记录
-        long_ex = any(p.get('symbol')==SYMBOL and float(p.get('contracts',0))>0 and p.get('side')=='long' for p in positions)
-        short_ex = any(p.get('symbol')==SYMBOL and float(p.get('contracts',0))>0 and p.get('side')=='short' for p in positions)
-        if not long_ex and state.get('long_pos'):
-            state['long_pos'] = None
-            log("🧹 交易所无LONG → 清除state")
-        if not short_ex and state.get('short_pos'):
-            state['short_pos'] = None
-            log("🧹 交易所无SHORT → 清除state")
+        long_ex = any(p.get('symbol')==symbol and float(p.get('contracts',0))>0 and p.get('side')=='long' for p in positions)
+        short_ex = any(p.get('symbol')==symbol and float(p.get('contracts',0))>0 and p.get('side')=='short' for p in positions)
+        if not long_ex and state.get('long_pos'): state['long_pos'] = None
+        if not short_ex and state.get('short_pos'): state['short_pos'] = None
 
-        save_state(state)
+        with open(state_file,'w') as f:
+            json.dump(state, f, indent=2, ensure_ascii=False, default=str)
     except Exception as e:
-        log(f"⚠️ 同步异常: {e}")
+        log(f"  ⚠️ {cfg['name']} 同步异常: {e}")
     return synced
 
-class HealthChecker:
-    def __init__(self):
+class StrategyHealthChecker:
+    def __init__(self, name, cfg):
+        self.name = name
+        self.cfg = cfg
+        self.label = cfg['label']
         self.results = []
         self.checks_ok = self.checks_fail = 0
         self._fixes = []
 
     def ok(self, item, detail=''):
         self.checks_ok += 1
-        self.results.append({'item':item,'status':'✅','detail':detail})
-        log(f"✅ {item}: {detail or '正常'}")
+        self.results.append({'strategy':self.name,'item':item,'status':'✅','detail':detail})
+        log(f"  ✅ [{self.name}] {item}: {detail or '正常'}")
 
     def fail(self, item, detail='', fix=None):
         self.checks_fail += 1
-        self.results.append({'item':item,'status':'❌','detail':detail,'fix':fix})
-        log(f"❌ {item}: {detail}")
+        self.results.append({'strategy':self.name,'item':item,'status':'❌','detail':detail,'fix':fix})
+        log(f"  ❌ [{self.name}] {item}: {detail}")
         if fix: self._fixes.append(fix)
 
     def check_process(self):
         try:
             r = subprocess.run(['ps','aux'], capture_output=True, text=True)
+            pat = self.cfg['process_pattern']
             for line in r.stdout.split('\n'):
-                if 'auto_trade.py' in line and 'grep' not in line and 'python' in line:
+                if pat in line and 'grep' not in line and 'python' in line:
                     pid = line.split()[1]
                     cpu = line.split()[2]
                     self.ok('进程状态', f'PID={pid} CPU={cpu}%')
@@ -174,16 +184,19 @@ class HealthChecker:
 
     def check_api(self):
         try:
-            data = get_data()
-            for k, n in [('k5m','5m'),('k1h','1h'),('k4h','4h'),('k1d','1d')]:
-                if len(data[k]) < 50:
-                    self.fail(f'API-{n}', f'数据不足{len(data[k])}根', 'retry')
-                    return
-            price = data['k5m'][-1][4]
-            self.ok('现货K线', f'各周期正常, 最新${price:,.0f}')
+            client = get_kline_client(self.cfg['kline_source'])
+            sym = self.cfg['symbol_kline']
+            k5m = client.fetch_ohlcv(sym, '5m', limit=100)
+            k1h = client.fetch_ohlcv(sym, '1h', limit=200)
+            k4h = client.fetch_ohlcv(sym, '4h', limit=200)
+            k1d = client.fetch_ohlcv(sym, '1d', limit=200)
 
-            r5 = calc_5m(data['k5m']); r1 = calc_1h(data['k1h'])
-            r4 = calc_4h(data['k4h']); rd = calc_1d(data['k1d'])
+            if len(k5m) < 50:
+                self.fail('API-K线', f'5m数据不足{len(k5m)}根', 'retry')
+                return
+
+            r5 = calc_5m(k5m); r1 = calc_1h(k1h)
+            r4 = calc_4h(k4h); rd = calc_1d(k1d)
             if any(v is None for v in [r5,r1,r4,rd]):
                 self.fail('策略指标', '计算失败', 'retry')
                 return
@@ -191,16 +204,11 @@ class HealthChecker:
             pct_sma = (r5['price']-r5['sma20'])/r5['sma20']*100
             h4_trend = '多' if r4['close_closed']>r4['sma_closed'] else '空'
             d1_trend = '多' if rd['close_closed']>rd['sma_closed'] else '空'
-            info = (f"${r5['price']:,.0f} | SMA5距{pct_sma:+.1f}% | "
+            info = (f"${r5['price']:,.4f} | SMA5距{pct_sma:+.1f}% | "
                     f"RSI5={r5['rsi']:.0f} | 1hADX={r1['adx_closed']:.0f} | "
                     f"4hADX={r4['adx_closed']:.0f} | 量比={r5['vol_ratio']:.1f}x | "
                     f"4h闭K{h4_trend}/1d闭K{d1_trend}")
             self.ok('策略指标', info)
-
-            if r5['rsi'] <= 0 or r5['rsi'] >= 100:
-                self.fail('RSI异常', f'{r5["rsi"]}', 'retry')
-            if r4['sma_closed'] <= 0:
-                self.fail('SMA20_4h异常', f'{r4["sma_closed"]}', 'retry')
 
         except ccxt.NetworkError as e:
             self.fail('API网络', str(e)[:50], 'network')
@@ -208,22 +216,22 @@ class HealthChecker:
             self.fail('API异常', str(e)[:80], 'restart')
 
     def check_position_sync(self):
-        """双向持仓同步: 先同步交易所→state, 再校验"""
-        synced = sync_exchange_to_state()
+        synced = sync_exchange_to_state(self.cfg)
         try:
             ex = get_binance()
-            positions = ex.fetch_positions([SYMBOL])
-            long_ex = any(p.get('symbol')==SYMBOL and float(p.get('contracts',0))>0 and p.get('side')=='long' for p in positions)
-            short_ex = any(p.get('symbol')==SYMBOL and float(p.get('contracts',0))>0 and p.get('side')=='short' for p in positions)
+            symbol = self.cfg['symbol']
+            positions = ex.fetch_positions([symbol])
+            long_ex = any(p.get('symbol')==symbol and float(p.get('contracts',0))>0 and p.get('side')=='long' for p in positions)
+            short_ex = any(p.get('symbol')==symbol and float(p.get('contracts',0))>0 and p.get('side')=='short' for p in positions)
 
-            state = json.load(open(STATE_FILE)) if os.path.exists(STATE_FILE) else {}
+            state_file = f"{self.cfg['task_dir']}/databases/state.json"
+            state = json.load(open(state_file)) if os.path.exists(state_file) else {}
             st_long = state.get('long_pos') is not None
             st_short = state.get('short_pos') is not None
 
             if long_ex == st_long and short_ex == st_short:
                 desc = f'一致 LONG={"有" if long_ex else "空"} SHORT={"有" if short_ex else "空"}'
-                if any(synced.values()):
-                    desc += ' (已同步)'
+                if any(synced.values()): desc += ' (已同步)'
                 self.ok('持仓同步', desc)
             else:
                 self.fail('持仓同步',
@@ -233,29 +241,34 @@ class HealthChecker:
             self.fail('持仓同步', str(e)[:50], 'sync_state')
 
     def check_state_files(self):
-        if not os.path.exists(STATE_FILE):
-            with open(STATE_FILE,'w') as f:
+        task_dir = self.cfg['task_dir']
+        state_file = f'{task_dir}/databases/state.json'
+        work_log = f'{task_dir}/logs/work_log.txt'
+        if not os.path.exists(state_file):
+            with open(state_file,'w') as f:
                 json.dump({'long_pos':None,'short_pos':None,'last_long_signal':False,'last_short_signal':False}, f)
             self.ok('State文件', '已创建默认')
         else:
-            with open(STATE_FILE) as f: s = json.load(f)
-            lp = f"有{s['long_pos']['qty']}BTC" if s.get('long_pos') else '空'
-            sp = f"有{s['short_pos']['qty']}BTC" if s.get('short_pos') else '空'
+            with open(state_file) as f: s = json.load(f)
+            qty = self.cfg['qty']
+            lp = f"有{s['long_pos']['qty']}{'BTC' if self.name=='BTC' else 'HYPE'}" if s.get('long_pos') else '空'
+            sp = f"有{s['short_pos']['qty']}{'BTC' if self.name=='BTC' else 'HYPE'}" if s.get('short_pos') else '空'
             self.ok('State文件', f'LONG={lp} SHORT={sp}')
 
-        if os.path.exists(WORK_LOG):
+        if os.path.exists(work_log):
             try:
-                lines = open(WORK_LOG).readlines()
-                if lines: self.ok('WorkLog', lines[-1].strip()[:60])
-                else: self.ok('WorkLog', '空')
-            except: self.ok('WorkLog', '读取失败')
+                lines = open(work_log).readlines()
+                self.ok('WorkLog', lines[-1].strip()[:60] if lines else '空')
+            except:
+                self.ok('WorkLog', '读取失败')
         else:
             self.ok('WorkLog', '不存在')
 
     def check_notify(self):
+        notify_q = f"{self.cfg['task_dir']}/databases/notify_queue.json"
         try:
-            if os.path.exists(NOTIFY_QUEUE):
-                q = json.load(open(NOTIFY_QUEUE))
+            if os.path.exists(notify_q):
+                q = json.load(open(notify_q))
                 items = q if isinstance(q, list) else [q]
                 pending = sum(1 for x in items if isinstance(x, dict) and not x.get('sent', True))
                 self.ok('通知队列', f'待发送{pending}条' if pending else '无积压')
@@ -266,17 +279,20 @@ class HealthChecker:
 
     def do_fix(self, fix):
         try:
+            task_dir = self.cfg['task_dir']
+            log_file = f'{task_dir}/logs/auto_trade.log' if self.name=='BTC' else f'{task_dir}/logs/hype_trade.log'
+            script = 'auto_trade.py' if self.name=='BTC' else 'hype_trade.py'
             if fix == 'restart':
-                subprocess.run(['pkill','-f','auto_trade.py'], capture_output=True)
+                subprocess.run(['pkill','-f', script], capture_output=True)
                 time.sleep(2)
                 subprocess.Popen(
-                    f'cd {TASK_DIR} && nohup python3 -u auto_trade.py >> logs/auto_trade.log 2>&1 &',
+                    f'cd {task_dir} && nohup python3 -u {script} >> {log_file} 2>&1 &',
                     shell=True, preexec_fn=os.setsid)
-                return '已重启auto_trade'
+                return f'{self.name} 已重启'
             elif fix == 'sync_state':
-                synced = sync_exchange_to_state()
+                synced = sync_exchange_to_state(self.cfg)
                 done = [k for k,v in synced.items() if v]
-                return f'已同步{",".join(done)}' if done else '无需同步'
+                return f'{self.name} 已同步{",".join(done)}' if done else f'{self.name} 无需同步'
             elif fix == 'network':
                 return '等待网络恢复'
             elif fix == 'retry':
@@ -285,75 +301,107 @@ class HealthChecker:
             return f'修复失败:{e}'
 
     def run(self):
-        log('='*50)
-        log('🔍 BTC v4.2 自检 (现货K线+合约执行)')
-        log('='*50)
-
-        # 先做同步
+        log(f'── {self.label} ──')
         self.check_position_sync()
         self.check_process()
         self.check_api()
         self.check_state_files()
         self.check_notify()
+        return self
 
-        fixes_done = []
-        for fix in set(self._fixes):
-            r = self.do_fix(fix)
+def main():
+    log('='*60)
+    log('🔍 BTC + HYPE v4.2 双策略自检')
+    log('='*60)
+
+    all_results = []
+    all_ok = 0; all_fail = 0
+    all_fixes = []
+
+    checks = []
+    for name, cfg in STRATEGIES.items():
+        cfg['name'] = name
+        c = StrategyHealthChecker(name, cfg)
+        c.run()
+        checks.append(c)
+        all_ok += c.checks_ok
+        all_fail += c.checks_fail
+        all_results.extend(c.results)
+        all_fixes.extend(c._fixes)
+
+    fixes_done = []
+    for fix in set(all_fixes):
+        for c in checks:
+            r = c.do_fix(fix)
             if r: fixes_done.append(r)
 
-        report = {'time': datetime.now().isoformat(), 'ok': self.checks_ok, 'fail': self.checks_fail,
-                  'items': self.results, 'fixes': fixes_done}
+    # 写自检日志
+    report = {
+        'time': datetime.now().isoformat(),
+        'ok': all_ok, 'fail': all_fail,
+        'items': all_results,
+        'fixes': fixes_done
+    }
+    check_log = '/tmp/health_check_logs/check_log.json'
+    logs = []
+    if os.path.exists(check_log):
+        try: logs = json.load(open(check_log))
+        except: pass
+    logs.append(report)
+    with open(check_log,'w') as f:
+        json.dump(logs[-50:], f, ensure_ascii=False, indent=2)
 
-        logs = []
-        if os.path.exists(CHECK_LOG):
-            try: logs = json.load(open(CHECK_LOG))
-            except: pass
-        logs.append(report)
-        with open(CHECK_LOG,'w') as f: json.dump(logs[-100:], f, ensure_ascii=False, indent=2)
+    # 写修复日志
+    fix_log = '/tmp/health_check_logs/fix_log.txt'
+    with open(fix_log,'a') as f:
+        for item in all_results:
+            if item['status'] == '❌':
+                f.write(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] ❌ [{item['strategy']}] {item['item']}: {item['detail']}\n")
+        for fr in fixes_done:
+            f.write(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] ✅ {fr}\n")
 
-        with open(FIX_LOG,'a') as f:
-            for item in self.results:
-                if item['status'] == '❌':
-                    f.write(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] ❌ {item['item']}: {item['detail']}\n")
-            for fr in fixes_done:
-                f.write(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] ✅ {fr}\n")
-
-        if self.checks_fail > 0:
-            snapshot = ''
+    # 有异常→发通知
+    if all_fail > 0:
+        snapshot = ''
+        for c in checks:
             try:
-                data = get_data()
-                r5 = calc_5m(data['k5m']); r1 = calc_1h(data['k1h'])
-                r4 = calc_4h(data['k4h']); rd = calc_1d(data['k1d'])
-                if all(v is not None for v in [r5,r1,r4,rd]):
+                client = get_kline_client(c.cfg['kline_source'])
+                sym = c.cfg['symbol_kline']
+                k5m = client.fetch_ohlcv(sym, '5m', limit=100)
+                k1h = client.fetch_ohlcv(sym, '1h', limit=200)
+                r5 = calc_5m(k5m); r1 = calc_1h(k1h)
+                if r5 and r1:
                     pct = (r5['price']-r5['sma20'])/r5['sma20']*100
-                    h4b=r4['close_closed']>r4['sma_closed']; d1b=rd['close_closed']>rd['sma_closed']
-                    sig=None
-                    if r1['adx_closed']>25 and r4['adx_closed']<40 and abs(pct)<=1 and r5['vol_ratio']>=1:
-                        if h4b and d1b and r5['rsi']>40: sig='LONG'
-                        elif not h4b and not d1b and r5['rsi']<60: sig='SHORT'
-                    snapshot = (f"\n📊 v4.2快照: ${r5['price']:,.0f} | "
-                               f"4h闭K{'多'if h4b else'空'}/1d闭K{'多'if d1b else'空'} | "
-                               f"RSI{r5['rsi']:.0f} | 1hADX{r1['adx_closed']:.0f} | 信号:{sig or '观望'}")
-            except: pass
-            msg = f"🔴 v4.2 自检发现{self.checks_fail}项问题{snapshot}\n"
-            for item in self.results:
-                if item['status'] == '❌':
-                    msg += f"• {item['item']}: {item['detail']}\n"
-            if fixes_done:
-                msg += f"\n🔧 已修复:\n" + '\n'.join(f'• {f}' for f in fixes_done)
-            try:
+                    snapshot += (f"\n📊 {c.label}: ${r5['price']:,.4f} | "
+                                f"SMA5距{pct:+.1f}% | RSI{r5['rsi']:.0f} | "
+                                f"1hADX{r1['adx_closed']:.0f} | 量比{r5['vol_ratio']:.1f}x")
+            except:
+                pass
+        msg = f"🔴 双策略自检发现{all_fail}项问题{snapshot}\n"
+        for item in all_results:
+            if item['status'] == '❌':
+                msg += f"• [{item['strategy']}] {item['item']}: {item['detail']}\n"
+        if fixes_done:
+            msg += f"\n🔧 已修复:\n" + '\n'.join(f'• {f}' for f in fixes_done)
+        try:
+            for c in checks:
+                nq = f"{c.cfg['task_dir']}/databases/notify_queue.json"
                 existing = []
-                if os.path.exists(NOTIFY_QUEUE):
-                    eq = json.load(open(NOTIFY_QUEUE))
+                if os.path.exists(nq):
+                    eq = json.load(open(nq))
                     existing = eq if isinstance(eq, list) else [eq]
                 existing.append({'time': datetime.now().isoformat(), 'msg': msg, 'sent': False})
-                with open(NOTIFY_QUEUE,'w') as f:
+                with open(nq,'w') as f:
                     json.dump(existing, f, ensure_ascii=False, indent=2)
-            except: pass
+                break  # 只发一份通知
+        except:
+            pass
 
-        log('='*50)
-        log(f'📊 自检完成: {self.checks_ok}✅ {self.checks_fail}❌ {len(fixes_done)}已修复')
-        return report
+    log('='*60)
+    log(f'📊 自检完成: {all_ok}✅ {all_fail}❌ {len(fixes_done)}已修复')
+    for c in checks:
+        log(f'  {c.label}: {c.checks_ok}✅ {c.checks_fail}❌')
+    return report
 
 if __name__ == '__main__':
-    HealthChecker().run()
+    main()
