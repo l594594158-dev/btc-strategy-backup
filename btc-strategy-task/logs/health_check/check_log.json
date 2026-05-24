@@ -1,1944 +1,6 @@
 [
   {
-    "time": "2026-05-23T15:25:09.058528",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=954533"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,242"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,242 | SMA5距-0.2% | RSI5=23 | 1hADX=48 | 4hADX=32 | 量比=1.0x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=True | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:25:03.038838] 开仓: SHORT 0.007BTC @ 75242.1 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T15:30:07.927586",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=954533"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,250"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,250 | SMA5距-0.2% | RSI5=25 | 1hADX=48 | 4hADX=32 | 量比=2.4x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=True/SHORT=True | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:25:03.038838] 开仓: SHORT 0.007BTC @ 75242.1 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T17:50:06.483400",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,716"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,716 | SMA5距+0.1% | RSI5=48 | 1hADX=52 | 4hADX=34 | 量比=0.8x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T17:55:07.540317",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,700"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,700 | SMA5距+0.1% | RSI5=46 | 1hADX=52 | 4hADX=34 | 量比=0.3x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T18:00:07.172707",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,645"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,645 | SMA5距+0.0% | RSI5=43 | 1hADX=54 | 4hADX=34 | 量比=0.4x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T18:05:06.982433",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,644"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,644 | SMA5距+0.0% | RSI5=43 | 1hADX=54 | 4hADX=34 | 量比=0.2x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T18:10:07.171886",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,672"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,672 | SMA5距+0.1% | RSI5=45 | 1hADX=54 | 4hADX=34 | 量比=0.2x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T18:15:06.809271",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,720"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,720 | SMA5距+0.1% | RSI5=50 | 1hADX=54 | 4hADX=34 | 量比=0.2x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T18:20:07.268022",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,723"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,723 | SMA5距+0.1% | RSI5=50 | 1hADX=54 | 4hADX=34 | 量比=0.3x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T18:25:06.709509",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,703"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,703 | SMA5距+0.0% | RSI5=48 | 1hADX=54 | 4hADX=34 | 量比=0.4x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T18:30:06.380279",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,717"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,717 | SMA5距+0.1% | RSI5=49 | 1hADX=54 | 4hADX=34 | 量比=0.7x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T18:35:06.915210",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,758"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,758 | SMA5距+0.1% | RSI5=53 | 1hADX=54 | 4hADX=34 | 量比=0.9x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T18:40:06.418234",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,747"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,747 | SMA5距+0.1% | RSI5=52 | 1hADX=54 | 4hADX=34 | 量比=0.9x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T18:45:07.188735",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,744"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,744 | SMA5距+0.1% | RSI5=52 | 1hADX=54 | 4hADX=34 | 量比=1.5x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T18:50:06.693424",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,692"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,692 | SMA5距-0.0% | RSI5=46 | 1hADX=54 | 4hADX=34 | 量比=0.7x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T18:55:06.422480",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,683"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,683 | SMA5距-0.0% | RSI5=45 | 1hADX=54 | 4hADX=34 | 量比=0.7x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T19:00:07.070824",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,683"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,683 | SMA5距-0.0% | RSI5=46 | 1hADX=55 | 4hADX=34 | 量比=0.6x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T19:05:06.841955",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,711"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,711 | SMA5距+0.0% | RSI5=49 | 1hADX=55 | 4hADX=34 | 量比=0.6x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T19:10:07.043587",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,769"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,769 | SMA5距+0.1% | RSI5=55 | 1hADX=55 | 4hADX=34 | 量比=0.7x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T19:15:07.070074",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,776"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,776 | SMA5距+0.1% | RSI5=56 | 1hADX=55 | 4hADX=34 | 量比=1.0x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T19:20:06.716337",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,790"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,790 | SMA5距+0.1% | RSI5=57 | 1hADX=55 | 4hADX=34 | 量比=1.0x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T19:25:06.254128",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,804"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,804 | SMA5距+0.1% | RSI5=59 | 1hADX=55 | 4hADX=34 | 量比=1.3x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T19:30:06.902196",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,821"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,821 | SMA5距+0.1% | RSI5=61 | 1hADX=55 | 4hADX=34 | 量比=1.0x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T19:35:06.645370",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,800"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,800 | SMA5距+0.1% | RSI5=57 | 1hADX=55 | 4hADX=34 | 量比=0.7x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T19:40:07.217956",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,759"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,759 | SMA5距+0.0% | RSI5=52 | 1hADX=55 | 4hADX=34 | 量比=0.7x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T19:45:07.161723",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,763"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,763 | SMA5距+0.0% | RSI5=52 | 1hADX=55 | 4hADX=34 | 量比=0.5x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T19:50:06.642600",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,769"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,769 | SMA5距+0.0% | RSI5=53 | 1hADX=55 | 4hADX=34 | 量比=0.3x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T19:55:07.274859",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,772"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,772 | SMA5距+0.0% | RSI5=53 | 1hADX=55 | 4hADX=34 | 量比=0.3x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T20:00:08.133365",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,763"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,763 | SMA5距+0.0% | RSI5=52 | 1hADX=56 | 4hADX=36 | 量比=0.7x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T20:05:06.821576",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,731"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,731 | SMA5距-0.0% | RSI5=47 | 1hADX=56 | 4hADX=36 | 量比=0.7x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T20:10:06.921519",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,727"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,727 | SMA5距-0.0% | RSI5=46 | 1hADX=56 | 4hADX=36 | 量比=0.9x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T20:15:06.828738",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,696"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,696 | SMA5距-0.1% | RSI5=42 | 1hADX=56 | 4hADX=36 | 量比=1.6x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T20:20:06.653227",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,663"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,663 | SMA5距-0.1% | RSI5=38 | 1hADX=56 | 4hADX=36 | 量比=1.6x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T20:25:07.659184",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,672"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,672 | SMA5距-0.1% | RSI5=39 | 1hADX=56 | 4hADX=36 | 量比=1.5x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T20:30:07.617091",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,710"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,710 | SMA5距-0.0% | RSI5=46 | 1hADX=56 | 4hADX=36 | 量比=0.8x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T20:35:07.408162",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,710"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,710 | SMA5距-0.0% | RSI5=46 | 1hADX=56 | 4hADX=36 | 量比=0.8x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T20:40:06.794694",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,737"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,737 | SMA5距-0.0% | RSI5=51 | 1hADX=56 | 4hADX=36 | 量比=0.6x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T20:45:08.130946",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,702"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,702 | SMA5距-0.1% | RSI5=45 | 1hADX=56 | 4hADX=36 | 量比=0.7x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T20:50:07.209633",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,702"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,702 | SMA5距-0.1% | RSI5=46 | 1hADX=56 | 4hADX=36 | 量比=0.7x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T20:55:06.815662",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,702"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,702 | SMA5距-0.0% | RSI5=46 | 1hADX=56 | 4hADX=36 | 量比=0.6x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T21:00:07.131626",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,726"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,726 | SMA5距-0.0% | RSI5=50 | 1hADX=57 | 4hADX=36 | 量比=0.6x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T21:05:09.706075",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=988960"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,904"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,904 | SMA5距+0.2% | RSI5=69 | 1hADX=57 | 4hADX=36 | 量比=4.9x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "LONG=False SHORT=True"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=有"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T21:10:09.708695",
-    "ok": 6,
-    "fail": 1,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "❌",
-        "detail": "未运行",
-        "fix": "restart"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,919"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,919 | SMA5距+0.2% | RSI5=71 | 1hADX=57 | 4hADX=36 | 量比=2.7x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=False/SHORT=True | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": [
-      "已重启"
-    ]
-  },
-  {
-    "time": "2026-05-23T21:15:06.675334",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1038301"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,899"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,899 | SMA5距+0.2% | RSI5=68 | 1hADX=57 | 4hADX=36 | 量比=0.9x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=False/SHORT=True | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T21:20:06.589997",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1038596"
-      },
-      {
-        "item": "API数据",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,910"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,910 | SMA5距+0.2% | RSI5=69 | 1hADX=57 | 4hADX=36 | 量比=2.4x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "交易所LONG=False/SHORT=True | state忽略旧仓"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=无 SHORT=无"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T21:22:59.769814",
+    "time": "2026-05-24T12:50:08.721363",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -1950,1221 +12,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=2.4%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,021"
+        "detail": "各周期正常, 最新$76,787"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,021 | SMA5距+0.3% | RSI5=72 | 1hADX=56 | 4hADX=35 | 量比=1.3x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=有0.001BTC"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T21:25:08.416895",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=有"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=1.6%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,991"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,991 | SMA5距+0.2% | RSI5=71 | 1hADX=56 | 4hADX=35 | 量比=0.7x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=有0.001BTC"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T21:30:08.575997",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=有"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=1.2%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,015"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,015 | SMA5距+0.3% | RSI5=72 | 1hADX=56 | 4hADX=35 | 量比=0.8x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=有0.001BTC"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T21:35:09.171996",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=有"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=1.1%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,925"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,925 | SMA5距+0.1% | RSI5=60 | 1hADX=56 | 4hADX=35 | 量比=2.7x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=有0.001BTC"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T21:40:08.508288",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=有"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=1.0%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,940"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,940 | SMA5距+0.1% | RSI5=62 | 1hADX=56 | 4hADX=35 | 量比=0.8x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=有0.001BTC"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T21:45:08.769210",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=有"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=1.0%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$74,939"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$74,939 | SMA5距+0.1% | RSI5=62 | 1hADX=56 | 4hADX=35 | 量比=0.7x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=有0.001BTC"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T21:50:08.190866",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=有"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=1.0%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,155"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,155 | SMA5距+0.4% | RSI5=76 | 1hADX=56 | 4hADX=35 | 量比=2.3x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=有0.001BTC"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T21:55:08.578678",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=有"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=1.0%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,238"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,238 | SMA5距+0.4% | RSI5=78 | 1hADX=56 | 4hADX=35 | 量比=2.4x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=有0.001BTC"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T22:00:09.407288",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=有"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,224"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,224 | SMA5距+0.4% | RSI5=76 | 1hADX=55 | 4hADX=35 | 量比=1.3x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=有0.001BTC"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T22:05:08.979435",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=有"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,139"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,139 | SMA5距+0.3% | RSI5=67 | 1hADX=55 | 4hADX=35 | 量比=0.4x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=有0.001BTC"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T22:10:08.282743",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=有"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,210"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,210 | SMA5距+0.3% | RSI5=70 | 1hADX=55 | 4hADX=35 | 量比=1.1x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=有0.001BTC"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T15:33:13.278180] 开仓: SHORT 0.007BTC @ 75196.2 | "
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T22:15:08.808960",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,216"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,216 | SMA5距+0.3% | RSI5=69 | 1hADX=55 | 4hADX=35 | 量比=2.0x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=空"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T22:14:39.112463] 平仓: SHORT 0.001BTC @ 74709.6"
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T22:20:08.489946",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,236"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,236 | SMA5距+0.3% | RSI5=70 | 1hADX=55 | 4hADX=35 | 量比=1.1x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=空"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T22:14:39.112463] 平仓: SHORT 0.001BTC @ 74709.6"
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T22:25:08.398205",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,304"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,304 | SMA5距+0.3% | RSI5=73 | 1hADX=55 | 4hADX=35 | 量比=1.2x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=空"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T22:14:39.112463] 平仓: SHORT 0.001BTC @ 74709.6"
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T22:30:09.437860",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,324"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,324 | SMA5距+0.3% | RSI5=74 | 1hADX=55 | 4hADX=35 | 量比=0.8x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=空"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T22:14:39.112463] 平仓: SHORT 0.001BTC @ 74709.6"
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T22:35:10.585919",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,374"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,374 | SMA5距+0.3% | RSI5=76 | 1hADX=55 | 4hADX=35 | 量比=1.1x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=空"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T22:14:39.112463] 平仓: SHORT 0.001BTC @ 74709.6"
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T22:40:07.998179",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,406"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,406 | SMA5距+0.4% | RSI5=76 | 1hADX=55 | 4hADX=35 | 量比=1.1x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=空"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T22:14:39.112463] 平仓: SHORT 0.001BTC @ 74709.6"
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T22:45:08.547787",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,467"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,467 | SMA5距+0.4% | RSI5=79 | 1hADX=55 | 4hADX=35 | 量比=0.6x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=空"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T22:14:39.112463] 平仓: SHORT 0.001BTC @ 74709.6"
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T22:50:08.497956",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,419"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,419 | SMA5距+0.3% | RSI5=73 | 1hADX=55 | 4hADX=35 | 量比=1.0x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=空"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T22:14:39.112463] 平仓: SHORT 0.001BTC @ 74709.6"
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T22:55:08.351939",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,443"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,443 | SMA5距+0.3% | RSI5=74 | 1hADX=55 | 4hADX=35 | 量比=0.3x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=空"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T22:14:39.112463] 平仓: SHORT 0.001BTC @ 74709.6"
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T23:00:08.979160",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,538"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,538 | SMA5距+0.4% | RSI5=78 | 1hADX=52 | 4hADX=35 | 量比=3.1x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=空"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T22:14:39.112463] 平仓: SHORT 0.001BTC @ 74709.6"
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T23:05:08.265103",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,509"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,509 | SMA5距+0.3% | RSI5=75 | 1hADX=52 | 4hADX=35 | 量比=0.5x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=空"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T22:14:39.112463] 平仓: SHORT 0.001BTC @ 74709.6"
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T23:10:08.430450",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,606"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,606 | SMA5距+0.4% | RSI5=78 | 1hADX=52 | 4hADX=35 | 量比=0.6x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=空"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T22:14:39.112463] 平仓: SHORT 0.001BTC @ 74709.6"
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T23:15:09.024688",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,610"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,610 | SMA5距+0.3% | RSI5=75 | 1hADX=52 | 4hADX=35 | 量比=1.3x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=空"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T22:14:39.112463] 平仓: SHORT 0.001BTC @ 74709.6"
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T23:20:08.360431",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,654"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,654 | SMA5距+0.4% | RSI5=79 | 1hADX=52 | 4hADX=35 | 量比=0.6x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=空"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T22:14:39.112463] 平仓: SHORT 0.001BTC @ 74709.6"
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T23:25:08.298727",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,626"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,626 | SMA5距+0.3% | RSI5=75 | 1hADX=52 | 4hADX=35 | 量比=0.5x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=空"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T22:14:39.112463] 平仓: SHORT 0.001BTC @ 74709.6"
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T23:30:08.528739",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,545"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,545 | SMA5距+0.2% | RSI5=66 | 1hADX=52 | 4hADX=35 | 量比=0.8x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=空"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T22:14:39.112463] 平仓: SHORT 0.001BTC @ 74709.6"
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T23:35:08.031337",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,445"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,445 | SMA5距+0.0% | RSI5=57 | 1hADX=52 | 4hADX=35 | 量比=0.6x | 4h闭K空/1d闭K空"
-      },
-      {
-        "item": "State文件",
-        "status": "✅",
-        "detail": "LONG=空 SHORT=空"
-      },
-      {
-        "item": "WorkLog",
-        "status": "✅",
-        "detail": "[2026-05-23T22:14:39.112463] 平仓: SHORT 0.001BTC @ 74709.6"
-      },
-      {
-        "item": "通知队列",
-        "status": "✅",
-        "detail": "无积压"
-      }
-    ],
-    "fixes": []
-  },
-  {
-    "time": "2026-05-23T23:40:08.204152",
-    "ok": 7,
-    "fail": 0,
-    "items": [
-      {
-        "item": "持仓同步",
-        "status": "✅",
-        "detail": "一致 LONG=空 SHORT=有"
-      },
-      {
-        "item": "进程状态",
-        "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
-      },
-      {
-        "item": "现货K线",
-        "status": "✅",
-        "detail": "各周期正常, 最新$75,448"
-      },
-      {
-        "item": "策略指标",
-        "status": "✅",
-        "detail": "$75,448 | SMA5距+0.0% | RSI5=58 | 1hADX=52 | 4hADX=35 | 量比=1.1x | 4h闭K空/1d闭K空"
+        "detail": "$76,787 | SMA5距-0.0% | RSI5=47 | 1hADX=39 | 4hADX=30 | 量比=0.7x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3174,7 +32,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3185,7 +43,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-23T23:45:08.801871",
+    "time": "2026-05-24T12:55:07.615733",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3197,17 +55,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,510"
+        "detail": "各周期正常, 最新$76,789"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,510 | SMA5距+0.1% | RSI5=61 | 1hADX=52 | 4hADX=35 | 量比=0.9x | 4h闭K空/1d闭K空"
+        "detail": "$76,789 | SMA5距-0.0% | RSI5=48 | 1hADX=39 | 4hADX=30 | 量比=0.4x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3217,7 +75,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3228,7 +86,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-23T23:50:08.222305",
+    "time": "2026-05-24T13:00:09.409697",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3240,17 +98,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,494"
+        "detail": "各周期正常, 最新$76,771"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,494 | SMA5距+0.0% | RSI5=60 | 1hADX=52 | 4hADX=35 | 量比=1.0x | 4h闭K空/1d闭K空"
+        "detail": "$76,771 | SMA5距-0.0% | RSI5=46 | 1hADX=39 | 4hADX=30 | 量比=0.7x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3260,7 +118,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3271,7 +129,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-23T23:55:08.761933",
+    "time": "2026-05-24T13:05:08.452701",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3283,17 +141,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,502"
+        "detail": "各周期正常, 最新$76,775"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,502 | SMA5距+0.0% | RSI5=61 | 1hADX=52 | 4hADX=35 | 量比=0.5x | 4h闭K空/1d闭K空"
+        "detail": "$76,775 | SMA5距-0.0% | RSI5=46 | 1hADX=39 | 4hADX=30 | 量比=0.3x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3303,7 +161,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3314,7 +172,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T00:00:09.306038",
+    "time": "2026-05-24T13:10:09.024469",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3326,17 +184,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,569"
+        "detail": "各周期正常, 最新$76,739"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,569 | SMA5距+0.1% | RSI5=65 | 1hADX=49 | 4hADX=35 | 量比=0.2x | 4h闭K空/1d闭K空"
+        "detail": "$76,739 | SMA5距-0.1% | RSI5=42 | 1hADX=39 | 4hADX=30 | 量比=1.4x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3346,7 +204,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3357,7 +215,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T00:05:08.667864",
+    "time": "2026-05-24T13:15:08.750586",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3369,17 +227,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,604"
+        "detail": "各周期正常, 最新$76,730"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,604 | SMA5距+0.1% | RSI5=67 | 1hADX=49 | 4hADX=35 | 量比=0.7x | 4h闭K空/1d闭K空"
+        "detail": "$76,730 | SMA5距-0.1% | RSI5=41 | 1hADX=39 | 4hADX=30 | 量比=0.3x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3389,7 +247,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3400,7 +258,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T00:10:08.159597",
+    "time": "2026-05-24T13:20:07.566281",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3412,17 +270,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,535"
+        "detail": "各周期正常, 最新$76,710"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,535 | SMA5距+0.0% | RSI5=60 | 1hADX=49 | 4hADX=35 | 量比=0.4x | 4h闭K空/1d闭K空"
+        "detail": "$76,710 | SMA5距-0.1% | RSI5=39 | 1hADX=39 | 4hADX=30 | 量比=1.0x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3432,7 +290,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3443,7 +301,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T00:15:08.444791",
+    "time": "2026-05-24T13:25:08.766544",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3455,17 +313,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,535"
+        "detail": "各周期正常, 最新$76,710"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,535 | SMA5距+0.0% | RSI5=60 | 1hADX=49 | 4hADX=35 | 量比=0.3x | 4h闭K空/1d闭K空"
+        "detail": "$76,710 | SMA5距-0.1% | RSI5=39 | 1hADX=39 | 4hADX=30 | 量比=0.7x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3475,7 +333,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3486,7 +344,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T00:20:08.346368",
+    "time": "2026-05-24T13:30:10.235611",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3498,17 +356,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,527"
+        "detail": "各周期正常, 最新$76,718"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,527 | SMA5距-0.0% | RSI5=59 | 1hADX=49 | 4hADX=35 | 量比=0.4x | 4h闭K空/1d闭K空"
+        "detail": "$76,718 | SMA5距-0.1% | RSI5=41 | 1hADX=39 | 4hADX=30 | 量比=3.6x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3518,7 +376,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3529,7 +387,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T00:25:08.037170",
+    "time": "2026-05-24T13:35:08.489703",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3541,17 +399,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,415"
+        "detail": "各周期正常, 最新$76,726"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,415 | SMA5距-0.1% | RSI5=49 | 1hADX=49 | 4hADX=35 | 量比=0.8x | 4h闭K空/1d闭K空"
+        "detail": "$76,726 | SMA5距-0.1% | RSI5=42 | 1hADX=39 | 4hADX=30 | 量比=0.7x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3561,7 +419,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3572,7 +430,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T00:30:08.774864",
+    "time": "2026-05-24T13:40:08.470751",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3584,17 +442,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,476"
+        "detail": "各周期正常, 最新$76,688"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,476 | SMA5距-0.1% | RSI5=54 | 1hADX=49 | 4hADX=35 | 量比=0.3x | 4h闭K空/1d闭K空"
+        "detail": "$76,688 | SMA5距-0.1% | RSI5=38 | 1hADX=39 | 4hADX=30 | 量比=1.1x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3604,7 +462,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3615,7 +473,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T00:35:08.262140",
+    "time": "2026-05-24T13:45:08.490370",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3627,17 +485,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,494"
+        "detail": "各周期正常, 最新$76,652"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,494 | SMA5距-0.0% | RSI5=55 | 1hADX=49 | 4hADX=35 | 量比=0.5x | 4h闭K空/1d闭K空"
+        "detail": "$76,652 | SMA5距-0.1% | RSI5=34 | 1hADX=39 | 4hADX=30 | 量比=0.9x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3647,7 +505,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3658,7 +516,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T00:40:08.615382",
+    "time": "2026-05-24T13:50:08.680263",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3670,17 +528,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,539"
+        "detail": "各周期正常, 最新$76,788"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,539 | SMA5距+0.0% | RSI5=58 | 1hADX=49 | 4hADX=35 | 量比=0.7x | 4h闭K空/1d闭K空"
+        "detail": "$76,788 | SMA5距+0.0% | RSI5=53 | 1hADX=39 | 4hADX=30 | 量比=0.7x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3690,7 +548,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3701,7 +559,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T00:45:08.747343",
+    "time": "2026-05-24T13:55:09.040150",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3713,17 +571,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,503"
+        "detail": "各周期正常, 最新$76,824"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,503 | SMA5距-0.0% | RSI5=55 | 1hADX=49 | 4hADX=35 | 量比=0.3x | 4h闭K空/1d闭K空"
+        "detail": "$76,824 | SMA5距+0.1% | RSI5=56 | 1hADX=39 | 4hADX=30 | 量比=1.3x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3733,7 +591,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3744,7 +602,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T00:50:07.992597",
+    "time": "2026-05-24T14:00:10.298761",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3756,17 +614,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,485"
+        "detail": "各周期正常, 最新$76,813"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,485 | SMA5距-0.0% | RSI5=53 | 1hADX=49 | 4hADX=35 | 量比=2.3x | 4h闭K空/1d闭K空"
+        "detail": "$76,813 | SMA5距+0.1% | RSI5=55 | 1hADX=39 | 4hADX=30 | 量比=0.5x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3776,7 +634,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3787,7 +645,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T00:55:08.216994",
+    "time": "2026-05-24T14:05:07.966390",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3799,17 +657,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,456"
+        "detail": "各周期正常, 最新$76,828"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,456 | SMA5距-0.1% | RSI5=50 | 1hADX=49 | 4hADX=35 | 量比=0.6x | 4h闭K空/1d闭K空"
+        "detail": "$76,828 | SMA5距+0.1% | RSI5=57 | 1hADX=39 | 4hADX=30 | 量比=1.1x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3819,7 +677,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3830,7 +688,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T01:00:11.428372",
+    "time": "2026-05-24T14:10:07.393335",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3842,17 +700,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,454"
+        "detail": "各周期正常, 最新$76,834"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,454 | SMA5距-0.1% | RSI5=50 | 1hADX=46 | 4hADX=35 | 量比=1.2x | 4h闭K空/1d闭K空"
+        "detail": "$76,834 | SMA5距+0.1% | RSI5=58 | 1hADX=39 | 4hADX=30 | 量比=0.7x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3862,7 +720,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3873,7 +731,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T01:05:08.522665",
+    "time": "2026-05-24T14:15:08.381267",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3885,17 +743,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,431"
+        "detail": "各周期正常, 最新$76,831"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,431 | SMA5距-0.1% | RSI5=48 | 1hADX=46 | 4hADX=35 | 量比=2.7x | 4h闭K空/1d闭K空"
+        "detail": "$76,831 | SMA5距+0.1% | RSI5=56 | 1hADX=39 | 4hADX=30 | 量比=1.2x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3905,7 +763,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3916,7 +774,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T01:10:08.509272",
+    "time": "2026-05-24T14:20:08.343768",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3928,17 +786,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,479"
+        "detail": "各周期正常, 最新$76,797"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,479 | SMA5距-0.0% | RSI5=53 | 1hADX=46 | 4hADX=35 | 量比=1.5x | 4h闭K空/1d闭K空"
+        "detail": "$76,797 | SMA5距+0.0% | RSI5=52 | 1hADX=39 | 4hADX=30 | 量比=0.7x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3948,7 +806,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -3959,7 +817,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T01:15:08.424819",
+    "time": "2026-05-24T14:25:07.939708",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -3971,17 +829,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,464"
+        "detail": "各周期正常, 最新$76,753"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,464 | SMA5距-0.0% | RSI5=51 | 1hADX=46 | 4hADX=35 | 量比=0.4x | 4h闭K空/1d闭K空"
+        "detail": "$76,753 | SMA5距-0.0% | RSI5=46 | 1hADX=39 | 4hADX=30 | 量比=0.5x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -3991,7 +849,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -4002,7 +860,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T01:20:08.118219",
+    "time": "2026-05-24T14:30:08.890029",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -4014,17 +872,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,463"
+        "detail": "各周期正常, 最新$76,743"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,463 | SMA5距-0.0% | RSI5=51 | 1hADX=46 | 4hADX=35 | 量比=0.3x | 4h闭K空/1d闭K空"
+        "detail": "$76,743 | SMA5距-0.0% | RSI5=45 | 1hADX=39 | 4hADX=30 | 量比=0.7x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -4034,7 +892,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -4045,7 +903,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T01:25:08.162576",
+    "time": "2026-05-24T14:35:07.721034",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -4057,17 +915,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,446"
+        "detail": "各周期正常, 最新$76,737"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,446 | SMA5距-0.1% | RSI5=49 | 1hADX=46 | 4hADX=35 | 量比=0.3x | 4h闭K空/1d闭K空"
+        "detail": "$76,737 | SMA5距-0.0% | RSI5=44 | 1hADX=39 | 4hADX=30 | 量比=0.9x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -4077,7 +935,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -4088,7 +946,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T01:30:15.172340",
+    "time": "2026-05-24T14:40:08.245438",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -4100,17 +958,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,488"
+        "detail": "各周期正常, 最新$76,742"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,488 | SMA5距+0.0% | RSI5=54 | 1hADX=46 | 4hADX=35 | 量比=0.7x | 4h闭K空/1d闭K空"
+        "detail": "$76,742 | SMA5距-0.0% | RSI5=45 | 1hADX=39 | 4hADX=30 | 量比=2.7x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -4120,7 +978,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -4131,7 +989,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T01:35:07.965363",
+    "time": "2026-05-24T14:45:08.334461",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -4143,17 +1001,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,469"
+        "detail": "各周期正常, 最新$76,817"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,469 | SMA5距-0.0% | RSI5=52 | 1hADX=46 | 4hADX=35 | 量比=2.3x | 4h闭K空/1d闭K空"
+        "detail": "$76,817 | SMA5距+0.1% | RSI5=55 | 1hADX=39 | 4hADX=30 | 量比=1.0x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -4163,7 +1021,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -4174,7 +1032,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T01:40:07.850404",
+    "time": "2026-05-24T14:50:07.902842",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -4186,17 +1044,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,442"
+        "detail": "各周期正常, 最新$76,909"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,442 | SMA5距-0.0% | RSI5=49 | 1hADX=46 | 4hADX=35 | 量比=2.7x | 4h闭K空/1d闭K空"
+        "detail": "$76,909 | SMA5距+0.2% | RSI5=64 | 1hADX=39 | 4hADX=30 | 量比=1.6x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -4206,7 +1064,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -4217,7 +1075,7 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T01:45:07.741795",
+    "time": "2026-05-24T14:55:08.582237",
     "ok": 7,
     "fail": 0,
     "items": [
@@ -4229,17 +1087,17 @@
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,428"
+        "detail": "各周期正常, 最新$77,013"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,428 | SMA5距-0.1% | RSI5=47 | 1hADX=46 | 4hADX=35 | 量比=0.5x | 4h闭K空/1d闭K空"
+        "detail": "$77,013 | SMA5距+0.3% | RSI5=71 | 1hADX=39 | 4hADX=30 | 量比=2.3x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
@@ -4249,7 +1107,7 @@
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-23T23:40:03.521904] 开仓: SHORT 0.035BTC @ 75404.9 | "
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",
@@ -4260,39 +1118,3178 @@
     "fixes": []
   },
   {
-    "time": "2026-05-24T01:50:08.570537",
+    "time": "2026-05-24T15:00:09.758490",
     "ok": 7,
     "fail": 0,
     "items": [
       {
         "item": "持仓同步",
         "status": "✅",
-        "detail": "一致 LONG=空 SHORT=空"
+        "detail": "一致 LONG=空 SHORT=有"
       },
       {
         "item": "进程状态",
         "status": "✅",
-        "detail": "PID=1039969 CPU=0.9%"
+        "detail": "PID=1105217 CPU=0.8%"
       },
       {
         "item": "现货K线",
         "status": "✅",
-        "detail": "各周期正常, 最新$75,427"
+        "detail": "各周期正常, 最新$76,997"
       },
       {
         "item": "策略指标",
         "status": "✅",
-        "detail": "$75,427 | SMA5距-0.0% | RSI5=47 | 1hADX=46 | 4hADX=35 | 量比=0.5x | 4h闭K空/1d闭K空"
+        "detail": "$76,997 | SMA5距+0.2% | RSI5=68 | 1hADX=39 | 4hADX=30 | 量比=1.8x | 4h闭K多/1d闭K空"
       },
       {
         "item": "State文件",
         "status": "✅",
-        "detail": "LONG=空 SHORT=空"
+        "detail": "LONG=空 SHORT=有0.035BTC"
       },
       {
         "item": "WorkLog",
         "status": "✅",
-        "detail": "[2026-05-24T01:49:02.304848] 平仓: SHORT 0.035BTC @ 75404.9"
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T15:05:08.445545",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,965"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,965 | SMA5距+0.2% | RSI5=64 | 1hADX=39 | 4hADX=30 | 量比=1.7x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T15:10:08.468506",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,930"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,930 | SMA5距+0.1% | RSI5=59 | 1hADX=39 | 4hADX=30 | 量比=0.6x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T15:15:08.735742",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,903"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,903 | SMA5距+0.1% | RSI5=56 | 1hADX=39 | 4hADX=30 | 量比=0.3x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T15:20:07.683832",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,906"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,906 | SMA5距+0.1% | RSI5=57 | 1hADX=39 | 4hADX=30 | 量比=0.4x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T15:25:08.104430",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,886"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,886 | SMA5距+0.0% | RSI5=54 | 1hADX=39 | 4hADX=30 | 量比=0.3x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T15:30:08.356295",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,899"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,899 | SMA5距+0.0% | RSI5=56 | 1hADX=39 | 4hADX=30 | 量比=0.2x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T15:35:08.198202",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,907"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,907 | SMA5距+0.1% | RSI5=56 | 1hADX=39 | 4hADX=30 | 量比=1.9x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T15:40:08.046684",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,872"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,872 | SMA5距+0.0% | RSI5=52 | 1hADX=39 | 4hADX=30 | 量比=0.6x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T15:45:08.961509",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,873"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,873 | SMA5距+0.0% | RSI5=52 | 1hADX=39 | 4hADX=30 | 量比=1.3x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T15:50:08.045708",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,814"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,814 | SMA5距-0.1% | RSI5=45 | 1hADX=39 | 4hADX=30 | 量比=1.0x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T15:55:08.419901",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,804"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,804 | SMA5距-0.1% | RSI5=44 | 1hADX=39 | 4hADX=30 | 量比=0.8x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T16:00:09.144733",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,814"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,814 | SMA5距-0.1% | RSI5=46 | 1hADX=39 | 4hADX=28 | 量比=0.7x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T16:05:07.450477",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,792"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,792 | SMA5距-0.1% | RSI5=43 | 1hADX=39 | 4hADX=28 | 量比=0.7x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T16:10:07.858611",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,757"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,757 | SMA5距-0.1% | RSI5=39 | 1hADX=39 | 4hADX=28 | 量比=1.9x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T16:15:07.857141",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,752"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,752 | SMA5距-0.2% | RSI5=39 | 1hADX=39 | 4hADX=28 | 量比=0.3x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T16:20:07.392375",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,769"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,769 | SMA5距-0.1% | RSI5=42 | 1hADX=39 | 4hADX=28 | 量比=0.5x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T16:25:09.149621",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,832"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,832 | SMA5距-0.0% | RSI5=50 | 1hADX=39 | 4hADX=28 | 量比=0.7x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T16:30:08.170779",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,819"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,819 | SMA5距-0.0% | RSI5=49 | 1hADX=39 | 4hADX=28 | 量比=1.8x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T16:35:08.465026",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,793"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,793 | SMA5距-0.1% | RSI5=46 | 1hADX=39 | 4hADX=28 | 量比=1.2x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T16:40:07.694151",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,825"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,825 | SMA5距-0.0% | RSI5=50 | 1hADX=39 | 4hADX=28 | 量比=0.6x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T16:45:07.412322",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,804"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,804 | SMA5距-0.0% | RSI5=47 | 1hADX=39 | 4hADX=28 | 量比=0.7x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T16:50:08.729329",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,810"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,810 | SMA5距-0.0% | RSI5=48 | 1hADX=39 | 4hADX=28 | 量比=1.5x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T16:55:07.333600",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,804"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,804 | SMA5距-0.0% | RSI5=48 | 1hADX=39 | 4hADX=28 | 量比=1.0x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T17:00:09.191188",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,831"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,831 | SMA5距+0.0% | RSI5=51 | 1hADX=38 | 4hADX=28 | 量比=1.0x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T17:05:07.996274",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,840"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,840 | SMA5距+0.0% | RSI5=53 | 1hADX=38 | 4hADX=28 | 量比=1.2x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T17:10:08.808717",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,881"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,881 | SMA5距+0.1% | RSI5=58 | 1hADX=38 | 4hADX=28 | 量比=0.6x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T17:15:08.658393",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,892"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,892 | SMA5距+0.1% | RSI5=59 | 1hADX=38 | 4hADX=28 | 量比=0.9x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T17:20:08.411286",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,900"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,900 | SMA5距+0.1% | RSI5=60 | 1hADX=38 | 4hADX=28 | 量比=1.3x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T17:25:07.923383",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,976"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,976 | SMA5距+0.2% | RSI5=68 | 1hADX=38 | 4hADX=28 | 量比=1.8x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T17:30:07.921304",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,962"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,962 | SMA5距+0.2% | RSI5=65 | 1hADX=38 | 4hADX=28 | 量比=4.7x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T17:35:07.697576",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,930"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,930 | SMA5距+0.1% | RSI5=60 | 1hADX=38 | 4hADX=28 | 量比=0.5x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T17:40:07.503966",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,980"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,980 | SMA5距+0.2% | RSI5=65 | 1hADX=38 | 4hADX=28 | 量比=1.7x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T17:45:08.968606",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,983"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,983 | SMA5距+0.1% | RSI5=65 | 1hADX=38 | 4hADX=28 | 量比=0.5x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T17:50:07.778686",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,976"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,976 | SMA5距+0.1% | RSI5=63 | 1hADX=38 | 4hADX=28 | 量比=0.8x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T17:55:07.868474",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,997"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,997 | SMA5距+0.1% | RSI5=65 | 1hADX=38 | 4hADX=28 | 量比=0.4x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T18:00:09.261642",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,020"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,020 | SMA5距+0.2% | RSI5=68 | 1hADX=39 | 4hADX=28 | 量比=2.0x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T18:05:07.974018",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,964"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,964 | SMA5距+0.1% | RSI5=58 | 1hADX=39 | 4hADX=28 | 量比=0.8x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T18:10:08.419164",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,976"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,976 | SMA5距+0.1% | RSI5=59 | 1hADX=39 | 4hADX=28 | 量比=0.7x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T18:15:08.948828",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,946"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,946 | SMA5距+0.0% | RSI5=55 | 1hADX=39 | 4hADX=28 | 量比=0.4x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T18:20:08.048934",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,999"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,999 | SMA5距+0.1% | RSI5=61 | 1hADX=39 | 4hADX=28 | 量比=1.2x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T18:25:08.410765",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.8%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$76,981"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$76,981 | SMA5距+0.1% | RSI5=58 | 1hADX=39 | 4hADX=28 | 量比=0.9x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T18:30:08.302637",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,224"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,224 | SMA5距+0.3% | RSI5=74 | 1hADX=39 | 4hADX=28 | 量比=10.1x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T18:35:07.944760",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,219"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,219 | SMA5距+0.3% | RSI5=73 | 1hADX=39 | 4hADX=28 | 量比=1.4x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T18:40:08.087857",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,197"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,197 | SMA5距+0.2% | RSI5=70 | 1hADX=39 | 4hADX=28 | 量比=0.8x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T18:45:08.130438",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,195"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,195 | SMA5距+0.2% | RSI5=70 | 1hADX=39 | 4hADX=28 | 量比=0.8x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T18:50:08.948369",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,169"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,169 | SMA5距+0.2% | RSI5=66 | 1hADX=39 | 4hADX=28 | 量比=0.4x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T18:55:07.704568",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,167"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,167 | SMA5距+0.1% | RSI5=65 | 1hADX=39 | 4hADX=28 | 量比=0.6x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T19:00:08.612228",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,191"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,191 | SMA5距+0.2% | RSI5=67 | 1hADX=40 | 4hADX=28 | 量比=0.3x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T19:05:08.966877",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,307"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,307 | SMA5距+0.3% | RSI5=74 | 1hADX=40 | 4hADX=28 | 量比=0.7x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T19:10:09.989419",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,287"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,287 | SMA5距+0.2% | RSI5=71 | 1hADX=40 | 4hADX=28 | 量比=0.6x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T19:15:08.688429",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,300"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,300 | SMA5距+0.2% | RSI5=73 | 1hADX=40 | 4hADX=28 | 量比=0.6x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T19:20:08.124981",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,288"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,288 | SMA5距+0.2% | RSI5=71 | 1hADX=40 | 4hADX=28 | 量比=0.3x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T19:25:08.824323",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,305"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,305 | SMA5距+0.2% | RSI5=72 | 1hADX=40 | 4hADX=28 | 量比=0.2x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T19:30:07.426632",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,286"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,286 | SMA5距+0.2% | RSI5=70 | 1hADX=40 | 4hADX=28 | 量比=0.7x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T19:35:08.667344",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,313"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,313 | SMA5距+0.2% | RSI5=71 | 1hADX=40 | 4hADX=28 | 量比=0.2x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T19:40:08.421943",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,256"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,256 | SMA5距+0.1% | RSI5=62 | 1hADX=40 | 4hADX=28 | 量比=0.3x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T19:45:09.092829",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,248"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,248 | SMA5距+0.1% | RSI5=62 | 1hADX=40 | 4hADX=28 | 量比=0.4x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T19:50:08.398015",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,232"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,232 | SMA5距+0.0% | RSI5=59 | 1hADX=40 | 4hADX=28 | 量比=0.6x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T19:55:08.939396",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,278"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,278 | SMA5距+0.1% | RSI5=64 | 1hADX=40 | 4hADX=28 | 量比=0.3x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T20:00:08.243322",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,326"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,326 | SMA5距+0.1% | RSI5=68 | 1hADX=41 | 4hADX=27 | 量比=0.4x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T20:05:08.545402",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,276"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,276 | SMA5距+0.0% | RSI5=60 | 1hADX=41 | 4hADX=27 | 量比=0.2x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T20:10:08.636561",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,230"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,230 | SMA5距-0.0% | RSI5=55 | 1hADX=41 | 4hADX=27 | 量比=0.4x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T20:15:08.838116",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,216"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,216 | SMA5距-0.0% | RSI5=53 | 1hADX=41 | 4hADX=27 | 量比=1.1x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T20:20:07.911642",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,099"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,099 | SMA5距-0.2% | RSI5=41 | 1hADX=41 | 4hADX=27 | 量比=2.0x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T20:25:08.545617",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,086"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,086 | SMA5距-0.2% | RSI5=40 | 1hADX=41 | 4hADX=27 | 量比=1.7x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T20:30:08.370062",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,086"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,086 | SMA5距-0.2% | RSI5=40 | 1hADX=41 | 4hADX=27 | 量比=0.4x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T20:35:08.250794",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,070"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,070 | SMA5距-0.2% | RSI5=39 | 1hADX=41 | 4hADX=27 | 量比=1.2x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T20:40:08.376299",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,086"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,086 | SMA5距-0.2% | RSI5=42 | 1hADX=41 | 4hADX=27 | 量比=1.7x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T20:45:08.464239",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,127"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,127 | SMA5距-0.1% | RSI5=47 | 1hADX=41 | 4hADX=27 | 量比=0.3x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T20:50:09.222620",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,105"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,105 | SMA5距-0.1% | RSI5=45 | 1hADX=41 | 4hADX=27 | 量比=0.2x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T20:55:08.645363",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,096"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,096 | SMA5距-0.1% | RSI5=44 | 1hADX=41 | 4hADX=27 | 量比=0.8x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T21:00:09.619263",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,124"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,124 | SMA5距-0.1% | RSI5=47 | 1hADX=41 | 4hADX=27 | 量比=0.6x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
+      },
+      {
+        "item": "通知队列",
+        "status": "✅",
+        "detail": "无积压"
+      }
+    ],
+    "fixes": []
+  },
+  {
+    "time": "2026-05-24T21:05:08.626045",
+    "ok": 7,
+    "fail": 0,
+    "items": [
+      {
+        "item": "持仓同步",
+        "status": "✅",
+        "detail": "一致 LONG=空 SHORT=有"
+      },
+      {
+        "item": "进程状态",
+        "status": "✅",
+        "detail": "PID=1105217 CPU=0.9%"
+      },
+      {
+        "item": "现货K线",
+        "status": "✅",
+        "detail": "各周期正常, 最新$77,105"
+      },
+      {
+        "item": "策略指标",
+        "status": "✅",
+        "detail": "$77,105 | SMA5距-0.1% | RSI5=45 | 1hADX=41 | 4hADX=27 | 量比=0.5x | 4h闭K多/1d闭K空"
+      },
+      {
+        "item": "State文件",
+        "status": "✅",
+        "detail": "LONG=空 SHORT=有0.035BTC"
+      },
+      {
+        "item": "WorkLog",
+        "status": "✅",
+        "detail": "[2026-05-24T05:38:45.324904] 开仓: SHORT 0.035BTC @ 76737.1 | "
       },
       {
         "item": "通知队列",

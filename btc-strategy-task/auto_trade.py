@@ -262,11 +262,6 @@ def check_entry(r5, r1, r4, rd):
 
     # === 5. LONG 顺势追多 ===
     if h4_bull and d1_bull and rsi5 > 40:
-        # 平仓冷却: 手动平仓后15分钟内同向不再开
-        if state.get('long_close_time'):
-            since_close = time.time() - state['long_close_time']
-            if since_close < 900:
-                return None, f"观望 | LONG已平{since_close:.0f}s, 冷却中(需>900s)"
         return 'LONG', {
             'name': 'LONG-顺势追多',
             'price': price, 'sma5': sma5, 'pct_sma': pct_sma,
@@ -278,11 +273,6 @@ def check_entry(r5, r1, r4, rd):
 
     # === 6. SHORT 顺势摸顶 ===
     if (not h4_bull) and (not d1_bull) and rsi5 < 60:
-        # 平仓冷却
-        if state.get('short_close_time'):
-            since_close = time.time() - state['short_close_time']
-            if since_close < 900:
-                return None, f"观望 | SHORT已平{since_close:.0f}s, 冷却中(需>900s)"
         return 'SHORT', {
             'name': 'SHORT-顺势摸顶',
             'price': price, 'sma5': sma5, 'pct_sma': pct_sma,
@@ -552,7 +542,6 @@ def manage_positions(state):
                 work_log('主动止损', f'{direction} {qty}BTC @ {entry} | pnl={pnl_pct:+.2f}%')
                 state[pos_key] = None
                 state[f'last_{direction.lower()}_signal'] = False
-                state[f'{direction.lower()}_close_time'] = time.time()  # 冷却
                 changed = True
                 cancel_algo_orders(direction, '主动止损')
             except Exception as e:
@@ -576,7 +565,6 @@ def manage_positions(state):
                 work_log('主动止盈', f'{direction} {qty}BTC @ {entry} | pnl={pnl_pct:+.2f}%')
                 state[pos_key] = None
                 state[f'last_{direction.lower()}_signal'] = False
-                state[f'{direction.lower()}_close_time'] = time.time()  # 冷却
                 changed = True
                 cancel_algo_orders(direction, '主动止盈')
             except Exception as e:
@@ -615,7 +603,6 @@ def check_close(state):
         work_log('平仓', f"LONG {pos['qty']}BTC @ {pos['entry_price']}")
         state['long_pos'] = None
         state['last_long_signal'] = False
-        state['long_close_time'] = time.time()  # 冷却: 防手动平仓后立即重开
         changed = True
         cancel_algo_orders('LONG', '被动平仓')
 
@@ -626,7 +613,6 @@ def check_close(state):
         work_log('平仓', f"SHORT {pos['qty']}BTC @ {pos['entry_price']}")
         state['short_pos'] = None
         state['last_short_signal'] = False
-        state['short_close_time'] = time.time()  # 冷却
         changed = True
         cancel_algo_orders('SHORT', '被动平仓')
 
