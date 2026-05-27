@@ -18,3 +18,4 @@ memory-tdai/
 *.tmp
 *.swp
 btc-strategy-task/logs/auto_trade.log
+btc-strategy-task/logs/auto_trade.log
