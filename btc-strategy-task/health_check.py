@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-BTC + HYPE v4.2 双策略 · 自检脚本
+BTC v4.3 + HYPE v4.2 双策略 · 自检脚本
 - 每5分钟执行一次自动检查
 - 检查进程运行、API数据、持仓同步、策略状态
 - 发现问题自动修复并通知
@@ -20,11 +20,11 @@ STRATEGIES = {
         'symbol_kline': 'BTC/USDT',       # 现货K线
         'kline_source': 'spot',            # spot | swap
         'leverage': 50,
-        'tp_pct': 0.025,
-        'sl_pct': 0.015,
+        'tp_pct': 0.012,
+        'sl_pct': 0.010,
         'qty': 0.035,
         'process_pattern': 'auto_trade.py',
-        'label': 'BTC v4.2',
+        'label': 'BTC v4.3',
     },
     'HYPE': {
         'task_dir': '/root/.openclaw/workspace/hype-strategy-task',
@@ -60,7 +60,7 @@ def get_kline_client(src):
     else:
         return get_binance()
 
-# ========== v4.2 指标计算 ==========
+# ========== v4.2/v4.3 指标计算 ==========
 
 def calc_5m(kline_data):
     df = pd.DataFrame(kline_data, columns=['t','o','h','l','c','v'])
@@ -203,11 +203,10 @@ class StrategyHealthChecker:
 
             pct_sma = (r5['price']-r5['sma20'])/r5['sma20']*100
             h4_trend = '多' if r4['close_closed']>r4['sma_closed'] else '空'
-            d1_trend = '多' if rd['close_closed']>rd['sma_closed'] else '空'
             info = (f"${r5['price']:,.4f} | SMA5距{pct_sma:+.1f}% | "
                     f"RSI5={r5['rsi']:.0f} | 1hADX={r1['adx_closed']:.0f} | "
                     f"4hADX={r4['adx_closed']:.0f} | 量比={r5['vol_ratio']:.1f}x | "
-                    f"4h闭K{h4_trend}/1d闭K{d1_trend}")
+                    f"4h闭K{h4_trend}")
             self.ok('策略指标', info)
 
         except ccxt.NetworkError as e:
@@ -311,7 +310,7 @@ class StrategyHealthChecker:
 
 def main():
     log('='*60)
-    log('🔍 BTC + HYPE v4.2 双策略自检')
+    log('🔍 BTC v4.3 + HYPE v4.2 双策略自检')
     log('='*60)
 
     all_results = []
